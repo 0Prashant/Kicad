@@ -1,0 +1,305 @@
+EESchema Schematic File Version 4
+LIBS:throwing_01-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 "Author : n-is"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text HLabel 3625 4550 0    60   Input ~ 0
+OPTO_IN
+Wire Wire Line
+	3625 4550 4075 4550
+$Comp
+L throwing_01-rescue:GND-RESCUE-newTemplateUse-RESCUE-throwing_01 #PWR033
+U 1 1 5A0F552D
+P 4025 4800
+F 0 "#PWR033" H 4025 4550 50  0001 C CNN
+F 1 "GND" H 4025 4650 50  0000 C CNN
+F 2 "" H 4025 4800 50  0001 C CNN
+F 3 "" H 4025 4800 50  0001 C CNN
+	1    4025 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4075 4750 4025 4750
+Wire Wire Line
+	4025 4750 4025 4800
+$Comp
+L throwing_01-rescue:GND-RESCUE-newTemplateUse-RESCUE-throwing_01 #PWR034
+U 1 1 5A0F552E
+P 4725 4800
+F 0 "#PWR034" H 4725 4550 50  0001 C CNN
+F 1 "GND" H 4725 4650 50  0000 C CNN
+F 2 "" H 4725 4800 50  0001 C CNN
+F 3 "" H 4725 4800 50  0001 C CNN
+	1    4725 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4675 4750 4725 4750
+Wire Wire Line
+	4725 4750 4725 4800
+Wire Wire Line
+	4850 4075 4850 4275
+Wire Wire Line
+	4850 4550 4675 4550
+Wire Wire Line
+	5050 4275 4850 4275
+Connection ~ 4850 4275
+Wire Wire Line
+	5425 4275 5350 4275
+$Comp
+L throwing_01-rescue:GND-RESCUE-newTemplateUse-RESCUE-throwing_01 #PWR035
+U 1 1 5A0F5533
+P 5725 4575
+F 0 "#PWR035" H 5725 4325 50  0001 C CNN
+F 1 "GND" H 5725 4425 50  0000 C CNN
+F 2 "" H 5725 4575 50  0001 C CNN
+F 3 "" H 5725 4575 50  0001 C CNN
+	1    5725 4575
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5725 4475 5725 4575
+Wire Wire Line
+	5725 3950 5725 4075
+Wire Wire Line
+	4850 3650 4850 3775
+Wire Wire Line
+	3575 3650 4850 3650
+Wire Wire Line
+	5550 3500 5550 3575
+Wire Wire Line
+	5300 3575 5550 3575
+Wire Wire Line
+	5725 3575 5725 3650
+Wire Wire Line
+	6275 3575 6275 3350
+Connection ~ 5725 3575
+Wire Wire Line
+	3550 2750 5300 2750
+Wire Wire Line
+	5550 2750 5550 3200
+Wire Wire Line
+	5300 3475 5300 3575
+Connection ~ 5550 3575
+Wire Wire Line
+	5300 2825 5300 2750
+Connection ~ 5550 2750
+Wire Wire Line
+	5300 3125 5300 3175
+Connection ~ 5300 2750
+$Comp
+L throwing_01-rescue:C-RESCUE-newTemplateUse-RESCUE-throwing_01 C3
+U 1 1 5A0F5538
+P 7375 3050
+F 0 "C3" H 7500 3150 50  0000 L CNN
+F 1 "MICA" H 7500 2950 50  0000 L CNN
+F 2 "Mods:C-MICA" H 7413 2900 50  0001 C CNN
+F 3 "" H 7375 3050 50  0001 C CNN
+	1    7375 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6775 2750 7375 2750
+Wire Wire Line
+	7375 2750 7375 2900
+Wire Wire Line
+	6675 3350 7375 3350
+Wire Wire Line
+	7375 3200 7375 3350
+Text Label 3550 2750 0    60   ~ 0
+High_Voltage_To_Be_Switched_By_Relay
+Text Label 3575 3650 0    60   ~ 0
+Low_Voltage(VCC)_To_Switch_Transistor
+$Comp
+L throwing_01-rescue:VCC-RESCUE-newTemplateUse-RESCUE-throwing_01 #PWR032
+U 1 1 5A0F5539
+P 3575 3575
+F 0 "#PWR032" H 3575 3425 50  0001 C CNN
+F 1 "VCC" H 3625 3800 50  0000 C CNN
+F 2 "" H 3575 3575 50  0001 C CNN
+F 3 "" H 3575 3575 50  0001 C CNN
+	1    3575 3575
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3575 3575 3575 3650
+Wire Wire Line
+	3550 2675 3550 2750
+Wire Wire Line
+	7375 3600 7550 3600
+Connection ~ 7375 3350
+Connection ~ 7375 2750
+$Comp
+L throwing_01-rescue:GND-RESCUE-newTemplateUse-RESCUE-throwing_01 #PWR036
+U 1 1 5A0F553D
+P 7500 3725
+F 0 "#PWR036" H 7500 3475 50  0001 C CNN
+F 1 "GND" H 7500 3575 50  0000 C CNN
+F 2 "" H 7500 3725 50  0001 C CNN
+F 3 "" H 7500 3725 50  0001 C CNN
+	1    7500 3725
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7550 3700 7500 3700
+Wire Wire Line
+	7500 3700 7500 3725
+$Comp
+L device:R R17
+U 1 1 5A0F56D8
+P 5300 2975
+F 0 "R17" H 5375 3025 50  0000 L CNN
+F 1 "220" H 5375 2900 50  0000 L CNN
+F 2 "Mods:Res_Small" V 5230 2975 50  0001 C CNN
+F 3 "" H 5300 2975 50  0001 C CNN
+	1    5300 2975
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:LED D1
+U 1 1 5A0F57AC
+P 5300 3325
+F 0 "D1" V 5375 3525 50  0000 R CNN
+F 1 "LED" V 5250 3575 50  0000 R CNN
+F 2 "Mods:LED_D3.0mm" H 5300 3325 50  0001 C CNN
+F 3 "~" H 5300 3325 50  0001 C CNN
+	1    5300 3325
+	0    -1   -1   0   
+$EndComp
+$Comp
+L device:D D2
+U 1 1 5A0F5888
+P 5550 3350
+F 0 "D2" V 5500 3450 50  0000 L CNN
+F 1 "D" V 5600 3450 50  0000 L CNN
+F 2 "Diodes_THT:D_A-405_P7.62mm_Horizontal" H 5550 3350 50  0001 C CNN
+F 3 "" H 5550 3350 50  0001 C CNN
+	1    5550 3350
+	0    1    1    0   
+$EndComp
+$Comp
+L Relay:G5LE-1 K1
+U 1 1 5A0F5B69
+P 6475 3050
+F 0 "K1" H 6925 3100 50  0000 L CNN
+F 1 "G5LE-1" H 6925 2975 50  0000 L CNN
+F 2 "Mods:Relay" H 6925 3000 50  0001 L CNN
+F 3 "http://www.omron.com/ecb/products/pdf/en-g5le.pdf" H 6475 2650 50  0001 C CNN
+	1    6475 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02 J9
+U 1 1 5A0F5D5D
+P 7750 3600
+F 0 "J9" H 7875 3625 50  0000 L CNN
+F 1 "Pneumatic" H 7875 3525 50  0000 L CNN
+F 2 "Mods:bornier2-medium" H 7750 3600 50  0001 C CNN
+F 3 "~" H 7750 3600 50  0001 C CNN
+	1    7750 3600
+	1    0    0    -1  
+$EndComp
+NoConn ~ 6575 2750
+$Comp
+L power:+12V #PWR037
+U 1 1 5A0F6056
+P 7875 2750
+F 0 "#PWR037" H 7875 2600 50  0001 C CNN
+F 1 "+12V" H 7925 2950 50  0000 C CNN
+F 2 "" H 7875 2750 50  0001 C CNN
+F 3 "" H 7875 2750 50  0001 C CNN
+	1    7875 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR031
+U 1 1 5A0F607E
+P 3550 2675
+F 0 "#PWR031" H 3550 2525 50  0001 C CNN
+F 1 "+12V" H 3600 2875 50  0000 C CNN
+F 2 "" H 3550 2675 50  0001 C CNN
+F 3 "" H 3550 2675 50  0001 C CNN
+	1    3550 2675
+	1    0    0    -1  
+$EndComp
+$Comp
+L opto:FODM3011 U2
+U 1 1 5A0F61E5
+P 4375 4650
+F 0 "U2" H 4400 5025 50  0000 C CNN
+F 1 "FODM3011" H 4400 4925 50  0000 C CNN
+F 2 "Mods:dip_4" H 4175 4450 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/FO/FODM3053.pdf" H 4350 4650 50  0001 L CNN
+	1    4375 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor:BC547 Q1
+U 1 1 5A0F6319
+P 5625 4275
+F 0 "Q1" H 5825 4325 50  0000 L CNN
+F 1 "BC547" H 5825 4200 50  0000 L CNN
+F 2 "Mods:_BC547" H 5825 4200 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/BC/BC547.pdf" H 5625 4275 50  0001 L CNN
+	1    5625 4275
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:R R15
+U 1 1 5A0F6B12
+P 4850 3925
+F 0 "R15" H 4925 3975 50  0000 L CNN
+F 1 "10K" H 4925 3850 50  0000 L CNN
+F 2 "Mods:Res_Small" V 4780 3925 50  0001 C CNN
+F 3 "" H 4850 3925 50  0001 C CNN
+	1    4850 3925
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:R R16
+U 1 1 5A0F6B68
+P 5200 4275
+F 0 "R16" V 5300 4250 50  0000 L CNN
+F 1 "5K" V 5100 4225 50  0000 L CNN
+F 2 "Mods:Res_Small" V 5130 4275 50  0001 C CNN
+F 3 "" H 5200 4275 50  0001 C CNN
+	1    5200 4275
+	0    1    1    0   
+$EndComp
+$Comp
+L device:R R18
+U 1 1 5A0F6C2D
+P 5725 3800
+F 0 "R18" H 5800 3850 50  0000 L CNN
+F 1 "560" H 5800 3725 50  0000 L CNN
+F 2 "Mods:Res_Small" V 5655 3800 50  0001 C CNN
+F 3 "" H 5725 3800 50  0001 C CNN
+	1    5725 3800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4850 4275 4850 4550
+Wire Wire Line
+	5725 3575 6275 3575
+Wire Wire Line
+	5550 3575 5725 3575
+Wire Wire Line
+	5550 2750 6275 2750
+Wire Wire Line
+	5300 2750 5550 2750
+Wire Wire Line
+	7375 3350 7375 3600
+Wire Wire Line
+	7375 2750 7875 2750
+$EndSCHEMATC

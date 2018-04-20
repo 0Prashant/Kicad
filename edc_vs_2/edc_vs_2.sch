@@ -1,0 +1,478 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L NE555 U2
+U 1 1 5A886BC8
+P 3260 2585
+F 0 "U2" H 2860 2935 50  0000 L CNN
+F 1 "5551" H 2860 2235 50  0000 L CNN
+F 2 "Housings_DIP:DIP-8_W7.62mm" H 3260 2585 50  0001 C CNN
+F 3 "" H 3260 2585 50  0001 C CNN
+	1    3260 2585
+	1    0    0    -1  
+$EndComp
+$Comp
+L NE555 U3
+U 1 1 5A886C98
+P 6510 2605
+F 0 "U3" H 6110 2955 50  0000 L CNN
+F 1 "5552" H 6110 2255 50  0000 L CNN
+F 2 "Housings_DIP:DIP-8_W7.62mm" H 6510 2605 50  0001 C CNN
+F 3 "" H 6510 2605 50  0001 C CNN
+	1    6510 2605
+	1    0    0    -1  
+$EndComp
+Text Label 3260 2985 3    60   ~ 0
+GND
+Text Label 3260 2185 1    60   ~ 0
+VCC
+Text Label 2760 2385 2    60   ~ 0
+TR1
+Text Label 3760 2785 0    60   ~ 0
+TR1
+$Comp
+L C C2
+U 1 1 5A886F30
+P 2610 2585
+F 0 "C2" H 2635 2685 50  0000 L CNN
+F 1 "0.1uF" H 2635 2485 50  0000 L CNN
+F 2 "Capacitors_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm" H 2648 2435 50  0001 C CNN
+F 3 "" H 2610 2585 50  0001 C CNN
+	1    2610 2585
+	0    1    1    0   
+$EndComp
+Text Label 2460 2585 2    60   ~ 0
+GND
+Text Label 2760 2785 2    60   ~ 0
+VCC
+Text Label 3760 2385 0    60   ~ 0
+OUT1
+Text Label 3760 2585 0    60   ~ 0
+DIS1
+Text Label 6510 2205 1    60   ~ 0
+VCC2
+Text Label 6010 2405 2    60   ~ 0
+TR2
+Text Label 7010 2805 0    60   ~ 0
+TR2
+Text Label 6510 3005 3    60   ~ 0
+GND
+Text Label 6010 2805 2    60   ~ 0
+VCC2
+$Comp
+L C C4
+U 1 1 5A8874EF
+P 5860 2605
+F 0 "C4" H 5885 2705 50  0000 L CNN
+F 1 "0.1uF" H 5885 2505 50  0000 L CNN
+F 2 "Capacitors_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 5898 2455 50  0001 C CNN
+F 3 "" H 5860 2605 50  0001 C CNN
+	1    5860 2605
+	0    1    1    0   
+$EndComp
+Text Label 5710 2605 2    60   ~ 0
+GND
+Text Label 7010 2405 0    60   ~ 0
+OUT2
+Text Label 7010 2605 0    60   ~ 0
+DIS2
+$Comp
+L R R1
+U 1 1 5A887AAC
+P 2320 4415
+F 0 "R1" V 2400 4415 50  0000 C CNN
+F 1 "470" V 2320 4415 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 2250 4415 50  0001 C CNN
+F 3 "" H 2320 4415 50  0001 C CNN
+	1    2320 4415
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D1
+U 1 1 5A887AFD
+P 2320 4715
+F 0 "D1" H 2320 4815 50  0000 C CNN
+F 1 "RED" H 2320 4615 50  0000 C CNN
+F 2 "LEDs:LED_D5.0mm" H 2320 4715 50  0001 C CNN
+F 3 "" H 2320 4715 50  0001 C CNN
+	1    2320 4715
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R2
+U 1 1 5A887C2C
+P 2670 4405
+F 0 "R2" V 2750 4405 50  0000 C CNN
+F 1 "470" V 2670 4405 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 2600 4405 50  0001 C CNN
+F 3 "" H 2670 4405 50  0001 C CNN
+	1    2670 4405
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D2
+U 1 1 5A887C83
+P 2670 4705
+F 0 "D2" H 2670 4805 50  0000 C CNN
+F 1 "YELLOW" H 2670 4605 50  0000 C CNN
+F 2 "LEDs:LED_D5.0mm" H 2670 4705 50  0001 C CNN
+F 3 "" H 2670 4705 50  0001 C CNN
+	1    2670 4705
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R3
+U 1 1 5A887CE1
+P 3035 4415
+F 0 "R3" V 3115 4415 50  0000 C CNN
+F 1 "470" V 3035 4415 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 2965 4415 50  0001 C CNN
+F 3 "" H 3035 4415 50  0001 C CNN
+	1    3035 4415
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D3
+U 1 1 5A887D4E
+P 3035 4715
+F 0 "D3" H 3035 4815 50  0000 C CNN
+F 1 "GREEN" H 3035 4615 50  0000 C CNN
+F 2 "LEDs:LED_D5.0mm" H 3035 4715 50  0001 C CNN
+F 3 "" H 3035 4715 50  0001 C CNN
+	1    3035 4715
+	0    -1   -1   0   
+$EndComp
+Text Label 2320 4265 1    60   ~ 0
+VCC
+Text Label 2320 4865 3    60   ~ 0
+OUT1
+Text Label 3035 4265 1    60   ~ 0
+OUT2
+Text Label 3035 4865 3    60   ~ 0
+GND
+Text Label 2670 4255 1    60   ~ 0
+VCC
+Text Label 2670 4855 3    60   ~ 0
+DIS2
+$Comp
+L POT RV1
+U 1 1 5A889021
+P 6160 4385
+F 0 "RV1" V 5985 4385 50  0000 C CNN
+F 1 "47K" V 6060 4385 50  0000 C CNN
+F 2 "Potentiometers:Potentiometer_Triwood_RM-065" H 6160 4385 50  0001 C CNN
+F 3 "" H 6160 4385 50  0001 C CNN
+	1    6160 4385
+	1    0    0    -1  
+$EndComp
+$Comp
+L POT RV2
+U 1 1 5A8890D1
+P 6160 4800
+F 0 "RV2" V 5985 4800 50  0000 C CNN
+F 1 "10K" V 6060 4800 50  0000 C CNN
+F 2 "Potentiometers:Potentiometer_Triwood_RM-065" H 6160 4800 50  0001 C CNN
+F 3 "" H 6160 4800 50  0001 C CNN
+	1    6160 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L POT RV3
+U 1 1 5A88915D
+P 6915 4385
+F 0 "RV3" V 6740 4385 50  0000 C CNN
+F 1 "47K" V 6815 4385 50  0000 C CNN
+F 2 "Potentiometers:Potentiometer_Triwood_RM-065" H 6915 4385 50  0001 C CNN
+F 3 "" H 6915 4385 50  0001 C CNN
+	1    6915 4385
+	1    0    0    -1  
+$EndComp
+$Comp
+L POT RV4
+U 1 1 5A889212
+P 6915 4805
+F 0 "RV4" V 6740 4805 50  0000 C CNN
+F 1 "10K" V 6815 4805 50  0000 C CNN
+F 2 "Potentiometers:Potentiometer_Triwood_RM-065" H 6915 4805 50  0001 C CNN
+F 3 "" H 6915 4805 50  0001 C CNN
+	1    6915 4805
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C5
+U 1 1 5A889296
+P 6160 5240
+F 0 "C5" H 6185 5340 50  0000 L CNN
+F 1 "C" H 6185 5140 50  0000 L CNN
+F 2 "modFiles:Capacitor_100uF" H 6198 5090 50  0001 C CNN
+F 3 "" H 6160 5240 50  0001 C CNN
+	1    6160 5240
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C6
+U 1 1 5A889316
+P 6915 5255
+F 0 "C6" H 6940 5355 50  0000 L CNN
+F 1 "C" H 6940 5155 50  0000 L CNN
+F 2 "modFiles:Capacitor_100uF" H 6953 5105 50  0001 C CNN
+F 3 "" H 6915 5255 50  0001 C CNN
+	1    6915 5255
+	1    0    0    -1  
+$EndComp
+Text Label 6160 4085 1    60   ~ 0
+VCC
+Text Label 6160 5390 3    60   ~ 0
+GND
+Wire Wire Line
+	6160 4650 6160 4535
+Wire Wire Line
+	6160 4950 6160 5090
+Wire Wire Line
+	6160 4595 6310 4595
+Wire Wire Line
+	6310 4595 6310 4800
+Connection ~ 6160 4595
+Wire Wire Line
+	6160 4235 6160 4085
+Wire Wire Line
+	6310 4385 6310 4180
+Wire Wire Line
+	6310 4180 6160 4180
+Connection ~ 6160 4180
+Text Label 6160 4600 2    60   ~ 0
+DIS1
+Text Label 6160 5030 2    60   ~ 0
+TR1
+Text Label 6915 5405 3    60   ~ 0
+GND
+Text Label 6915 4080 1    60   ~ 0
+VCC2
+Wire Wire Line
+	6915 4235 6915 4080
+Wire Wire Line
+	6915 4185 7065 4185
+Connection ~ 6915 4185
+Wire Wire Line
+	7065 4185 7065 4385
+Wire Wire Line
+	6915 4655 6915 4535
+Wire Wire Line
+	6915 5105 6915 4955
+Wire Wire Line
+	7065 4805 7065 4595
+Wire Wire Line
+	7065 4595 6915 4595
+Connection ~ 6915 4595
+Text Label 6915 5035 0    60   ~ 0
+TR2
+Text Label 6915 4595 0    60   ~ 0
+DIS2
+$Comp
+L BC547 Q1
+U 1 1 5A88F0B1
+P 4555 4510
+F 0 "Q1" H 4755 4585 50  0000 L CNN
+F 1 "BC547" H 4755 4510 50  0000 L CNN
+F 2 "TO_SOT_Packages_THT:TO-92_Molded_Narrow" H 4755 4435 50  0001 L CIN
+F 3 "" H 4555 4510 50  0001 L CNN
+	1    4555 4510
+	1    0    0    -1  
+$EndComp
+Text Label 4355 4510 2    60   ~ 0
+OUT1
+Text Label 4655 4310 1    60   ~ 0
+VCC
+Text Label 4655 4710 3    60   ~ 0
+VCC2
+$Comp
+L CONN_01X02 J1
+U 1 1 5A890088
+P 1515 6475
+F 0 "J1" H 1515 6625 50  0000 C CNN
+F 1 "PWR" V 1615 6475 50  0000 C CNN
+F 2 "modFiles:Bornier2" H 1515 6475 50  0001 C CNN
+F 3 "" H 1515 6475 50  0001 C CNN
+	1    1515 6475
+	1    0    0    -1  
+$EndComp
+$Comp
+L LM7809ACT U1
+U 1 1 5A8901B1
+P 2500 6435
+F 0 "U1" H 2300 6635 50  0000 C CNN
+F 1 "7805" H 2500 6635 50  0000 L CNN
+F 2 "TO_SOT_Packages_THT:TO-220_Vertical" H 2500 6535 50  0001 C CIN
+F 3 "" H 2500 6435 50  0001 C CNN
+	1    2500 6435
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C1
+U 1 1 5A89021E
+P 2100 6535
+F 0 "C1" H 2125 6635 50  0000 L CNN
+F 1 "C" H 2125 6435 50  0000 L CNN
+F 2 "modFiles:Capacitor_100uF" H 2138 6385 50  0001 C CNN
+F 3 "" H 2100 6535 50  0001 C CNN
+	1    2100 6535
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C3
+U 1 1 5A8902F3
+P 2900 6535
+F 0 "C3" H 2925 6635 50  0000 L CNN
+F 1 "C" H 2925 6435 50  0000 L CNN
+F 2 "modFiles:Capacitor_100uF" H 2938 6385 50  0001 C CNN
+F 3 "" H 2900 6535 50  0001 C CNN
+	1    2900 6535
+	1    0    0    -1  
+$EndComp
+Text Label 1315 6425 2    60   ~ 0
+VCC1
+Text Label 1315 6525 2    60   ~ 0
+GND
+Text Label 2100 6385 2    60   ~ 0
+VCC1
+Text Label 2900 6385 0    60   ~ 0
+VCC
+Text Label 2100 6685 3    60   ~ 0
+GND
+Text Label 2500 6685 3    60   ~ 0
+GND
+Text Label 2900 6685 3    60   ~ 0
+GND
+$Comp
+L R R4
+U 1 1 5A8942A7
+P 4910 6525
+F 0 "R4" V 4990 6525 50  0000 C CNN
+F 1 "1" V 4910 6525 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 4840 6525 50  0001 C CNN
+F 3 "" H 4910 6525 50  0001 C CNN
+	1    4910 6525
+	1    0    0    -1  
+$EndComp
+Text Label 4910 6375 1    60   ~ 0
+GND
+Text Label 4910 6675 3    60   ~ 0
+GND
+$Comp
+L R R5
+U 1 1 5A894979
+P 5115 6525
+F 0 "R5" V 5195 6525 50  0000 C CNN
+F 1 "J" V 5115 6525 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 5045 6525 50  0001 C CNN
+F 3 "" H 5115 6525 50  0001 C CNN
+	1    5115 6525
+	1    0    0    -1  
+$EndComp
+Text Label 5115 6375 1    60   ~ 0
+GND
+Text Label 5115 6675 3    60   ~ 0
+GND
+$Comp
+L R R6
+U 1 1 5A895474
+P 5305 6510
+F 0 "R6" V 5385 6510 50  0000 C CNN
+F 1 "1" V 5305 6510 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 5235 6510 50  0001 C CNN
+F 3 "" H 5305 6510 50  0001 C CNN
+	1    5305 6510
+	1    0    0    -1  
+$EndComp
+Text Label 5305 6360 1    60   ~ 0
+GND
+Text Label 5305 6660 3    60   ~ 0
+GND
+$Comp
+L R R7
+U 1 1 5A895B8C
+P 5480 6505
+F 0 "R7" V 5560 6505 50  0000 C CNN
+F 1 "1" V 5480 6505 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 5410 6505 50  0001 C CNN
+F 3 "" H 5480 6505 50  0001 C CNN
+	1    5480 6505
+	1    0    0    -1  
+$EndComp
+Text Label 5480 6355 1    60   ~ 0
+GND
+Text Label 5480 6655 3    60   ~ 0
+GND
+$Comp
+L R R8
+U 1 1 5A896203
+P 5680 6505
+F 0 "R8" V 5760 6505 50  0000 C CNN
+F 1 "1" V 5680 6505 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 5610 6505 50  0001 C CNN
+F 3 "" H 5680 6505 50  0001 C CNN
+	1    5680 6505
+	1    0    0    -1  
+$EndComp
+Text Label 5680 6655 3    60   ~ 0
+VCC
+Text Label 5680 6355 1    60   ~ 0
+VCC
+$Comp
+L R R9
+U 1 1 5A896816
+P 5860 6510
+F 0 "R9" V 5940 6510 50  0000 C CNN
+F 1 "J" V 5860 6510 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 5790 6510 50  0001 C CNN
+F 3 "" H 5860 6510 50  0001 C CNN
+	1    5860 6510
+	1    0    0    -1  
+$EndComp
+Text Label 5860 6360 1    60   ~ 0
+VCC2
+Text Label 5860 6660 3    60   ~ 0
+VCC2
+$EndSCHEMATC

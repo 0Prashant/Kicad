@@ -1,0 +1,651 @@
+EESchema Schematic File Version 4
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 4
+Title "Power Supply"
+Date ""
+Rev ""
+Comp "Robotics Club"
+Comment1 "Author : n-is"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L newTemplateUse-rescue:C-RESCUE-newTemplateUse C6
+U 1 1 5A0F94D8
+P 5200 3875
+F 0 "C6" H 5350 3925 50  0000 L CNN
+F 1 "100uF" H 5350 3800 50  0000 L CNN
+F 2 "Mods:Cap_100uF" H 5238 3725 50  0001 C CNN
+F 3 "" H 5200 3875 50  0001 C CNN
+	1    5200 3875
+	1    0    0    -1  
+$EndComp
+$Comp
+L newTemplateUse-rescue:C-RESCUE-newTemplateUse C7
+U 1 1 5A0F94D9
+P 6625 3875
+F 0 "C7" H 6775 3925 50  0000 L CNN
+F 1 "10uF" H 6775 3800 50  0000 L CNN
+F 2 "Capacitors_THT:CP_Radial_D4.0mm_P2.00mm" H 6663 3725 50  0001 C CNN
+F 3 "" H 6625 3875 50  0001 C CNN
+	1    6625 3875
+	1    0    0    -1  
+$EndComp
+$Comp
+L newTemplateUse-rescue:GND-RESCUE-newTemplateUse #PWR059
+U 1 1 5A0F94DA
+P 6625 4100
+F 0 "#PWR059" H 6625 3850 50  0001 C CNN
+F 1 "GND" H 6625 3925 50  0000 C CNN
+F 2 "" H 6625 4100 50  0001 C CNN
+F 3 "" H 6625 4100 50  0001 C CNN
+	1    6625 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L newTemplateUse-rescue:GND-RESCUE-newTemplateUse #PWR054
+U 1 1 5A0F94DB
+P 5200 4100
+F 0 "#PWR054" H 5200 3850 50  0001 C CNN
+F 1 "GND" H 5200 3925 50  0000 C CNN
+F 2 "" H 5200 4100 50  0001 C CNN
+F 3 "" H 5200 4100 50  0001 C CNN
+	1    5200 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L newTemplateUse-rescue:GND-RESCUE-newTemplateUse #PWR056
+U 1 1 5A0F94DC
+P 5900 4100
+F 0 "#PWR056" H 5900 3850 50  0001 C CNN
+F 1 "GND" H 5900 3925 50  0000 C CNN
+F 2 "" H 5900 4100 50  0001 C CNN
+F 3 "" H 5900 4100 50  0001 C CNN
+	1    5900 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 3950 5900 4100
+Wire Wire Line
+	6625 3550 6625 3650
+Wire Wire Line
+	6200 3650 6625 3650
+Wire Wire Line
+	4975 3650 5200 3650
+Wire Wire Line
+	5200 3325 5200 3650
+Wire Wire Line
+	5200 4025 5200 4100
+Wire Wire Line
+	6625 4025 6625 4100
+$Comp
+L newTemplateUse-rescue:Conn_01x02-RESCUE-newTemplateUse J11
+U 1 1 5A0F94DD
+P 2850 3750
+F 0 "J11" H 2750 3375 50  0000 C CNN
+F 1 "Solar" H 2750 3475 50  0000 C CNN
+F 2 "Mods:SolarConn" H 2850 3750 50  0001 C CNN
+F 3 "~" H 2850 3750 50  0001 C CNN
+	1    2850 3750
+	-1   0    0    1   
+$EndComp
+$Comp
+L newTemplateUse-rescue:+12V-RESCUE-newTemplateUse #PWR012
+U 1 1 5A0F94DE
+P 3325 3525
+F 0 "#PWR012" H 3325 3375 50  0001 C CNN
+F 1 "+12V" H 3375 3725 50  0000 C CNN
+F 2 "" H 3325 3525 50  0001 C CNN
+F 3 "" H 3325 3525 50  0001 C CNN
+	1    3325 3525
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3325 3525 3325 3650
+Wire Wire Line
+	3050 3650 3325 3650
+$Comp
+L newTemplateUse-rescue:GND-RESCUE-newTemplateUse #PWR013
+U 1 1 5A0F94DF
+P 3325 3875
+F 0 "#PWR013" H 3325 3625 50  0001 C CNN
+F 1 "GND" H 3325 3700 50  0000 C CNN
+F 2 "" H 3325 3875 50  0001 C CNN
+F 3 "" H 3325 3875 50  0001 C CNN
+	1    3325 3875
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3050 3750 3325 3750
+Wire Wire Line
+	3325 3750 3325 3875
+$Comp
+L newTemplateUse-rescue:D-RESCUE-newTemplateUse D8
+U 1 1 5A0F94E0
+P 4825 3650
+F 0 "D8" H 4800 3375 50  0000 C CNN
+F 1 "D" H 4825 3500 50  0000 C CNN
+F 2 "Diodes_THT:D_P600_R-6_P20.00mm_Horizontal" H 4825 3650 50  0001 C CNN
+F 3 "" H 4825 3650 50  0001 C CNN
+	1    4825 3650
+	-1   0    0    1   
+$EndComp
+Connection ~ 5200 3650
+Wire Wire Line
+	4675 3650 4575 3650
+$Comp
+L newTemplateUse-rescue:+12V-RESCUE-newTemplateUse #PWR052
+U 1 1 5A0F94E2
+P 4075 3525
+F 0 "#PWR052" H 4075 3375 50  0001 C CNN
+F 1 "+12V" H 4125 3725 50  0000 C CNN
+F 2 "" H 4075 3525 50  0001 C CNN
+F 3 "" H 4075 3525 50  0001 C CNN
+	1    4075 3525
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4075 3525 4075 3650
+Wire Wire Line
+	4075 3650 4275 3650
+Connection ~ 6625 3650
+Wire Wire Line
+	7925 3650 7600 3650
+$Comp
+L newTemplateUse-rescue:+5V-RESCUE-newTemplateUse #PWR062
+U 1 1 5A0F94E5
+P 8275 1550
+F 0 "#PWR062" H 8275 1400 50  0001 C CNN
+F 1 "+5V" H 8300 1775 50  0000 C CNN
+F 2 "" H 8275 1550 50  0001 C CNN
+F 3 "" H 8275 1550 50  0001 C CNN
+	1    8275 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L newTemplateUse-rescue:R-RESCUE-newTemplateUse R25
+U 1 1 5A0F94E6
+P 8675 1725
+F 0 "R25" V 8425 1750 50  0000 C CNN
+F 1 "220" V 8550 1725 50  0000 C CNN
+F 2 "Mods:Res_Small" V 8605 1725 50  0001 C CNN
+F 3 "" H 8675 1725 50  0001 C CNN
+	1    8675 1725
+	0    1    1    0   
+$EndComp
+$Comp
+L newTemplateUse-rescue:LED-RESCUE-newTemplateUse D9
+U 1 1 5A0F94E7
+P 9100 1725
+F 0 "D9" H 9050 1450 50  0000 C CNN
+F 1 "MEGA OUT" H 9050 1550 50  0000 C CNN
+F 2 "LEDs:LED_D3.0mm" H 9100 1725 50  0001 C CNN
+F 3 "~" H 9100 1725 50  0001 C CNN
+	1    9100 1725
+	-1   0    0    1   
+$EndComp
+$Comp
+L newTemplateUse-rescue:GND-RESCUE-newTemplateUse #PWR064
+U 1 1 5A0F94E8
+P 9500 1850
+F 0 "#PWR064" H 9500 1600 50  0001 C CNN
+F 1 "GND" H 9500 1675 50  0000 C CNN
+F 2 "" H 9500 1850 50  0001 C CNN
+F 3 "" H 9500 1850 50  0001 C CNN
+	1    9500 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8275 1550 8275 1725
+Wire Wire Line
+	7875 1725 8275 1725
+Wire Wire Line
+	8825 1725 8950 1725
+Wire Wire Line
+	9250 1725 9500 1725
+Wire Wire Line
+	9500 1725 9500 1850
+$Comp
+L newTemplateUse-rescue:R-RESCUE-newTemplateUse R26
+U 1 1 5A0F94E9
+P 8675 2375
+F 0 "R26" V 8425 2400 50  0000 C CNN
+F 1 "220" V 8550 2375 50  0000 C CNN
+F 2 "Mods:Res_Small" V 8605 2375 50  0001 C CNN
+F 3 "" H 8675 2375 50  0001 C CNN
+	1    8675 2375
+	0    1    1    0   
+$EndComp
+$Comp
+L newTemplateUse-rescue:LED-RESCUE-newTemplateUse D10
+U 1 1 5A0F94EA
+P 9100 2375
+F 0 "D10" H 9050 2100 50  0000 C CNN
+F 1 "BUCK" H 9050 2200 50  0000 C CNN
+F 2 "LEDs:LED_D3.0mm" H 9100 2375 50  0001 C CNN
+F 3 "~" H 9100 2375 50  0001 C CNN
+	1    9100 2375
+	-1   0    0    1   
+$EndComp
+$Comp
+L newTemplateUse-rescue:GND-RESCUE-newTemplateUse #PWR065
+U 1 1 5A0F94EB
+P 9500 2500
+F 0 "#PWR065" H 9500 2250 50  0001 C CNN
+F 1 "GND" H 9500 2325 50  0000 C CNN
+F 2 "" H 9500 2500 50  0001 C CNN
+F 3 "" H 9500 2500 50  0001 C CNN
+	1    9500 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8275 2375 8525 2375
+Wire Wire Line
+	8825 2375 8950 2375
+Wire Wire Line
+	9250 2375 9500 2375
+Wire Wire Line
+	9500 2375 9500 2500
+$Comp
+L newTemplateUse-rescue:VCC-RESCUE-newTemplateUse #PWR063
+U 1 1 5A0F94EC
+P 8275 2175
+F 0 "#PWR063" H 8275 2025 50  0001 C CNN
+F 1 "VCC" H 8300 2400 50  0000 C CNN
+F 2 "" H 8275 2175 50  0001 C CNN
+F 3 "" H 8275 2175 50  0001 C CNN
+	1    8275 2175
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8275 2175 8275 2375
+$Comp
+L newTemplateUse-rescue:R-RESCUE-newTemplateUse R23
+U 1 1 5A0F94ED
+P 2575 1700
+F 0 "R23" V 2325 1725 50  0000 C CNN
+F 1 "220" V 2450 1700 50  0000 C CNN
+F 2 "Mods:Res_Small" V 2505 1700 50  0001 C CNN
+F 3 "" H 2575 1700 50  0001 C CNN
+	1    2575 1700
+	0    1    1    0   
+$EndComp
+$Comp
+L newTemplateUse-rescue:LED-RESCUE-newTemplateUse D5
+U 1 1 5A0F94EE
+P 3000 1700
+F 0 "D5" H 2950 1425 50  0000 C CNN
+F 1 "MEGA IN" H 2950 1525 50  0000 C CNN
+F 2 "LEDs:LED_D3.0mm" H 3000 1700 50  0001 C CNN
+F 3 "~" H 3000 1700 50  0001 C CNN
+	1    3000 1700
+	-1   0    0    1   
+$EndComp
+$Comp
+L newTemplateUse-rescue:GND-RESCUE-newTemplateUse #PWR014
+U 1 1 5A0F94EF
+P 3400 1825
+F 0 "#PWR014" H 3400 1575 50  0001 C CNN
+F 1 "GND" H 3400 1650 50  0000 C CNN
+F 2 "" H 3400 1825 50  0001 C CNN
+F 3 "" H 3400 1825 50  0001 C CNN
+	1    3400 1825
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2175 1525 2175 1700
+Wire Wire Line
+	2175 1700 2425 1700
+Wire Wire Line
+	2725 1700 2850 1700
+Wire Wire Line
+	3150 1700 3400 1700
+Wire Wire Line
+	3400 1700 3400 1825
+$Comp
+L newTemplateUse-rescue:R-RESCUE-newTemplateUse R24
+U 1 1 5A0F94F0
+P 2575 2350
+F 0 "R24" V 2325 2375 50  0000 C CNN
+F 1 "220" V 2450 2350 50  0000 C CNN
+F 2 "Mods:Res_Small" V 2505 2350 50  0001 C CNN
+F 3 "" H 2575 2350 50  0001 C CNN
+	1    2575 2350
+	0    1    1    0   
+$EndComp
+$Comp
+L newTemplateUse-rescue:LED-RESCUE-newTemplateUse D6
+U 1 1 5A0F94F1
+P 3000 2350
+F 0 "D6" H 2950 2075 50  0000 C CNN
+F 1 "POWER" H 2950 2175 50  0000 C CNN
+F 2 "LEDs:LED_D3.0mm" H 3000 2350 50  0001 C CNN
+F 3 "~" H 3000 2350 50  0001 C CNN
+	1    3000 2350
+	-1   0    0    1   
+$EndComp
+$Comp
+L newTemplateUse-rescue:GND-RESCUE-newTemplateUse #PWR015
+U 1 1 5A0F94F2
+P 3400 2475
+F 0 "#PWR015" H 3400 2225 50  0001 C CNN
+F 1 "GND" H 3400 2300 50  0000 C CNN
+F 2 "" H 3400 2475 50  0001 C CNN
+F 3 "" H 3400 2475 50  0001 C CNN
+	1    3400 2475
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2175 2350 2425 2350
+Wire Wire Line
+	2725 2350 2850 2350
+Wire Wire Line
+	3150 2350 3400 2350
+Wire Wire Line
+	3400 2350 3400 2475
+Wire Wire Line
+	2175 2150 2175 2350
+$Comp
+L newTemplateUse-rescue:+9V-RESCUE-newTemplateUse #PWR045
+U 1 1 5A0F94F3
+P 2175 1525
+F 0 "#PWR045" H 2175 1375 50  0001 C CNN
+F 1 "+9V" H 2225 1750 50  0000 C CNN
+F 2 "" H 2175 1525 50  0001 C CNN
+F 3 "" H 2175 1525 50  0001 C CNN
+	1    2175 1525
+	1    0    0    -1  
+$EndComp
+$Comp
+L newTemplateUse-rescue:+12V-RESCUE-newTemplateUse #PWR046
+U 1 1 5A0F94F4
+P 2175 2150
+F 0 "#PWR046" H 2175 2000 50  0001 C CNN
+F 1 "+12V" H 2225 2350 50  0000 C CNN
+F 2 "" H 2175 2150 50  0001 C CNN
+F 3 "" H 2175 2150 50  0001 C CNN
+	1    2175 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L newTemplateUse-rescue:GND-RESCUE-newTemplateUse #PWR055
+U 1 1 5A0F94F6
+P 5275 5675
+F 0 "#PWR055" H 5275 5425 50  0001 C CNN
+F 1 "GND" H 5275 5500 50  0000 C CNN
+F 2 "" H 5275 5675 50  0001 C CNN
+F 3 "" H 5275 5675 50  0001 C CNN
+	1    5275 5675
+	1    0    0    -1  
+$EndComp
+$Comp
+L newTemplateUse-rescue:GND-RESCUE-newTemplateUse #PWR057
+U 1 1 5A0F94F7
+P 6600 5650
+F 0 "#PWR057" H 6600 5400 50  0001 C CNN
+F 1 "GND" H 6600 5475 50  0000 C CNN
+F 2 "" H 6600 5650 50  0001 C CNN
+F 3 "" H 6600 5650 50  0001 C CNN
+	1    6600 5650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 5525 6600 5525
+Wire Wire Line
+	6600 5525 6600 5650
+Wire Wire Line
+	5550 5525 5275 5525
+Wire Wire Line
+	5275 5525 5275 5675
+$Comp
+L newTemplateUse-rescue:C-RESCUE-newTemplateUse C8
+U 1 1 5A0F94F8
+P 7325 5375
+F 0 "C8" H 7475 5450 50  0000 L CNN
+F 1 "10uF" H 7425 5275 50  0000 L CNN
+F 2 "Capacitors_THT:CP_Radial_D4.0mm_P2.00mm" H 7363 5225 50  0001 C CNN
+F 3 "" H 7325 5375 50  0001 C CNN
+	1    7325 5375
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 5225 7325 5225
+$Comp
+L newTemplateUse-rescue:GND-RESCUE-newTemplateUse #PWR061
+U 1 1 5A0F94F9
+P 7325 5650
+F 0 "#PWR061" H 7325 5400 50  0001 C CNN
+F 1 "GND" H 7325 5475 50  0000 C CNN
+F 2 "" H 7325 5650 50  0001 C CNN
+F 3 "" H 7325 5650 50  0001 C CNN
+	1    7325 5650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7325 5525 7325 5650
+Wire Wire Line
+	7325 5225 7325 5000
+$Comp
+L newTemplateUse-rescue:C-RESCUE-newTemplateUse C5
+U 1 1 5A0F94FA
+P 4700 5375
+F 0 "C5" H 4850 5450 50  0000 L CNN
+F 1 "1000uF" H 4775 5250 50  0000 L CNN
+F 2 "Mods:Cao_1000uF" H 4738 5225 50  0001 C CNN
+F 3 "" H 4700 5375 50  0001 C CNN
+	1    4700 5375
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 5225 4700 5225
+$Comp
+L newTemplateUse-rescue:GND-RESCUE-newTemplateUse #PWR053
+U 1 1 5A0F94FB
+P 4700 5675
+F 0 "#PWR053" H 4700 5425 50  0001 C CNN
+F 1 "GND" H 4700 5500 50  0000 C CNN
+F 2 "" H 4700 5675 50  0001 C CNN
+F 3 "" H 4700 5675 50  0001 C CNN
+	1    4700 5675
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 5525 4700 5675
+$Comp
+L newTemplateUse-rescue:+12V-RESCUE-newTemplateUse #PWR016
+U 1 1 5A0F94FC
+P 3875 4675
+F 0 "#PWR016" H 3875 4525 50  0001 C CNN
+F 1 "+12V" H 3925 4875 50  0000 C CNN
+F 2 "" H 3875 4675 50  0001 C CNN
+F 3 "" H 3875 4675 50  0001 C CNN
+	1    3875 4675
+	1    0    0    -1  
+$EndComp
+$Comp
+L newTemplateUse-rescue:D-RESCUE-newTemplateUse D7
+U 1 1 5A0F94FD
+P 3875 4925
+F 0 "D7" V 3950 4825 50  0000 R CNN
+F 1 "D" V 3800 4825 50  0000 R CNN
+F 2 "Diodes_THT:D_P600_R-6_P20.00mm_Horizontal" H 3875 4925 50  0001 C CNN
+F 3 "" H 3875 4925 50  0001 C CNN
+	1    3875 4925
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3875 5075 3875 5225
+Wire Wire Line
+	3875 4675 3875 4775
+Wire Wire Line
+	5325 5125 5325 5225
+Connection ~ 5325 5225
+$Comp
+L newTemplateUse-rescue:VCC-RESCUE-newTemplateUse #PWR060
+U 1 1 5A0F94FF
+P 7325 5000
+F 0 "#PWR060" H 7325 4850 50  0001 C CNN
+F 1 "VCC" H 7350 5225 50  0000 C CNN
+F 2 "" H 7325 5000 50  0001 C CNN
+F 3 "" H 7325 5000 50  0001 C CNN
+	1    7325 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 3650 3750 3325
+Connection ~ 3325 3650
+Text HLabel 7925 3650 2    60   Output ~ 0
+PowerForMega
+$Comp
+L newTemplateUse-rescue:PWR_FLAG-RESCUE-newTemplateUse #FLG05
+U 1 1 5A0F9502
+P 7875 1550
+F 0 "#FLG05" H 7875 1625 50  0001 C CNN
+F 1 "PWR_FLAG" H 7900 1750 50  0000 C CNN
+F 2 "" H 7875 1550 50  0001 C CNN
+F 3 "" H 7875 1550 50  0001 C CNN
+	1    7875 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7875 1550 7875 1725
+Connection ~ 8275 1725
+Wire Wire Line
+	3750 3750 3750 4050
+Connection ~ 3325 3750
+$Comp
+L power:PWR_FLAG #FLG01
+U 1 1 5A0F96D4
+P 3750 3325
+F 0 "#FLG01" H 3750 3400 50  0001 C CNN
+F 1 "PWR_FLAG" H 3775 3525 50  0000 C CNN
+F 2 "" H 3750 3325 50  0001 C CNN
+F 3 "" H 3750 3325 50  0001 C CNN
+	1    3750 3325
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG02
+U 1 1 5A0F9705
+P 3750 4050
+F 0 "#FLG02" H 3750 4125 50  0001 C CNN
+F 1 "PWR_FLAG" H 3725 4275 50  0000 C CNN
+F 2 "" H 3750 4050 50  0001 C CNN
+F 3 "" H 3750 4050 50  0001 C CNN
+	1    3750 4050
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG03
+U 1 1 5A0F964E
+P 5200 3325
+F 0 "#FLG03" H 5200 3400 50  0001 C CNN
+F 1 "PWR_FLAG" H 5225 3525 50  0000 C CNN
+F 2 "" H 5200 3325 50  0001 C CNN
+F 3 "" H 5200 3325 50  0001 C CNN
+	1    5200 3325
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG04
+U 1 1 5A0F99B5
+P 5325 5125
+F 0 "#FLG04" H 5325 5200 50  0001 C CNN
+F 1 "PWR_FLAG" H 5350 5325 50  0000 C CNN
+F 2 "" H 5325 5125 50  0001 C CNN
+F 3 "" H 5325 5125 50  0001 C CNN
+	1    5325 5125
+	1    0    0    -1  
+$EndComp
+$Comp
+L regul:L7805 U4
+U 1 1 5A0F9C96
+P 5900 3650
+F 0 "U4" H 5900 3950 50  0000 C CNN
+F 1 "L7809" H 5900 3800 50  0000 C CNN
+F 2 "Mods:LM78_heatsink" H 5925 3500 50  0001 L CIN
+F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf/files/CD00000444.pdf/jcr:content/translations/en.CD00000444.pdf" H 5900 3600 50  0001 C CNN
+	1    5900 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+9V #PWR058
+U 1 1 5A0F9DE2
+P 6625 3550
+F 0 "#PWR058" H 6625 3400 50  0001 C CNN
+F 1 "+9V" H 6675 3775 50  0000 C CNN
+F 2 "" H 6625 3550 50  0001 C CNN
+F 3 "" H 6625 3550 50  0001 C CNN
+	1    6625 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_DIP_x01 SW2
+U 1 1 5A0F9E80
+P 7300 3650
+F 0 "SW2" H 7325 3975 50  0000 C CNN
+F 1 "SW_DIP_x01" H 7325 3875 50  0000 C CNN
+F 2 "Buttons_Switches_THT:SW_DIP_x3_W7.62mm_Slide" H 7300 3650 50  0001 C CNN
+F 3 "" H 7300 3650 50  0001 C CNN
+	1    7300 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L newGeneric:LM2596-PSU U5
+U 1 1 5A0FA051
+P 5950 5375
+F 0 "U5" H 5950 5900 60  0000 C CNN
+F 1 "LM2596-PSU" H 5950 5800 60  0000 C CNN
+F 2 "Mods:LM2596-PSU" H 5950 5375 60  0001 C CNN
+F 3 "" H 5950 5375 60  0001 C CNN
+	1    5950 5375
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:Fuse F2
+U 1 1 5A0FA45F
+P 4425 3650
+F 0 "F2" V 4175 3675 50  0000 C CNN
+F 1 "Fuse" V 4275 3675 50  0000 C CNN
+F 2 "Mods:FUSE" V 4355 3650 50  0001 C CNN
+F 3 "" H 4425 3650 50  0001 C CNN
+	1    4425 3650
+	0    1    1    0   
+$EndComp
+$Comp
+L device:Fuse F1
+U 1 1 5A0FA679
+P 4350 5225
+F 0 "F1" V 4125 5250 50  0000 C CNN
+F 1 "Fuse" V 4225 5250 50  0000 C CNN
+F 2 "Mods:FUSE" V 4280 5225 50  0001 C CNN
+F 3 "" H 4350 5225 50  0001 C CNN
+	1    4350 5225
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3875 5225 4200 5225
+Connection ~ 4700 5225
+Wire Wire Line
+	5200 3650 5600 3650
+Wire Wire Line
+	5200 3650 5200 3725
+Wire Wire Line
+	6625 3650 6625 3725
+Wire Wire Line
+	6625 3650 7000 3650
+Wire Wire Line
+	5325 5225 5550 5225
+Wire Wire Line
+	3325 3650 3750 3650
+Wire Wire Line
+	8275 1725 8525 1725
+Wire Wire Line
+	3325 3750 3750 3750
+Wire Wire Line
+	4700 5225 5325 5225
+$EndSCHEMATC

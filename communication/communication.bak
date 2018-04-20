@@ -1,0 +1,220 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L LM324 U1
+U 1 1 5A16F4D0
+P 5200 4000
+F 0 "U1" H 5250 4200 60  0000 C CNN
+F 1 "LM324" H 5350 3800 50  0000 C CNN
+F 2 "Housings_DIP:DIP-14_W7.62mm" H 5200 4000 60  0001 C CNN
+F 3 "" H 5200 4000 60  0001 C CNN
+	1    5200 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 5A16F500
+P 4350 3900
+F 0 "R1" V 4430 3900 40  0000 C CNN
+F 1 "R" V 4357 3901 40  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 4280 3900 30  0001 C CNN
+F 3 "" H 4350 3900 30  0000 C CNN
+	1    4350 3900
+	0    1    1    0   
+$EndComp
+$Comp
+L LED D2
+U 1 1 5A16F54D
+P 6000 4000
+F 0 "D2" H 6000 4100 50  0000 C CNN
+F 1 "LED" H 6000 3900 50  0000 C CNN
+F 2 "LEDs:LED_D3.0mm" H 6000 4000 60  0001 C CNN
+F 3 "" H 6000 4000 60  0000 C CNN
+	1    6000 4000
+	1    0    0    -1  
+$EndComp
+Text Label 5100 3550 0    60   ~ 0
+vcc
+Text Label 5100 4450 0    60   ~ 0
+gnd
+$Comp
+L LED D1
+U 1 1 5A16F5F4
+P 4450 4450
+F 0 "D1" H 4450 4550 50  0000 C CNN
+F 1 "LED" H 4450 4350 50  0000 C CNN
+F 2 "LEDs:LED_D3.0mm" H 4450 4450 60  0001 C CNN
+F 3 "" H 4450 4450 60  0000 C CNN
+	1    4450 4450
+	0    1    1    0   
+$EndComp
+$Comp
+L POT RV1
+U 1 1 5A16F68C
+P 4000 4150
+F 0 "RV1" H 4000 4050 50  0000 C CNN
+F 1 "POT" H 4000 4150 50  0000 C CNN
+F 2 "Potentiometers:Potentiometer_Trimmer_ACP_CA6v_Horizontal" H 4000 4150 60  0001 C CNN
+F 3 "" H 4000 4150 60  0000 C CNN
+	1    4000 4150
+	0    1    1    0   
+$EndComp
+$Comp
+L CONN_2 P1
+U 1 1 5A16F70D
+P 4150 5100
+F 0 "P1" V 4100 5100 40  0000 C CNN
+F 1 "CONN_2" V 4200 5100 40  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 4150 5100 60  0001 C CNN
+F 3 "" H 4150 5100 60  0001 C CNN
+	1    4150 5100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4600 3900 4700 3900
+Wire Wire Line
+	4100 3900 4100 3550
+Wire Wire Line
+	4000 3550 5100 3550
+Wire Wire Line
+	5100 3550 5100 3600
+Wire Wire Line
+	6200 4000 6250 4000
+Wire Wire Line
+	6250 4000 6250 4450
+Wire Wire Line
+	6250 4450 5100 4450
+Wire Wire Line
+	5100 4450 5100 4400
+Wire Wire Line
+	4450 4100 4700 4100
+Wire Wire Line
+	4450 4100 4450 4250
+Wire Wire Line
+	4150 4150 4450 4150
+Connection ~ 4450 4150
+Wire Wire Line
+	4000 3900 4000 3550
+Connection ~ 4100 3550
+Wire Wire Line
+	4250 4650 5400 4650
+Wire Wire Line
+	5400 4650 5400 4450
+Connection ~ 5400 4450
+Wire Wire Line
+	4000 4400 4000 4700
+Wire Wire Line
+	4000 4700 4050 4700
+Wire Wire Line
+	4050 4700 4050 4750
+Wire Wire Line
+	4250 4650 4250 4750
+Connection ~ 4450 4650
+$Comp
+L CONN_2 P2
+U 1 1 5A16F84C
+P 6800 3650
+F 0 "P2" V 6750 3650 40  0000 C CNN
+F 1 "CONN_2" V 6850 3650 40  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 6800 3650 60  0001 C CNN
+F 3 "" H 6800 3650 60  0001 C CNN
+	1    6800 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 3550 4950 3400
+Wire Wire Line
+	4950 3400 6100 3400
+Wire Wire Line
+	6100 3400 6100 3550
+Wire Wire Line
+	6100 3550 6450 3550
+Connection ~ 4950 3550
+Wire Wire Line
+	6450 3750 6400 3750
+Wire Wire Line
+	6400 3750 6400 4100
+Wire Wire Line
+	6400 4100 6250 4100
+Connection ~ 6250 4100
+$Comp
+L R R?
+U 1 1 5A16FD3B
+P 5750 3650
+F 0 "R?" V 5830 3650 40  0000 C CNN
+F 1 "R" V 5757 3651 40  0000 C CNN
+F 2 "" V 5680 3650 30  0000 C CNN
+F 3 "" H 5750 3650 30  0000 C CNN
+	1    5750 3650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5500 3650 5500 3900
+Wire Wire Line
+	5500 3900 5700 3900
+Wire Wire Line
+	5700 3900 5700 4100
+Wire Wire Line
+	6000 3650 6000 3900
+Wire Wire Line
+	6000 3900 5800 3900
+Wire Wire Line
+	5800 3900 5800 4000
+$Comp
+L CONN_1 P?
+U 1 1 5A16FE19
+P 5750 4250
+F 0 "P?" H 5830 4250 40  0000 L CNN
+F 1 "CONN_1" H 5750 4305 30  0001 C CNN
+F 2 "" H 5750 4250 60  0001 C CNN
+F 3 "" H 5750 4250 60  0001 C CNN
+	1    5750 4250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5700 4100 5750 4100
+Connection ~ 5700 4000
+$EndSCHEMATC

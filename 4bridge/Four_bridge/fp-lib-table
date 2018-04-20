@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name "h-bridge module")(type Legacy)(uri "$(KISYSMOD)/Mod files.pretty/h-bridge module.mod")(options "")(descr ""))
+)

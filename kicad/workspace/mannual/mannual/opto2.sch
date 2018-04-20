@@ -1,0 +1,308 @@
+EESchema Schematic File Version 4
+LIBS:opto2-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L opto:FODM3011 U1
+U 1 1 5A3EBC74
+P 3775 4975
+F 0 "U1" H 3775 5300 50  0000 C CNN
+F 1 "FODM3011" H 3775 5209 50  0000 C CNN
+F 2 "Mods:dip_4" H 3575 4775 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/FO/FODM3053.pdf" H 3750 4975 50  0001 L CNN
+	1    3775 4975
+	1    0    0    -1  
+$EndComp
+$Comp
+L Relay:G5LE-1 K1
+U 1 1 5A3EC04D
+P 6200 3450
+F 0 "K1" H 6630 3496 50  0000 L CNN
+F 1 "G5LE-1" H 6630 3405 50  0000 L CNN
+F 2 "Mods:Relay" H 6650 3400 50  0001 L CNN
+F 3 "http://www.omron.com/ecb/products/pdf/en-g5le.pdf" H 6200 3050 50  0001 C CNN
+	1    6200 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:R R1
+U 1 1 5A3EC116
+P 3300 4725
+F 0 "R1" H 3370 4771 50  0000 L CNN
+F 1 "220" H 3370 4680 50  0000 L CNN
+F 2 "Mods:Res_Small" V 3230 4725 50  0001 C CNN
+F 3 "" H 3300 4725 50  0001 C CNN
+	1    3300 4725
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 4875 3475 4875
+Text HLabel 3300 4575 1    60   Input ~ 0
+opto2
+$Comp
+L power:GND #PWR01
+U 1 1 5A3EC24C
+P 3475 5325
+F 0 "#PWR01" H 3475 5075 50  0001 C CNN
+F 1 "GND" H 3480 5152 50  0000 C CNN
+F 2 "" H 3475 5325 50  0001 C CNN
+F 3 "" H 3475 5325 50  0001 C CNN
+	1    3475 5325
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3475 5075 3475 5325
+$Comp
+L power:GND #PWR02
+U 1 1 5A3EC2C7
+P 4150 5150
+F 0 "#PWR02" H 4150 4900 50  0001 C CNN
+F 1 "GND" H 4155 4977 50  0000 C CNN
+F 2 "" H 4150 5150 50  0001 C CNN
+F 3 "" H 4150 5150 50  0001 C CNN
+	1    4150 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4075 5075 4150 5075
+Wire Wire Line
+	4150 5075 4150 5150
+$Comp
+L power:VCC #PWR03
+U 1 1 5A3EC474
+P 4100 4125
+F 0 "#PWR03" H 4100 3975 50  0001 C CNN
+F 1 "VCC" H 4117 4298 50  0000 C CNN
+F 2 "" H 4100 4125 50  0001 C CNN
+F 3 "" H 4100 4125 50  0001 C CNN
+	1    4100 4125
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:R R2
+U 1 1 5A3EC4B7
+P 4100 4475
+F 0 "R2" H 4170 4521 50  0000 L CNN
+F 1 "10k" H 4170 4430 50  0000 L CNN
+F 2 "Mods:Res_Small" V 4030 4475 50  0001 C CNN
+F 3 "" H 4100 4475 50  0001 C CNN
+	1    4100 4475
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:R R3
+U 1 1 5A3EC583
+P 4700 4775
+F 0 "R3" V 4493 4775 50  0000 C CNN
+F 1 "5k" V 4584 4775 50  0000 C CNN
+F 2 "Mods:Res_Small" V 4630 4775 50  0001 C CNN
+F 3 "" H 4700 4775 50  0001 C CNN
+	1    4700 4775
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4100 4125 4100 4325
+Wire Wire Line
+	4100 4625 4100 4775
+Wire Wire Line
+	4100 4875 4075 4875
+Wire Wire Line
+	4550 4775 4100 4775
+Connection ~ 4100 4775
+Wire Wire Line
+	4100 4775 4100 4875
+$Comp
+L Transistor:BC547 Q1
+U 1 1 5A3ECB54
+P 5100 4775
+F 0 "Q1" H 5291 4821 50  0000 L CNN
+F 1 "BC547" H 5291 4730 50  0000 L CNN
+F 2 "TO_SOT_Packages_THT:TO-92_Molded_Narrow" H 5300 4700 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/BC/BC547.pdf" H 5100 4775 50  0001 L CNN
+	1    5100 4775
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 4775 4900 4775
+$Comp
+L power:GND #PWR04
+U 1 1 5A3ECD21
+P 5200 5125
+F 0 "#PWR04" H 5200 4875 50  0001 C CNN
+F 1 "GND" H 5205 4952 50  0000 C CNN
+F 2 "" H 5200 5125 50  0001 C CNN
+F 3 "" H 5200 5125 50  0001 C CNN
+	1    5200 5125
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 4975 5200 5125
+$Comp
+L device:R R5
+U 1 1 5A3ECDF0
+P 5200 4300
+F 0 "R5" H 5270 4346 50  0000 L CNN
+F 1 "560" H 5270 4255 50  0000 L CNN
+F 2 "Mods:Res_Small" V 5130 4300 50  0001 C CNN
+F 3 "" H 5200 4300 50  0001 C CNN
+	1    5200 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 4450 5200 4575
+$Comp
+L device:LED D1
+U 1 1 5A3ECF9B
+P 5000 3550
+F 0 "D1" V 5038 3433 50  0000 R CNN
+F 1 "O2_led" V 4947 3433 50  0000 R CNN
+F 2 "LEDs:LED_D3.0mm" H 5000 3550 50  0001 C CNN
+F 3 "~" H 5000 3550 50  0001 C CNN
+	1    5000 3550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L device:D D2
+U 1 1 5A3ED0E1
+P 5350 3425
+F 0 "D2" V 5304 3504 50  0000 L CNN
+F 1 "D" V 5395 3504 50  0000 L CNN
+F 2 "Diodes_THT:D_A-405_P10.16mm_Horizontal" H 5350 3425 50  0001 C CNN
+F 3 "" H 5350 3425 50  0001 C CNN
+	1    5350 3425
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5350 3275 5350 3100
+Wire Wire Line
+	5350 3100 6000 3100
+Wire Wire Line
+	6000 3100 6000 3150
+Wire Wire Line
+	6000 3750 5350 3750
+Wire Wire Line
+	5350 3750 5350 4050
+Wire Wire Line
+	5350 4050 5200 4050
+Wire Wire Line
+	5200 4050 5200 4150
+Connection ~ 5350 3750
+Wire Wire Line
+	5000 3700 5000 3750
+Wire Wire Line
+	5000 3750 5350 3750
+Wire Wire Line
+	5350 3575 5350 3750
+$Comp
+L device:R R4
+U 1 1 5A3EDB14
+P 4800 3200
+F 0 "R4" V 4593 3200 50  0000 C CNN
+F 1 "1k" V 4684 3200 50  0000 C CNN
+F 2 "Mods:Res_Small" V 4730 3200 50  0001 C CNN
+F 3 "" H 4800 3200 50  0001 C CNN
+	1    4800 3200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4950 3200 5000 3200
+Wire Wire Line
+	5000 3200 5000 3400
+Wire Wire Line
+	4650 3200 4650 3100
+Wire Wire Line
+	4650 3100 5350 3100
+Connection ~ 5350 3100
+$Comp
+L power:+12V #PWR05
+U 1 1 5A3EE0DD
+P 4450 3025
+F 0 "#PWR05" H 4450 2875 50  0001 C CNN
+F 1 "+12V" H 4465 3198 50  0000 C CNN
+F 2 "" H 4450 3025 50  0001 C CNN
+F 3 "" H 4450 3025 50  0001 C CNN
+	1    4450 3025
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 3025 4650 3025
+Wire Wire Line
+	4650 3025 4650 3100
+Connection ~ 4650 3100
+$Comp
+L device:C C1
+U 1 1 5A3EE79F
+P 7125 3525
+F 0 "C1" H 7240 3571 50  0000 L CNN
+F 1 "mica" H 7240 3480 50  0000 L CNN
+F 2 "Mods:C-MICA" H 7163 3375 50  0001 C CNN
+F 3 "" H 7125 3525 50  0001 C CNN
+	1    7125 3525
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 3150 6700 3150
+Wire Wire Line
+	7125 3150 7125 3375
+Wire Wire Line
+	6400 3750 7125 3750
+Wire Wire Line
+	7125 3750 7125 3675
+$Comp
+L Connector:Conn_01x02 J1
+U 1 1 5A3EEFEE
+P 7400 3875
+F 0 "J1" H 7480 3867 50  0000 L CNN
+F 1 "pneumetic" H 7480 3776 50  0000 L CNN
+F 2 "Mods:bornier2-medium" H 7400 3875 50  0001 C CNN
+F 3 "~" H 7400 3875 50  0001 C CNN
+	1    7400 3875
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7125 3750 7125 3875
+Wire Wire Line
+	7125 3875 7200 3875
+Connection ~ 7125 3750
+Wire Wire Line
+	6700 3150 6700 3025
+Wire Wire Line
+	6700 3025 6000 3025
+Wire Wire Line
+	6000 3025 6000 3100
+Connection ~ 6700 3150
+Wire Wire Line
+	6700 3150 7125 3150
+Connection ~ 6000 3100
+$Comp
+L power:GND #PWR06
+U 1 1 5A3EFEC6
+P 7125 4075
+F 0 "#PWR06" H 7125 3825 50  0001 C CNN
+F 1 "GND" H 7130 3902 50  0000 C CNN
+F 2 "" H 7125 4075 50  0001 C CNN
+F 3 "" H 7125 4075 50  0001 C CNN
+	1    7125 4075
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7125 4075 7125 4000
+Wire Wire Line
+	7125 4000 7100 4000
+Wire Wire Line
+	7100 4000 7100 3975
+Wire Wire Line
+	7100 3975 7200 3975
+$EndSCHEMATC
