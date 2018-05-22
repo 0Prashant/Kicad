@@ -1,0 +1,1119 @@
+EESchema Schematic File Version 2
+LIBS:component tester-rescue
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:component tester-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Conn_01x08_Male J1
+U 1 1 5AF00625
+P 4050 1300
+F 0 "J1" H 4050 1700 50  0000 C CNN
+F 1 "PortA" H 4200 800 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x08_Pitch2.54mm" H 4050 1300 50  0001 C CNN
+F 3 "" H 4050 1300 50  0001 C CNN
+	1    4050 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_01x08_Male J6
+U 1 1 5AF00690
+P 4850 1300
+F 0 "J6" H 4850 1700 50  0000 C CNN
+F 1 "PortB" H 5000 800 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x08_Pitch2.54mm" H 4850 1300 50  0001 C CNN
+F 3 "" H 4850 1300 50  0001 C CNN
+	1    4850 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_01x08_Male J2
+U 1 1 5AF006F1
+P 4050 2350
+F 0 "J2" H 4050 2750 50  0000 C CNN
+F 1 "PortC" H 4200 1850 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x08_Pitch2.54mm" H 4050 2350 50  0001 C CNN
+F 3 "" H 4050 2350 50  0001 C CNN
+	1    4050 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_01x08_Male J7
+U 1 1 5AF00723
+P 4850 2350
+F 0 "J7" H 4850 2750 50  0000 C CNN
+F 1 "PortD" H 5000 1850 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x08_Pitch2.54mm" H 4850 2350 50  0001 C CNN
+F 3 "" H 4850 2350 50  0001 C CNN
+	1    4850 2350
+	1    0    0    -1  
+$EndComp
+Text Label 3000 1200 0    60   ~ 0
+A0
+Text Label 3000 1300 0    60   ~ 0
+A1
+Text Label 3000 1400 0    60   ~ 0
+A2
+Text Label 3000 1500 0    60   ~ 0
+A3
+Text Label 3000 1600 0    60   ~ 0
+A4
+Text Label 3000 1700 0    60   ~ 0
+A5
+Text Label 3000 1800 0    60   ~ 0
+A6
+Text Label 3000 1900 0    60   ~ 0
+A7
+Text Label 3000 2100 0    60   ~ 0
+B0
+Text Label 3000 2200 0    60   ~ 0
+B1
+Text Label 3000 2300 0    60   ~ 0
+B2
+Text Label 3000 2400 0    60   ~ 0
+B3
+Text Label 3000 2500 0    60   ~ 0
+B4
+Text Label 3000 2600 0    60   ~ 0
+B5
+Text Label 3000 2700 0    60   ~ 0
+B6
+Text Label 3000 2800 0    60   ~ 0
+B7
+Text Label 3000 3000 0    60   ~ 0
+C0
+Text Label 3000 3100 0    60   ~ 0
+C1
+Text Label 3000 3200 0    60   ~ 0
+C2
+Text Label 3000 3300 0    60   ~ 0
+C3
+Text Label 3000 3400 0    60   ~ 0
+C4
+Text Label 3000 3500 0    60   ~ 0
+C5
+Text Label 3000 3600 0    60   ~ 0
+C6
+Text Label 3000 3700 0    60   ~ 0
+C7
+Text Label 3000 3900 0    60   ~ 0
+D0
+Text Label 3000 4000 0    60   ~ 0
+D1
+Text Label 3000 4100 0    60   ~ 0
+D2
+Text Label 3000 4200 0    60   ~ 0
+D3
+Text Label 3000 4300 0    60   ~ 0
+D4
+Text Label 3000 4400 0    60   ~ 0
+D5
+Text Label 5375 7200 1    60   ~ 0
+B1
+Text Label 5475 7200 1    60   ~ 0
+B3
+Text Label 5050 2050 0    60   ~ 0
+D0
+Text Label 5050 2150 0    60   ~ 0
+D1
+Text Label 5050 2250 0    60   ~ 0
+D2
+Text Label 5050 2350 0    60   ~ 0
+D3
+Text Label 5050 2450 0    60   ~ 0
+D4
+Text Label 5050 2550 0    60   ~ 0
+D5
+Text Label 5050 2650 0    60   ~ 0
+D6
+Text Label 5050 2750 0    60   ~ 0
+D7
+Text Label 4250 2050 0    60   ~ 0
+C0
+Text Label 4250 2150 0    60   ~ 0
+C1
+Text Label 4250 2250 0    60   ~ 0
+C2
+Text Label 4250 2350 0    60   ~ 0
+C3
+Text Label 4250 2450 0    60   ~ 0
+C4
+Text Label 4250 2550 0    60   ~ 0
+C5
+Text Label 4250 2650 0    60   ~ 0
+C6
+Text Label 4250 2750 0    60   ~ 0
+C7
+Text Label 5050 1000 0    60   ~ 0
+B0
+Text Label 5050 1100 0    60   ~ 0
+B1
+Text Label 5050 1200 0    60   ~ 0
+B2
+Text Label 5050 1300 0    60   ~ 0
+B3
+Text Label 5050 1400 0    60   ~ 0
+B4
+Text Label 5050 1500 0    60   ~ 0
+B5
+Text Label 5050 1600 0    60   ~ 0
+B6
+Text Label 5050 1700 0    60   ~ 0
+B7
+Text Label 4250 1000 0    60   ~ 0
+A0
+Text Label 4250 1100 0    60   ~ 0
+A1
+Text Label 4250 1200 0    60   ~ 0
+A2
+Text Label 4250 1300 0    60   ~ 0
+A3
+Text Label 4250 1400 0    60   ~ 0
+A4
+Text Label 4250 1500 0    60   ~ 0
+A5
+Text Label 4250 1600 0    60   ~ 0
+A6
+Text Label 4250 1700 0    60   ~ 0
+A7
+Text Label 1650 6275 3    60   ~ 0
+A3
+Text Label 1750 6275 3    60   ~ 0
+A2
+Text Label 1850 6275 3    60   ~ 0
+A1
+Text Label 1950 6275 3    60   ~ 0
+A0
+$Comp
+L ATMEGA32-16PU U1
+U 1 1 5AF27907
+P 2000 2900
+F 0 "U1" H 1150 4780 50  0000 L BNN
+F 1 "ATMEGA32-16PU" H 2450 950 50  0000 L BNN
+F 2 "Housings_DIP:DIP-40_W15.24mm" H 2000 2900 50  0001 C CIN
+F 3 "" H 2000 2900 50  0001 C CNN
+	1    2000 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR01
+U 1 1 5AF27D65
+P 1850 900
+F 0 "#PWR01" H 1850 750 50  0001 C CNN
+F 1 "VCC" H 1850 1050 50  0000 C CNN
+F 2 "" H 1850 900 50  0001 C CNN
+F 3 "" H 1850 900 50  0001 C CNN
+	1    1850 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR02
+U 1 1 5AF27F0F
+P 2000 4975
+F 0 "#PWR02" H 2000 4725 50  0001 C CNN
+F 1 "GND" H 2000 4825 50  0000 C CNN
+F 2 "" H 2000 4975 50  0001 C CNN
+F 3 "" H 2000 4975 50  0001 C CNN
+	1    2000 4975
+	1    0    0    -1  
+$EndComp
+$Comp
+L Crystal Y1
+U 1 1 5AF28368
+P 1000 1800
+F 0 "Y1" H 1000 1950 50  0000 C CNN
+F 1 "Crystal" H 1000 1650 50  0000 C CNN
+F 2 "modFiles:Crystal" H 1000 1800 50  0001 C CNN
+F 3 "" H 1000 1800 50  0001 C CNN
+	1    1000 1800
+	0    1    1    0   
+$EndComp
+$Comp
+L C C1
+U 1 1 5AF28399
+P 850 1600
+F 0 "C1" H 875 1700 50  0000 L CNN
+F 1 "C" H 875 1500 50  0000 L CNN
+F 2 "modFiles:Capacitor_Disc_Small" H 888 1450 50  0001 C CNN
+F 3 "" H 850 1600 50  0001 C CNN
+	1    850  1600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L C C2
+U 1 1 5AF28476
+P 850 2000
+F 0 "C2" H 875 2100 50  0000 L CNN
+F 1 "C" H 875 1900 50  0000 L CNN
+F 2 "modFiles:Capacitor_Disc_Small" H 888 1850 50  0001 C CNN
+F 3 "" H 850 2000 50  0001 C CNN
+	1    850  2000
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR03
+U 1 1 5AF28589
+P 700 1600
+F 0 "#PWR03" H 700 1350 50  0001 C CNN
+F 1 "GND" H 700 1450 50  0000 C CNN
+F 2 "" H 700 1600 50  0001 C CNN
+F 3 "" H 700 1600 50  0001 C CNN
+	1    700  1600
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR04
+U 1 1 5AF285D4
+P 700 2000
+F 0 "#PWR04" H 700 1750 50  0001 C CNN
+F 1 "GND" H 700 1850 50  0000 C CNN
+F 2 "" H 700 2000 50  0001 C CNN
+F 3 "" H 700 2000 50  0001 C CNN
+	1    700  2000
+	0    1    1    0   
+$EndComp
+$Comp
+L SW_Push SW1
+U 1 1 5AF28AD6
+P 800 1200
+F 0 "SW1" H 850 1300 50  0000 L CNN
+F 1 "SW_Push" H 800 1140 50  0000 C CNN
+F 2 "modFiles:Push_Button" H 800 1400 50  0001 C CNN
+F 3 "" H 800 1400 50  0001 C CNN
+	1    800  1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 5AF28CEB
+P 1000 800
+F 0 "R1" V 1080 800 50  0000 C CNN
+F 1 "R" V 1000 800 50  0000 C CNN
+F 2 "modFiles:Resistor_small" V 930 800 50  0001 C CNN
+F 3 "" H 1000 800 50  0001 C CNN
+	1    1000 800 
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR05
+U 1 1 5AF28E86
+P 600 1200
+F 0 "#PWR05" H 600 950 50  0001 C CNN
+F 1 "GND" H 600 1050 50  0000 C CNN
+F 2 "" H 600 1200 50  0001 C CNN
+F 3 "" H 600 1200 50  0001 C CNN
+	1    600  1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR06
+U 1 1 5AF28EB0
+P 1000 650
+F 0 "#PWR06" H 1000 500 50  0001 C CNN
+F 1 "VCC" H 1000 800 50  0000 C CNN
+F 2 "" H 1000 650 50  0001 C CNN
+F 3 "" H 1000 650 50  0001 C CNN
+	1    1000 650 
+	1    0    0    -1  
+$EndComp
+Text Label 950  6275 3    60   ~ 0
+A7
+Text Label 1150 6275 3    60   ~ 0
+A6
+$Comp
+L GND #PWR07
+U 1 1 5AF2A677
+P 750 6275
+F 0 "#PWR07" H 750 6025 50  0001 C CNN
+F 1 "GND" H 750 6125 50  0000 C CNN
+F 2 "" H 750 6275 50  0001 C CNN
+F 3 "" H 750 6275 50  0001 C CNN
+	1    750  6275
+	1    0    0    -1  
+$EndComp
+$Comp
+L POT RV1
+U 1 1 5AF2A6CB
+P 850 6525
+F 0 "RV1" V 675 6525 50  0000 C CNN
+F 1 "POT" V 750 6525 50  0000 C CNN
+F 2 "modFiles:Potentiometer_Triwood" H 850 6525 50  0001 C CNN
+F 3 "" H 850 6525 50  0001 C CNN
+	1    850  6525
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR08
+U 1 1 5AF2A712
+P 1050 6525
+F 0 "#PWR08" H 1050 6275 50  0001 C CNN
+F 1 "GND" H 1050 6375 50  0000 C CNN
+F 2 "" H 1050 6525 50  0001 C CNN
+F 3 "" H 1050 6525 50  0001 C CNN
+	1    1050 6525
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR09
+U 1 1 5AF2A73E
+P 575 6275
+F 0 "#PWR09" H 575 6125 50  0001 C CNN
+F 1 "VCC" H 575 6425 50  0000 C CNN
+F 2 "" H 575 6275 50  0001 C CNN
+F 3 "" H 575 6275 50  0001 C CNN
+	1    575  6275
+	-1   0    0    1   
+$EndComp
+$Comp
+L VCC #PWR010
+U 1 1 5AF2A798
+P 2050 6275
+F 0 "#PWR010" H 2050 6125 50  0001 C CNN
+F 1 "VCC" H 2050 6425 50  0000 C CNN
+F 2 "" H 2050 6275 50  0001 C CNN
+F 3 "" H 2050 6275 50  0001 C CNN
+	1    2050 6275
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR011
+U 1 1 5AF2A7C4
+P 2225 6275
+F 0 "#PWR011" H 2225 6025 50  0001 C CNN
+F 1 "GND" H 2225 6125 50  0000 C CNN
+F 2 "" H 2225 6275 50  0001 C CNN
+F 3 "" H 2225 6275 50  0001 C CNN
+	1    2225 6275
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_01x02 J5
+U 1 1 5AF2B279
+P 800 7475
+F 0 "J5" H 800 7575 50  0000 C CNN
+F 1 "Conn_01x02" H 800 7275 50  0000 C CNN
+F 2 "modFiles:Connector_Bornier_2" H 800 7475 50  0001 C CNN
+F 3 "" H 800 7475 50  0001 C CNN
+	1    800  7475
+	-1   0    0    1   
+$EndComp
+$Comp
+L LM7805_TO220 U2
+U 1 1 5AF2B2FC
+P 1900 7375
+F 0 "U2" H 1750 7500 50  0000 C CNN
+F 1 "LM7805_TO220" H 1900 7500 50  0000 L CNN
+F 2 "modFiles:Voltage_Regulators" H 1900 7600 50  0001 C CIN
+F 3 "" H 1900 7325 50  0001 C CNN
+	1    1900 7375
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C4
+U 1 1 5AF2B371
+P 2200 7525
+F 0 "C4" H 2225 7625 50  0000 L CNN
+F 1 "C" H 2225 7425 50  0000 L CNN
+F 2 "modFiles:Capacitor_10uF" H 2238 7375 50  0001 C CNN
+F 3 "" H 2200 7525 50  0001 C CNN
+	1    2200 7525
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C3
+U 1 1 5AF2B3D2
+P 1600 7525
+F 0 "C3" H 1625 7625 50  0000 L CNN
+F 1 "C" H 1625 7425 50  0000 L CNN
+F 2 "modFiles:Capacitor_100uF" H 1638 7375 50  0001 C CNN
+F 3 "" H 1600 7525 50  0001 C CNN
+	1    1600 7525
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR012
+U 1 1 5AF2C1D7
+P 2800 7375
+F 0 "#PWR012" H 2800 7225 50  0001 C CNN
+F 1 "VCC" H 2800 7525 50  0000 C CNN
+F 2 "" H 2800 7375 50  0001 C CNN
+F 3 "" H 2800 7375 50  0001 C CNN
+	1    2800 7375
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR013
+U 1 1 5AF2C20D
+P 2200 7675
+F 0 "#PWR013" H 2200 7425 50  0001 C CNN
+F 1 "GND" H 2200 7525 50  0000 C CNN
+F 2 "" H 2200 7675 50  0001 C CNN
+F 3 "" H 2200 7675 50  0001 C CNN
+	1    2200 7675
+	0    -1   -1   0   
+$EndComp
+$Comp
+L VCC #PWR014
+U 1 1 5AF2CE78
+P 2150 900
+F 0 "#PWR014" H 2150 750 50  0001 C CNN
+F 1 "VCC" H 2150 1050 50  0000 C CNN
+F 2 "" H 2150 900 50  0001 C CNN
+F 3 "" H 2150 900 50  0001 C CNN
+	1    2150 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR015
+U 1 1 5AF2D54C
+P 1000 2400
+F 0 "#PWR015" H 1000 2250 50  0001 C CNN
+F 1 "VCC" H 1000 2550 50  0000 C CNN
+F 2 "" H 1000 2400 50  0001 C CNN
+F 3 "" H 1000 2400 50  0001 C CNN
+	1    1000 2400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Conn_01x04 J4
+U 1 1 5AF316AC
+P 4150 4850
+F 0 "J4" H 4150 5050 50  0000 C CNN
+F 1 "RX-TX" H 4150 4550 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm" H 4150 4850 50  0001 C CNN
+F 3 "" H 4150 4850 50  0001 C CNN
+	1    4150 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_01x04 J9
+U 1 1 5AF3187E
+P 5250 4850
+F 0 "J9" H 5250 5050 50  0000 C CNN
+F 1 "SDA-SCL" H 5250 4550 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm" H 5250 4850 50  0001 C CNN
+F 3 "" H 5250 4850 50  0001 C CNN
+	1    5250 4850
+	1    0    0    -1  
+$EndComp
+Text Label 3950 4950 2    60   ~ 0
+D0
+Text Label 3950 5050 2    60   ~ 0
+D1
+$Comp
+L VCC #PWR016
+U 1 1 5AF31C1E
+P 3950 4750
+F 0 "#PWR016" H 3950 4600 50  0001 C CNN
+F 1 "VCC" H 3950 4900 50  0000 C CNN
+F 2 "" H 3950 4750 50  0001 C CNN
+F 3 "" H 3950 4750 50  0001 C CNN
+	1    3950 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR017
+U 1 1 5AF31C56
+P 3950 4850
+F 0 "#PWR017" H 3950 4600 50  0001 C CNN
+F 1 "GND" H 3950 4700 50  0000 C CNN
+F 2 "" H 3950 4850 50  0001 C CNN
+F 3 "" H 3950 4850 50  0001 C CNN
+	1    3950 4850
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR018
+U 1 1 5AF31CE2
+P 5050 4850
+F 0 "#PWR018" H 5050 4600 50  0001 C CNN
+F 1 "GND" H 5050 4700 50  0000 C CNN
+F 2 "" H 5050 4850 50  0001 C CNN
+F 3 "" H 5050 4850 50  0001 C CNN
+	1    5050 4850
+	0    1    1    0   
+$EndComp
+$Comp
+L VCC #PWR019
+U 1 1 5AF31D1A
+P 5050 4750
+F 0 "#PWR019" H 5050 4600 50  0001 C CNN
+F 1 "VCC" H 5050 4900 50  0000 C CNN
+F 2 "" H 5050 4750 50  0001 C CNN
+F 3 "" H 5050 4750 50  0001 C CNN
+	1    5050 4750
+	1    0    0    -1  
+$EndComp
+Text Label 5050 4950 2    60   ~ 0
+C1
+$Comp
+L Conn_01x03 J3
+U 1 1 5AF32A1D
+P 4450 3550
+F 0 "J3" H 4450 3750 50  0000 C CNN
+F 1 "Int" H 4450 3350 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 4450 3550 50  0001 C CNN
+F 3 "" H 4450 3550 50  0001 C CNN
+	1    4450 3550
+	1    0    0    -1  
+$EndComp
+Text Label 4250 3450 2    60   ~ 0
+B2
+Text Label 4250 3550 2    60   ~ 0
+D2
+Text Label 4250 3650 2    60   ~ 0
+D3
+Text Label 5050 5050 2    60   ~ 0
+C0
+$Comp
+L Conn_01x04 J8
+U 1 1 5AF33165
+P 5100 3550
+F 0 "J8" H 5100 3750 50  0000 C CNN
+F 1 "PWM" H 5100 3350 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm" H 5100 3550 50  0001 C CNN
+F 3 "" H 5100 3550 50  0001 C CNN
+	1    5100 3550
+	1    0    0    -1  
+$EndComp
+Text Label 4900 3450 2    60   ~ 0
+B3
+Text Label 4900 3550 2    60   ~ 0
+D4
+Text Label 4900 3650 2    60   ~ 0
+D5
+Text GLabel 3100 650  0    60   Input ~ 0
+AVR_MCU
+Text GLabel 1475 6500 0    60   Input ~ 0
+LCD
+Text GLabel 4850 550  0    60   Input ~ 0
+Input_Output
+Text GLabel 4750 750  0    60   Input ~ 0
+Ports
+Text GLabel 4400 3150 0    60   Input ~ 0
+Interrrupts
+Text GLabel 5350 3100 0    60   Input ~ 0
+PWM
+Text GLabel 4850 4250 0    60   Input ~ 0
+Moudles
+Text GLabel 4300 4450 0    60   Input ~ 0
+Bluetooth
+Text GLabel 5500 4450 0    60   Input ~ 0
+2_Wire_Interface
+Text GLabel 1900 7025 0    60   Input ~ 0
+Power_Supply
+$Comp
+L C C5
+U 1 1 5AF3930B
+P 4050 5750
+F 0 "C5" H 4075 5850 50  0000 L CNN
+F 1 "C" H 4075 5650 50  0000 L CNN
+F 2 "modFiles:Capacitor_Disc_Small" H 4088 5600 50  0001 C CNN
+F 3 "" H 4050 5750 50  0001 C CNN
+	1    4050 5750
+	0    1    1    0   
+$EndComp
+$Comp
+L C C8
+U 1 1 5AF39366
+P 4600 5750
+F 0 "C8" H 4625 5850 50  0000 L CNN
+F 1 "C" H 4625 5650 50  0000 L CNN
+F 2 "modFiles:Capacitor_Disc_Small" H 4638 5600 50  0001 C CNN
+F 3 "" H 4600 5750 50  0001 C CNN
+	1    4600 5750
+	0    1    1    0   
+$EndComp
+$Comp
+L C C11
+U 1 1 5AF393B8
+P 5150 5750
+F 0 "C11" H 5175 5850 50  0000 L CNN
+F 1 "C" H 5175 5650 50  0000 L CNN
+F 2 "modFiles:Capacitor_Disc_Small" H 5188 5600 50  0001 C CNN
+F 3 "" H 5150 5750 50  0001 C CNN
+	1    5150 5750
+	0    1    1    0   
+$EndComp
+$Comp
+L C C6
+U 1 1 5AF39415
+P 4050 6050
+F 0 "C6" H 4075 6150 50  0000 L CNN
+F 1 "C" H 4075 5950 50  0000 L CNN
+F 2 "modFiles:Capacitor_Disc_Small" H 4088 5900 50  0001 C CNN
+F 3 "" H 4050 6050 50  0001 C CNN
+	1    4050 6050
+	0    1    1    0   
+$EndComp
+$Comp
+L C C9
+U 1 1 5AF39466
+P 4600 6050
+F 0 "C9" H 4625 6150 50  0000 L CNN
+F 1 "C" H 4625 5950 50  0000 L CNN
+F 2 "modFiles:Capacitor_Disc_Small" H 4638 5900 50  0001 C CNN
+F 3 "" H 4600 6050 50  0001 C CNN
+	1    4600 6050
+	0    1    1    0   
+$EndComp
+$Comp
+L C C12
+U 1 1 5AF394C1
+P 5150 6050
+F 0 "C12" H 5175 6150 50  0000 L CNN
+F 1 "C" H 5175 5950 50  0000 L CNN
+F 2 "modFiles:Capacitor_Disc_Small" H 5188 5900 50  0001 C CNN
+F 3 "" H 5150 6050 50  0001 C CNN
+	1    5150 6050
+	0    1    1    0   
+$EndComp
+$Comp
+L C C7
+U 1 1 5AF39577
+P 4050 6350
+F 0 "C7" H 4075 6450 50  0000 L CNN
+F 1 "C" H 4075 6250 50  0000 L CNN
+F 2 "modFiles:Capacitor_Disc_Small" H 4088 6200 50  0001 C CNN
+F 3 "" H 4050 6350 50  0001 C CNN
+	1    4050 6350
+	0    1    1    0   
+$EndComp
+$Comp
+L C C10
+U 1 1 5AF3957D
+P 4600 6350
+F 0 "C10" H 4625 6450 50  0000 L CNN
+F 1 "C" H 4625 6250 50  0000 L CNN
+F 2 "modFiles:Capacitor_Disc_Small" H 4638 6200 50  0001 C CNN
+F 3 "" H 4600 6350 50  0001 C CNN
+	1    4600 6350
+	0    1    1    0   
+$EndComp
+$Comp
+L C C13
+U 1 1 5AF39583
+P 5150 6350
+F 0 "C13" H 5175 6450 50  0000 L CNN
+F 1 "C" H 5175 6250 50  0000 L CNN
+F 2 "modFiles:Capacitor_Disc_Small" H 5188 6200 50  0001 C CNN
+F 3 "" H 5150 6350 50  0001 C CNN
+	1    5150 6350
+	0    1    1    0   
+$EndComp
+$Comp
+L VCC #PWR020
+U 1 1 5AF39973
+P 5000 6550
+F 0 "#PWR020" H 5000 6400 50  0001 C CNN
+F 1 "VCC" H 5000 6700 50  0000 C CNN
+F 2 "" H 5000 6550 50  0001 C CNN
+F 3 "" H 5000 6550 50  0001 C CNN
+	1    5000 6550
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR021
+U 1 1 5AF3A4D2
+P 5300 6550
+F 0 "#PWR021" H 5300 6300 50  0001 C CNN
+F 1 "GND" H 5300 6400 50  0000 C CNN
+F 2 "" H 5300 6550 50  0001 C CNN
+F 3 "" H 5300 6550 50  0001 C CNN
+	1    5300 6550
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR022
+U 1 1 5AF3A5F3
+P 4450 6550
+F 0 "#PWR022" H 4450 6400 50  0001 C CNN
+F 1 "VCC" H 4450 6700 50  0000 C CNN
+F 2 "" H 4450 6550 50  0001 C CNN
+F 3 "" H 4450 6550 50  0001 C CNN
+	1    4450 6550
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR023
+U 1 1 5AF3A5F9
+P 4750 6550
+F 0 "#PWR023" H 4750 6300 50  0001 C CNN
+F 1 "GND" H 4750 6400 50  0000 C CNN
+F 2 "" H 4750 6550 50  0001 C CNN
+F 3 "" H 4750 6550 50  0001 C CNN
+	1    4750 6550
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR024
+U 1 1 5AF3A639
+P 3900 6550
+F 0 "#PWR024" H 3900 6400 50  0001 C CNN
+F 1 "VCC" H 3900 6700 50  0000 C CNN
+F 2 "" H 3900 6550 50  0001 C CNN
+F 3 "" H 3900 6550 50  0001 C CNN
+	1    3900 6550
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR025
+U 1 1 5AF3A63F
+P 4200 6550
+F 0 "#PWR025" H 4200 6300 50  0001 C CNN
+F 1 "GND" H 4200 6400 50  0000 C CNN
+F 2 "" H 4200 6550 50  0001 C CNN
+F 3 "" H 4200 6550 50  0001 C CNN
+	1    4200 6550
+	1    0    0    -1  
+$EndComp
+Text GLabel 4900 5550 0    60   Input ~ 0
+Capacitors
+$Comp
+L LCD-016N002L DS1
+U 1 1 5AFB4180
+P 1400 5775
+F 0 "DS1" H 600 6175 50  0000 C CNN
+F 1 "LCD-016N002L" H 2100 6175 50  0000 C CNN
+F 2 "modFiles:LCD_16*2" H 1400 5725 50  0001 C CIN
+F 3 "" H 1400 5775 50  0001 C CNN
+	1    1400 5775
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X06 J10
+U 1 1 5AFC32A6
+P 4350 7375
+F 0 "J10" H 4350 7725 50  0000 C CNN
+F 1 "Programmer" V 4450 7375 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x06_Pitch2.54mm" H 4350 7375 50  0001 C CNN
+F 3 "" H 4350 7375 50  0001 C CNN
+	1    4350 7375
+	0    1    1    0   
+$EndComp
+Text Label 4100 7175 1    60   ~ 0
+B6
+Text Label 4200 7175 1    60   ~ 0
+B7
+Text Label 4300 7175 1    60   ~ 0
+B4
+$Comp
+L VCC #PWR026
+U 1 1 5AFC39DA
+P 4500 7175
+F 0 "#PWR026" H 4500 7025 50  0001 C CNN
+F 1 "VCC" H 4500 7325 50  0000 C CNN
+F 2 "" H 4500 7175 50  0001 C CNN
+F 3 "" H 4500 7175 50  0001 C CNN
+	1    4500 7175
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR027
+U 1 1 5AFC3A2A
+P 4600 7175
+F 0 "#PWR027" H 4600 6925 50  0001 C CNN
+F 1 "GND" H 4600 7025 50  0000 C CNN
+F 2 "" H 4600 7175 50  0001 C CNN
+F 3 "" H 4600 7175 50  0001 C CNN
+	1    4600 7175
+	0    -1   -1   0   
+$EndComp
+Text Label 1000 1200 0    60   ~ 0
+R
+Text Label 4400 7175 1    60   ~ 0
+R
+$Comp
+L D_Zener D1
+U 1 1 5AF9C569
+P 4375 4900
+F 0 "D1" H 4375 5000 50  0000 C CNN
+F 1 "D_Zener" H 4375 4800 50  0000 C CNN
+F 2 "modFiles:Diode_Small" H 4375 4900 50  0001 C CNN
+F 3 "" H 4375 4900 50  0001 C CNN
+	1    4375 4900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R2
+U 1 1 5AF9C638
+P 4675 5025
+F 0 "R2" V 4755 5025 50  0000 C CNN
+F 1 "R" V 4675 5025 50  0000 C CNN
+F 2 "modFiles:Resistor_small" V 4605 5025 50  0001 C CNN
+F 3 "" H 4675 5025 50  0001 C CNN
+	1    4675 5025
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R3
+U 1 1 5AF9C6B7
+P 4775 5025
+F 0 "R3" V 4855 5025 50  0000 C CNN
+F 1 "R" V 4775 5025 50  0000 C CNN
+F 2 "modFiles:Resistor_small" V 4705 5025 50  0001 C CNN
+F 3 "" H 4775 5025 50  0001 C CNN
+	1    4775 5025
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR028
+U 1 1 5AF9C795
+P 4725 5200
+F 0 "#PWR028" H 4725 5050 50  0001 C CNN
+F 1 "VCC" H 4725 5350 50  0000 C CNN
+F 2 "" H 4725 5200 50  0001 C CNN
+F 3 "" H 4725 5200 50  0001 C CNN
+	1    4725 5200
+	-1   0    0    1   
+$EndComp
+Text Label 4675 4875 2    60   ~ 0
+C0
+Text Label 4775 4875 0    60   ~ 0
+C1
+Text Label 4375 5050 2    60   ~ 0
+D0
+$Comp
+L GND #PWR029
+U 1 1 5AF9D169
+P 4375 4750
+F 0 "#PWR029" H 4375 4500 50  0001 C CNN
+F 1 "GND" H 4375 4600 50  0000 C CNN
+F 2 "" H 4375 4750 50  0001 C CNN
+F 3 "" H 4375 4750 50  0001 C CNN
+	1    4375 4750
+	-1   0    0    1   
+$EndComp
+$Comp
+L Fuse F1
+U 1 1 5AFB04FA
+P 1150 7375
+F 0 "F1" V 1230 7375 50  0000 C CNN
+F 1 "Fuse" V 1075 7375 50  0000 C CNN
+F 2 "modFiles:Fuse_Holder" V 1080 7375 50  0001 C CNN
+F 3 "" H 1150 7375 50  0001 C CNN
+	1    1150 7375
+	0    1    1    0   
+$EndComp
+$Comp
+L D D2
+U 1 1 5AFB0D05
+P 1450 7375
+F 0 "D2" H 1450 7475 50  0000 C CNN
+F 1 "D" H 1450 7275 50  0000 C CNN
+F 2 "modFiles:Diode_Small" H 1450 7375 50  0001 C CNN
+F 3 "" H 1450 7375 50  0001 C CNN
+	1    1450 7375
+	-1   0    0    1   
+$EndComp
+$Comp
+L SW_DIP_x01 SW2
+U 1 1 5AFB0DA2
+P 2500 7375
+F 0 "SW2" H 2500 7525 50  0000 C CNN
+F 1 "SW_DIP_x01" H 2500 7225 50  0000 C CNN
+F 2 "modFiles:DIP_Switch" H 2500 7375 50  0001 C CNN
+F 3 "" H 2500 7375 50  0001 C CNN
+	1    2500 7375
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_01x03 J11
+U 1 1 5AFB4444
+P 5375 7400
+F 0 "J11" H 5375 7600 50  0000 C CNN
+F 1 "Motor" H 5375 7200 50  0000 C CNN
+F 2 "modFiles:Connector_Bornier_3" H 5375 7400 50  0001 C CNN
+F 3 "" H 5375 7400 50  0001 C CNN
+	1    5375 7400
+	0    1    1    0   
+$EndComp
+Text Label 5275 7200 1    60   ~ 0
+B0
+$Comp
+L LED D3
+U 1 1 5AFB5ECC
+P 3100 7525
+F 0 "D3" H 3100 7625 50  0000 C CNN
+F 1 "LED" H 3100 7425 50  0000 C CNN
+F 2 "modFiles:LED_D3.0mm" H 3100 7525 50  0001 C CNN
+F 3 "" H 3100 7525 50  0001 C CNN
+	1    3100 7525
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R4
+U 1 1 5AFB6500
+P 2950 7375
+F 0 "R4" V 3030 7375 50  0000 C CNN
+F 1 "R" V 2950 7375 50  0000 C CNN
+F 2 "modFiles:Resistor_small" V 2880 7375 50  0001 C CNN
+F 3 "" H 2950 7375 50  0001 C CNN
+	1    2950 7375
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR030
+U 1 1 5AFB664E
+P 3100 7675
+F 0 "#PWR030" H 3100 7425 50  0001 C CNN
+F 1 "GND" H 3100 7525 50  0000 C CNN
+F 2 "" H 3100 7675 50  0001 C CNN
+F 3 "" H 3100 7675 50  0001 C CNN
+	1    3100 7675
+	0    1    1    0   
+$EndComp
+Text Label 3000 4500 0    60   ~ 0
+D6
+Text Label 3000 4600 0    60   ~ 0
+D7
+Text Label 4900 3750 2    60   ~ 0
+D7
+$Comp
+L C C14
+U 1 1 5B009039
+P 750 900
+F 0 "C14" H 775 1000 50  0000 L CNN
+F 1 "C" H 775 800 50  0000 L CNN
+F 2 "modFiles:Capacitor_Disc_Small" H 788 750 50  0001 C CNN
+F 3 "" H 750 900 50  0001 C CNN
+	1    750  900 
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1950 4900 1950 4975
+Wire Wire Line
+	1950 4975 2050 4975
+Wire Wire Line
+	2050 4975 2050 4900
+Connection ~ 2000 4975
+Wire Wire Line
+	1000 2000 1000 1950
+Wire Wire Line
+	1000 1600 1000 1650
+Wire Wire Line
+	1000 950  1000 1200
+Wire Wire Line
+	2200 7375 2200 7375
+Wire Wire Line
+	1000 7475 1150 7675
+Wire Wire Line
+	1150 7675 2200 7675
+Connection ~ 1600 7675
+Connection ~ 1900 7675
+Wire Bus Line
+	3750 500  3750 5650
+Wire Bus Line
+	5550 4100 3750 4100
+Wire Notes Line
+	3750 3000 5550 3000
+Wire Notes Line
+	5550 3000 5550 2950
+Wire Notes Line
+	4700 3000 4700 4100
+Wire Notes Line
+	5550 750  5550 700 
+Wire Notes Line
+	3750 4350 5550 4350
+Wire Bus Line
+	3750 5400 5550 5400
+Wire Notes Line
+	4550 4350 4550 5400
+Wire Notes Line
+	4550 5400 4600 5400
+Wire Bus Line
+	3750 6800 5550 6800
+Wire Notes Line
+	3750 650  5550 650 
+Wire Wire Line
+	3900 5750 3900 6550
+Connection ~ 3900 6050
+Wire Wire Line
+	4200 5750 4200 6550
+Connection ~ 4200 6050
+Wire Wire Line
+	4450 5750 4450 6550
+Connection ~ 4450 6050
+Wire Wire Line
+	4750 5750 4750 6550
+Connection ~ 4750 6050
+Wire Wire Line
+	5000 5750 5000 6550
+Connection ~ 5000 6050
+Wire Wire Line
+	5300 5750 5300 6550
+Connection ~ 5300 6050
+Connection ~ 3900 6350
+Connection ~ 4200 6350
+Connection ~ 4450 6350
+Connection ~ 4750 6350
+Connection ~ 5000 6350
+Connection ~ 5300 6350
+Wire Wire Line
+	850  6375 850  6275
+Wire Wire Line
+	1050 6275 1050 6525
+Wire Wire Line
+	1050 6525 1000 6525
+Wire Bus Line
+	3750 5225 475  5225
+Wire Wire Line
+	2150 6275 2225 6275
+Wire Wire Line
+	575  6275 650  6275
+Wire Wire Line
+	4675 5175 4775 5175
+Wire Wire Line
+	4725 5200 4725 5175
+Connection ~ 4725 5175
+Wire Wire Line
+	600  1200 600  900 
+Wire Wire Line
+	900  900  900  1075
+Wire Wire Line
+	900  1075 1000 1075
+Connection ~ 1000 1075
+$EndSCHEMATC

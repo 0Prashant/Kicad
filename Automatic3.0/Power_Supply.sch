@@ -1,0 +1,598 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:Prashant_library
+LIBS:74xgxx
+LIBS:ac-dc
+LIBS:actel
+LIBS:allegro
+LIBS:Altera
+LIBS:analog_devices
+LIBS:battery_management
+LIBS:bbd
+LIBS:bosch
+LIBS:brooktre
+LIBS:cmos_ieee
+LIBS:dc-dc
+LIBS:diode
+LIBS:elec-unifil
+LIBS:ESD_Protection
+LIBS:ftdi
+LIBS:gennum
+LIBS:graphic
+LIBS:hc11
+LIBS:ir
+LIBS:Lattice
+LIBS:leds
+LIBS:logo
+LIBS:maxim
+LIBS:mechanical
+LIBS:microchip_dspic33dsc
+LIBS:microchip_pic10mcu
+LIBS:microchip_pic12mcu
+LIBS:microchip_pic16mcu
+LIBS:microchip_pic18mcu
+LIBS:microchip_pic24mcu
+LIBS:microchip_pic32mcu
+LIBS:modules
+LIBS:motor_drivers
+LIBS:motors
+LIBS:msp430
+LIBS:nordicsemi
+LIBS:nxp
+LIBS:nxp_armmcu
+LIBS:onsemi
+LIBS:Oscillators
+LIBS:powerint
+LIBS:Power_Management
+LIBS:pspice
+LIBS:references
+LIBS:relays
+LIBS:rfcom
+LIBS:sensors
+LIBS:silabs
+LIBS:stm8
+LIBS:stm32
+LIBS:supertex
+LIBS:switches
+LIBS:transf
+LIBS:triac_thyristor
+LIBS:ttl_ieee
+LIBS:video
+LIBS:wiznet
+LIBS:Worldsemi
+LIBS:Xicor
+LIBS:zetex
+LIBS:Zilog
+LIBS:Automatic3-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 2
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L R R3
+U 1 1 5ADD8419
+P 4700 1325
+F 0 "R3" V 4780 1325 50  0000 C CNN
+F 1 "330" V 4700 1325 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4630 1325 50  0001 C CNN
+F 3 "" H 4700 1325 50  0001 C CNN
+	1    4700 1325
+	0    1    1    0   
+$EndComp
+$Comp
+L LED D5
+U 1 1 5ADD847B
+P 5050 1325
+F 0 "D5" H 5050 1425 50  0000 C CNN
+F 1 "LED" H 5050 1225 50  0000 C CNN
+F 2 "modFiles:LED_D3.0mm" H 5050 1325 50  0001 C CNN
+F 3 "" H 5050 1325 50  0001 C CNN
+	1    5050 1325
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR037
+U 1 1 5ADD84AA
+P 5275 1375
+F 0 "#PWR037" H 5275 1125 50  0001 C CNN
+F 1 "GND" H 5275 1225 50  0000 C CNN
+F 2 "" H 5275 1375 50  0001 C CNN
+F 3 "" H 5275 1375 50  0001 C CNN
+	1    5275 1375
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R4
+U 1 1 5ADD8639
+P 4725 1875
+F 0 "R4" V 4805 1875 50  0000 C CNN
+F 1 "1K" V 4725 1875 50  0000 C CNN
+F 2 "modFiles:Resistor_small" V 4655 1875 50  0001 C CNN
+F 3 "" H 4725 1875 50  0001 C CNN
+	1    4725 1875
+	0    1    1    0   
+$EndComp
+$Comp
+L LED D6
+U 1 1 5ADD863F
+P 5075 1875
+F 0 "D6" H 5075 1975 50  0000 C CNN
+F 1 "LED" H 5075 1775 50  0000 C CNN
+F 2 "modFiles:LED_D3.0mm" H 5075 1875 50  0001 C CNN
+F 3 "" H 5075 1875 50  0001 C CNN
+	1    5075 1875
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR038
+U 1 1 5ADD8645
+P 5300 1925
+F 0 "#PWR038" H 5300 1675 50  0001 C CNN
+F 1 "GND" H 5300 1775 50  0000 C CNN
+F 2 "" H 5300 1925 50  0001 C CNN
+F 3 "" H 5300 1925 50  0001 C CNN
+	1    5300 1925
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 5ADD88CE
+P 3425 1300
+F 0 "R1" V 3505 1300 50  0000 C CNN
+F 1 "1K5" V 3425 1300 50  0000 C CNN
+F 2 "modFiles:Resistor_small" V 3355 1300 50  0001 C CNN
+F 3 "" H 3425 1300 50  0001 C CNN
+	1    3425 1300
+	0    1    1    0   
+$EndComp
+$Comp
+L LED D3
+U 1 1 5ADD88D4
+P 3775 1300
+F 0 "D3" H 3775 1400 50  0000 C CNN
+F 1 "LED" H 3775 1200 50  0000 C CNN
+F 2 "modFiles:LED_D3.0mm" H 3775 1300 50  0001 C CNN
+F 3 "" H 3775 1300 50  0001 C CNN
+	1    3775 1300
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR039
+U 1 1 5ADD88DA
+P 4000 1350
+F 0 "#PWR039" H 4000 1100 50  0001 C CNN
+F 1 "GND" H 4000 1200 50  0000 C CNN
+F 2 "" H 4000 1350 50  0001 C CNN
+F 3 "" H 4000 1350 50  0001 C CNN
+	1    4000 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R2
+U 1 1 5ADD88EB
+P 3450 1850
+F 0 "R2" V 3530 1850 50  0000 C CNN
+F 1 "1K" V 3450 1850 50  0000 C CNN
+F 2 "modFiles:Resistor_small" V 3380 1850 50  0001 C CNN
+F 3 "" H 3450 1850 50  0001 C CNN
+	1    3450 1850
+	0    1    1    0   
+$EndComp
+$Comp
+L LED D4
+U 1 1 5ADD88F1
+P 3800 1850
+F 0 "D4" H 3800 1950 50  0000 C CNN
+F 1 "LED" H 3800 1750 50  0000 C CNN
+F 2 "modFiles:LED_D3.0mm" H 3800 1850 50  0001 C CNN
+F 3 "" H 3800 1850 50  0001 C CNN
+	1    3800 1850
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR040
+U 1 1 5ADD88F7
+P 4025 1900
+F 0 "#PWR040" H 4025 1650 50  0001 C CNN
+F 1 "GND" H 4025 1750 50  0000 C CNN
+F 2 "" H 4025 1900 50  0001 C CNN
+F 3 "" H 4025 1900 50  0001 C CNN
+	1    4025 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L +9V #PWR041
+U 1 1 5ADD8969
+P 3225 1750
+F 0 "#PWR041" H 3225 1600 50  0001 C CNN
+F 1 "+9V" H 3225 1890 50  0000 C CNN
+F 2 "" H 3225 1750 50  0001 C CNN
+F 3 "" H 3225 1750 50  0001 C CNN
+	1    3225 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR042
+U 1 1 5ADD89A5
+P 4475 1225
+F 0 "#PWR042" H 4475 1075 50  0001 C CNN
+F 1 "+5V" H 4475 1365 50  0000 C CNN
+F 2 "" H 4475 1225 50  0001 C CNN
+F 3 "" H 4475 1225 50  0001 C CNN
+	1    4475 1225
+	1    0    0    -1  
+$EndComp
+Text Label 4500 1775 0    60   ~ 0
+BUCK
+$Comp
+L LM7809ACT U2
+U 1 1 5ADD8A91
+P 4125 3450
+F 0 "U2" H 3925 3650 50  0000 C CNN
+F 1 "LM7809" H 4125 3650 50  0000 L CNN
+F 2 "modFiles:Voltage_Regulators" H 4125 3550 50  0001 C CIN
+F 3 "" H 4125 3450 50  0001 C CNN
+	1    4125 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L D D1
+U 1 1 5ADD8BEB
+P 3275 3400
+F 0 "D1" H 3275 3500 50  0000 C CNN
+F 1 "D" H 3275 3300 50  0000 C CNN
+F 2 "Diodes_THT:D_DO-27_P12.70mm_Horizontal" H 3275 3400 50  0001 C CNN
+F 3 "" H 3275 3400 50  0001 C CNN
+	1    3275 3400
+	-1   0    0    1   
+$EndComp
+$Comp
+L C C2
+U 1 1 5ADD8C7C
+P 3575 3600
+F 0 "C2" H 3600 3700 50  0000 L CNN
+F 1 "100uF" H 3600 3500 50  0000 L CNN
+F 2 "modFiles:Capacitor_100uF" H 3613 3450 50  0001 C CNN
+F 3 "" H 3575 3600 50  0001 C CNN
+	1    3575 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Fuse F1
+U 1 1 5ADD8CB5
+P 2825 3400
+F 0 "F1" V 2905 3400 50  0000 C CNN
+F 1 "Fuse" V 2750 3400 50  0000 C CNN
+F 2 "modFiles:Fuse_Holder" V 2755 3400 50  0001 C CNN
+F 3 "" H 2825 3400 50  0001 C CNN
+	1    2825 3400
+	0    1    1    0   
+$EndComp
+$Comp
+L +12V #PWR043
+U 1 1 5ADD8D0E
+P 2600 3225
+F 0 "#PWR043" H 2600 3075 50  0001 C CNN
+F 1 "+12V" H 2600 3365 50  0000 C CNN
+F 2 "" H 2600 3225 50  0001 C CNN
+F 3 "" H 2600 3225 50  0001 C CNN
+	1    2600 3225
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C3
+U 1 1 5ADD8D5E
+P 4675 3600
+F 0 "C3" H 4700 3700 50  0000 L CNN
+F 1 "10uF" H 4700 3500 50  0000 L CNN
+F 2 "modFiles:Capacitor_10uF" H 4713 3450 50  0001 C CNN
+F 3 "" H 4675 3600 50  0001 C CNN
+	1    4675 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L +9V #PWR044
+U 1 1 5ADD8DBB
+P 4850 3225
+F 0 "#PWR044" H 4850 3075 50  0001 C CNN
+F 1 "+9V" H 4850 3365 50  0000 C CNN
+F 2 "" H 4850 3225 50  0001 C CNN
+F 3 "" H 4850 3225 50  0001 C CNN
+	1    4850 3225
+	1    0    0    -1  
+$EndComp
+Text HLabel 5775 3400 2    60   Input ~ 0
+POWER_FOR_MEGA
+$Comp
+L GND #PWR045
+U 1 1 5ADD935A
+P 4125 3800
+F 0 "#PWR045" H 4125 3550 50  0001 C CNN
+F 1 "GND" H 4125 3650 50  0000 C CNN
+F 2 "" H 4125 3800 50  0001 C CNN
+F 3 "" H 4125 3800 50  0001 C CNN
+	1    4125 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L +12V #PWR046
+U 1 1 5ADDA23F
+P 2525 5475
+F 0 "#PWR046" H 2525 5325 50  0001 C CNN
+F 1 "+12V" H 2525 5615 50  0000 C CNN
+F 2 "" H 2525 5475 50  0001 C CNN
+F 3 "" H 2525 5475 50  0001 C CNN
+	1    2525 5475
+	1    0    0    -1  
+$EndComp
+$Comp
+L Fuse F2
+U 1 1 5ADDA280
+P 2825 5650
+F 0 "F2" V 2905 5650 50  0000 C CNN
+F 1 "Fuse" V 2750 5650 50  0000 C CNN
+F 2 "modFiles:Fuse_Holder" V 2755 5650 50  0001 C CNN
+F 3 "" H 2825 5650 50  0001 C CNN
+	1    2825 5650
+	0    1    1    0   
+$EndComp
+$Comp
+L C C1
+U 1 1 5ADDA2B7
+P 3550 5900
+F 0 "C1" H 3575 6000 50  0000 L CNN
+F 1 "1000uF" H 3575 5800 50  0000 L CNN
+F 2 "modFiles:Capacitor_1000uF" H 3588 5750 50  0001 C CNN
+F 3 "" H 3550 5900 50  0001 C CNN
+	1    3550 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C4
+U 1 1 5ADDA2F0
+P 5225 5875
+F 0 "C4" H 5250 5975 50  0000 L CNN
+F 1 "100uF" H 5250 5775 50  0000 L CNN
+F 2 "modFiles:Capacitor_100uF" H 5263 5725 50  0001 C CNN
+F 3 "" H 5225 5875 50  0001 C CNN
+	1    5225 5875
+	1    0    0    -1  
+$EndComp
+$Comp
+L D D2
+U 1 1 5ADDA329
+P 3275 5650
+F 0 "D2" H 3275 5750 50  0000 C CNN
+F 1 "D" H 3275 5550 50  0000 C CNN
+F 2 "Diodes_THT:D_DO-27_P12.70mm_Horizontal" H 3275 5650 50  0001 C CNN
+F 3 "" H 3275 5650 50  0001 C CNN
+	1    3275 5650
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR047
+U 1 1 5ADDA376
+P 4475 6375
+F 0 "#PWR047" H 4475 6125 50  0001 C CNN
+F 1 "GND" H 4475 6225 50  0000 C CNN
+F 2 "" H 4475 6375 50  0001 C CNN
+F 3 "" H 4475 6375 50  0001 C CNN
+	1    4475 6375
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR048
+U 1 1 5ADDA3B0
+P 5450 5575
+F 0 "#PWR048" H 5450 5425 50  0001 C CNN
+F 1 "+5V" H 5450 5715 50  0000 C CNN
+F 2 "" H 5450 5575 50  0001 C CNN
+F 3 "" H 5450 5575 50  0001 C CNN
+	1    5450 5575
+	1    0    0    -1  
+$EndComp
+$Comp
+L Buck U1
+U 1 1 5ADDA0C4
+P 3975 5850
+F 0 "U1" H 4299 6144 60  0000 C CNN
+F 1 "Buck" H 4099 6144 60  0000 C CNN
+F 2 "modFiles:Buck_Regulator" H 4399 6144 60  0001 C CNN
+F 3 "" H 4399 6144 60  0001 C CNN
+	1    3975 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X02 J1
+U 1 1 5ADDD128
+P 1935 4535
+F 0 "J1" H 1935 4685 50  0000 C CNN
+F 1 "CONN_01X02" V 2035 4535 50  0000 C CNN
+F 2 "modFiles:Solar_Connector" H 1935 4535 50  0001 C CNN
+F 3 "" H 1935 4535 50  0001 C CNN
+	1    1935 4535
+	1    0    0    -1  
+$EndComp
+$Comp
+L +12V #PWR049
+U 1 1 5ADDD1E7
+P 1690 4465
+F 0 "#PWR049" H 1690 4315 50  0001 C CNN
+F 1 "+12V" H 1690 4605 50  0000 C CNN
+F 2 "" H 1690 4465 50  0001 C CNN
+F 3 "" H 1690 4465 50  0001 C CNN
+	1    1690 4465
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR050
+U 1 1 5ADDD3BB
+P 1690 4615
+F 0 "#PWR050" H 1690 4365 50  0001 C CNN
+F 1 "GND" H 1690 4465 50  0000 C CNN
+F 2 "" H 1690 4615 50  0001 C CNN
+F 3 "" H 1690 4615 50  0001 C CNN
+	1    1690 4615
+	1    0    0    -1  
+$EndComp
+Text Label 3645 5450 0    60   ~ 0
+BUCK
+Wire Wire Line
+	4475 1225 4475 1325
+Wire Wire Line
+	4475 1325 4550 1325
+Wire Wire Line
+	4850 1325 4900 1325
+Wire Wire Line
+	5200 1325 5275 1325
+Wire Wire Line
+	5275 1325 5275 1375
+Wire Wire Line
+	4500 1775 4500 1875
+Wire Wire Line
+	4500 1875 4575 1875
+Wire Wire Line
+	4875 1875 4925 1875
+Wire Wire Line
+	5225 1875 5300 1875
+Wire Wire Line
+	5300 1875 5300 1925
+Wire Wire Line
+	3200 1200 3200 1300
+Wire Wire Line
+	3200 1300 3275 1300
+Wire Wire Line
+	3575 1300 3625 1300
+Wire Wire Line
+	3925 1300 4000 1300
+Wire Wire Line
+	4000 1300 4000 1350
+Wire Wire Line
+	3225 1750 3225 1850
+Wire Wire Line
+	3225 1850 3300 1850
+Wire Wire Line
+	3600 1850 3650 1850
+Wire Wire Line
+	3950 1850 4025 1850
+Wire Wire Line
+	4025 1850 4025 1900
+Wire Wire Line
+	4525 3400 5775 3400
+Wire Wire Line
+	4675 3450 4675 3400
+Connection ~ 4675 3400
+Wire Wire Line
+	4850 3225 4850 3400
+Connection ~ 4850 3400
+Wire Wire Line
+	2600 3225 2600 3400
+Wire Wire Line
+	2600 3400 2675 3400
+Wire Wire Line
+	2975 3400 3125 3400
+Wire Wire Line
+	3425 3400 3725 3400
+Wire Wire Line
+	3575 3450 3575 3400
+Connection ~ 3575 3400
+Wire Wire Line
+	3575 3750 4675 3750
+Wire Wire Line
+	4125 3700 4125 3800
+Connection ~ 4125 3750
+Wire Wire Line
+	2525 5475 2525 5650
+Wire Wire Line
+	2525 5650 2675 5650
+Wire Wire Line
+	2975 5650 3125 5650
+Wire Wire Line
+	3775 6280 5225 6280
+Wire Wire Line
+	5005 6280 5005 5785
+Wire Wire Line
+	5005 5660 5450 5660
+Wire Wire Line
+	5450 5660 5450 5575
+Wire Wire Line
+	5225 5725 5225 5660
+Connection ~ 5225 5660
+Wire Wire Line
+	3775 5780 3775 6280
+Wire Wire Line
+	3550 6050 3550 6275
+Wire Wire Line
+	3550 6275 3775 6275
+Connection ~ 3775 6275
+Wire Wire Line
+	4475 6375 4475 6280
+Connection ~ 4475 6280
+Wire Wire Line
+	5225 6280 5225 6025
+Connection ~ 5005 6280
+Wire Wire Line
+	1735 4485 1690 4485
+Wire Wire Line
+	1690 4485 1690 4465
+Wire Wire Line
+	1735 4585 1690 4585
+Wire Wire Line
+	1690 4585 1690 4615
+Wire Wire Line
+	3645 5450 3550 5450
+Wire Wire Line
+	3425 5650 3550 5650
+Connection ~ 3550 5650
+Text HLabel 3550 5450 1    60   Input ~ 0
+BUCK
+Wire Wire Line
+	3550 5450 3550 5750
+Wire Wire Line
+	3550 5580 3775 5580
+Wire Wire Line
+	3775 5580 3775 5655
+Connection ~ 3550 5580
+Text Label 3050 5650 1    60   ~ 0
+12led
+Text Label 3200 1200 0    60   ~ 0
+12led
+$EndSCHEMATC
