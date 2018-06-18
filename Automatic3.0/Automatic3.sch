@@ -28,7 +28,6 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:Prashant_library
 LIBS:74xgxx
 LIBS:ac-dc
 LIBS:actel
@@ -46,12 +45,10 @@ LIBS:elec-unifil
 LIBS:ESD_Protection
 LIBS:ftdi
 LIBS:gennum
-LIBS:graphic
 LIBS:hc11
 LIBS:ir
 LIBS:Lattice
 LIBS:leds
-LIBS:logo
 LIBS:maxim
 LIBS:mechanical
 LIBS:microchip_dspic33dsc
@@ -91,6 +88,7 @@ LIBS:Worldsemi
 LIBS:Xicor
 LIBS:zetex
 LIBS:Zilog
+LIBS:Prashant_library
 LIBS:Automatic3-cache
 EELAYER 25 0
 EELAYER END
@@ -704,7 +702,7 @@ U 1 1 5AEC14F3
 P 6425 1175
 F 0 "J7" H 6225 1625 50  0000 L CNN
 F 1 "USB_B" H 6225 1525 50  0000 L CNN
-F 2 "modFiles:Connector_USB" H 6575 1125 50  0001 C CNN
+F 2 "Connectors_JST:JST_PH_B4B-PH-K_04x2.00mm_Straight" H 6575 1125 50  0001 C CNN
 F 3 "" H 6575 1125 50  0001 C CNN
 	1    6425 1175
 	1    0    0    -1  
@@ -944,7 +942,7 @@ U 1 1 5B161ACA
 P 7300 2875
 F 0 "J11" H 7300 3125 50  0000 C CNN
 F 1 "Compass" V 7400 2875 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm" H 7300 2875 50  0001 C CNN
+F 2 "Connectors_JST:JST_PH_B4B-PH-K_04x2.00mm_Straight" H 7300 2875 50  0001 C CNN
 F 3 "" H 7300 2875 50  0001 C CNN
 	1    7300 2875
 	1    0    0    -1  
@@ -1368,7 +1366,7 @@ L CONN_02X05 J1
 U 1 1 5B1EF49C
 P 6150 2600
 F 0 "J1" H 6150 2900 50  0000 C CNN
-F 1 "CONN_02X05" H 6150 2300 50  0000 C CNN
+F 1 "GND VCC" H 6150 2300 50  0000 C CNN
 F 2 "Pin_Headers:Pin_Header_Straight_2x05_Pitch2.54mm" H 6150 1400 50  0001 C CNN
 F 3 "" H 6150 1400 50  0001 C CNN
 	1    6150 2600
@@ -1681,4 +1679,15 @@ F 3 "" H 1525 325 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1325 325  1525 325 
+$Comp
+L +5V #PWR043
+U 1 1 5B273E9C
+P 6725 975
+F 0 "#PWR043" H 6725 825 50  0001 C CNN
+F 1 "+5V" H 6725 1115 50  0000 C CNN
+F 2 "" H 6725 975 50  0001 C CNN
+F 3 "" H 6725 975 50  0001 C CNN
+	1    6725 975 
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
