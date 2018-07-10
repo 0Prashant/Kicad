@@ -1,4 +1,4 @@
-update=शनिवार 07 जुलाई 2018 11:15:20 पूर्वाह्न +0545
+update=बुधवार 04 जुलाई 2018 09:36:12 अपराह्न +0545
 version=1
 last_client=kicad
 [pcbnew]
@@ -23,8 +23,6 @@ ModuleOutlineThickness=0.150000000000
 [cvpcb]
 version=1
 NetIExt=net
-[general]
-version=1
 [eeschema]
 version=1
 LibDir=
@@ -61,4 +59,5 @@ LibName29=opto
 LibName30=atmel
 LibName31=contrib
 LibName32=valves
-LibName33=/home/prashant/Desktop/my_lib
+[general]
+version=1
