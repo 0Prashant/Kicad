@@ -404,17 +404,17 @@ F 3 "" H 1750 2525 50  0001 C CNN
 	1    1750 2525
 	-1   0    0    -1  
 $EndComp
-Text Label 1950 2325 0    60   ~ 0
-PR1
-Text Label 1950 2425 0    60   ~ 0
-PR2
 Text Label 1950 2525 0    60   ~ 0
+PR1
+Text Label 1950 2325 0    60   ~ 0
+PR2
+Text Label 1950 2425 0    60   ~ 0
 PR3
-Text Label 1950 2625 0    60   ~ 0
-PR1o
-Text Label 1950 2725 0    60   ~ 0
-PR2o
 Text Label 1950 2825 0    60   ~ 0
+PR1o
+Text Label 1950 2625 0    60   ~ 0
+PR2o
+Text Label 1950 2725 0    60   ~ 0
 PR3o
 Text Label 1950 2925 0    60   ~ 0
 LED1
@@ -424,7 +424,7 @@ Text Label 1575 4625 0    60   ~ 0
 PR1
 Text Label 1575 4825 0    60   ~ 0
 PR2
-Text Label 5250 4275 1    60   ~ 0
+Text Label 4325 3325 3    60   ~ 0
 PR3
 Text Label 1575 4425 0    60   ~ 0
 PR1o
@@ -471,9 +471,9 @@ Connection ~ 5700 2400
 Wire Wire Line
 	4925 2300 4925 2250
 Wire Wire Line
-	4925 2250 5025 2250
+	5025 2250 4925 2250
 Wire Wire Line
-	5025 2250 5025 2075
+	5025 2075 5025 2250
 Connection ~ 5025 2150
 Wire Wire Line
 	5050 2600 4925 2600
@@ -543,7 +543,7 @@ Wire Wire Line
 Wire Wire Line
 	5050 2075 5050 1975
 Wire Wire Line
-	4675 2150 4675 1650
+	4675 1650 4675 2850
 Wire Wire Line
 	4675 1650 5050 1650
 Connection ~ 4675 2150
@@ -561,21 +561,6 @@ Wire Wire Line
 	2575 4825 2900 4825
 Wire Wire Line
 	2900 5025 2575 5025
-$Comp
-L J J6
-U 1 1 5B4A5AFF
-P 3675 2750
-F 0 "J6" H 3675 2830 50  0000 C CNN
-F 1 "J" H 3685 2690 50  0000 C CNN
-F 2 "modFiles:Jumper" H 3675 2750 50  0001 C CNN
-F 3 "" H 3675 2750 50  0001 C CNN
-	1    3675 2750
-	1    0    0    -1  
-$EndComp
-Text Label 3575 2750 2    60   ~ 0
-OUT1
-Text Label 3775 2750 0    60   ~ 0
-OUT1
 Wire Wire Line
 	9150 1975 9025 1975
 Wire Wire Line
@@ -605,68 +590,57 @@ $EndComp
 $Comp
 L R R8
 U 1 1 5B5617D1
-P 4825 4425
-F 0 "R8" V 4905 4425 50  0000 C CNN
-F 1 "10k" V 4825 4425 50  0000 C CNN
-F 2 "modFiles:Resistor_small" V 4755 4425 50  0001 C CNN
-F 3 "" H 4825 4425 50  0001 C CNN
-	1    4825 4425
-	1    0    0    -1  
+P 4750 3175
+F 0 "R8" V 4830 3175 50  0000 C CNN
+F 1 "10k" V 4750 3175 50  0000 C CNN
+F 2 "modFiles:Resistor_small" V 4680 3175 50  0001 C CNN
+F 3 "" H 4750 3175 50  0001 C CNN
+	1    4750 3175
+	-1   0    0    1   
 $EndComp
 $Comp
 L R R9
 U 1 1 5B561992
-P 5050 4425
-F 0 "R9" V 5130 4425 50  0000 C CNN
-F 1 "10k" V 5050 4425 50  0000 C CNN
-F 2 "modFiles:Resistor_small" V 4980 4425 50  0001 C CNN
-F 3 "" H 5050 4425 50  0001 C CNN
-	1    5050 4425
-	1    0    0    -1  
+P 4525 3175
+F 0 "R9" V 4605 3175 50  0000 C CNN
+F 1 "10k" V 4525 3175 50  0000 C CNN
+F 2 "modFiles:Resistor_small" V 4455 3175 50  0001 C CNN
+F 3 "" H 4525 3175 50  0001 C CNN
+	1    4525 3175
+	-1   0    0    1   
 $EndComp
 $Comp
 L R R10
 U 1 1 5B5619FF
-P 5250 4425
-F 0 "R10" V 5330 4425 50  0000 C CNN
-F 1 "10k" V 5250 4425 50  0000 C CNN
-F 2 "modFiles:Resistor_small" V 5180 4425 50  0001 C CNN
-F 3 "" H 5250 4425 50  0001 C CNN
-	1    5250 4425
-	1    0    0    -1  
-$EndComp
-$Comp
-L +12V #PWR012
-U 1 1 5B561AB3
-P 4950 4625
-F 0 "#PWR012" H 4950 4475 50  0001 C CNN
-F 1 "+12V" H 4950 4765 50  0000 C CNN
-F 2 "" H 4950 4625 50  0001 C CNN
-F 3 "" H 4950 4625 50  0001 C CNN
-	1    4950 4625
+P 4325 3175
+F 0 "R10" V 4405 3175 50  0000 C CNN
+F 1 "10k" V 4325 3175 50  0000 C CNN
+F 2 "modFiles:Resistor_small" V 4255 3175 50  0001 C CNN
+F 3 "" H 4325 3175 50  0001 C CNN
+	1    4325 3175
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	4825 4625 5050 4625
+	4525 2975 4750 2975
 Wire Wire Line
-	4825 4625 4825 4575
+	4750 2975 4750 3025
 Wire Wire Line
-	5050 4625 5050 4575
-Connection ~ 4950 4625
+	4525 2975 4525 3025
+Connection ~ 4625 2975
 $Comp
-L GND #PWR013
+L GND #PWR012
 U 1 1 5B561CAE
-P 5250 4575
-F 0 "#PWR013" H 5250 4325 50  0001 C CNN
-F 1 "GND" H 5250 4425 50  0000 C CNN
-F 2 "" H 5250 4575 50  0001 C CNN
-F 3 "" H 5250 4575 50  0001 C CNN
-	1    5250 4575
-	1    0    0    -1  
+P 4325 3025
+F 0 "#PWR012" H 4325 2775 50  0001 C CNN
+F 1 "GND" H 4325 2875 50  0000 C CNN
+F 2 "" H 4325 3025 50  0001 C CNN
+F 3 "" H 4325 3025 50  0001 C CNN
+	1    4325 3025
+	-1   0    0    1   
 $EndComp
-Text Label 4825 4275 1    60   ~ 0
+Text Label 4750 3325 3    60   ~ 0
 PR1
-Text Label 5050 4275 1    60   ~ 0
+Text Label 4525 3325 3    60   ~ 0
 PR2
 Text Label 2900 4825 0    60   ~ 0
 PR3
@@ -675,4 +649,8 @@ Connection ~ 9025 1900
 Connection ~ 8850 1975
 Wire Wire Line
 	9025 1900 8850 1900
+Wire Wire Line
+	4675 2850 4625 2850
+Wire Wire Line
+	4625 2850 4625 2975
 $EndSCHEMATC
