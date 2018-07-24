@@ -1,0 +1,1537 @@
+EESchema Schematic File Version 2
+LIBS:manualTwoMega-rescue
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:manualTwoMega-cache
+LIBS:RMS_library
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Arduino_Mega2560_Shield U4
+U 1 1 5B244B88
+P 4405 5660
+AR Path="/5B244AEC/5B244B88" Ref="U4"  Part="1" 
+AR Path="/5B255BE2/5B244B88" Ref="U4"  Part="1" 
+AR Path="/5B4A8BBF/5B244B88" Ref="U4"  Part="1" 
+F 0 "U4" V 6805 6210 60  0000 C CNN
+F 1 "Arduino_Mega2560_Shield" V 6705 6260 60  0000 C CNN
+F 2 "modFiles:Arduino_Mega2560_Shield" H 5155 5610 60  0001 C CNN
+F 3 "" H 5155 5610 60  0001 C CNN
+	1    4405 5660
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_01x04_Male J5
+U 1 1 5B244C9D
+P 8665 1700
+AR Path="/5B244AEC/5B244C9D" Ref="J5"  Part="1" 
+AR Path="/5B255BE2/5B244C9D" Ref="J5"  Part="1" 
+AR Path="/5B4A8BBF/5B244C9D" Ref="J5"  Part="1" 
+F 0 "J5" H 8665 1900 50  0000 C CNN
+F 1 "JoyStick" H 8665 1400 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm" H 8665 1700 50  0001 C CNN
+F 3 "" H 8665 1700 50  0001 C CNN
+	1    8665 1700
+	-1   0    0    1   
+$EndComp
+$Comp
+L +5V #PWR024
+U 1 1 5B244D56
+P 8465 1500
+AR Path="/5B244AEC/5B244D56" Ref="#PWR024"  Part="1" 
+AR Path="/5B255BE2/5B244D56" Ref="#PWR63"  Part="1" 
+AR Path="/5B4A8BBF/5B244D56" Ref="#PWR052"  Part="1" 
+F 0 "#PWR052" H 8465 1350 50  0001 C CNN
+F 1 "+5V" H 8465 1640 50  0000 C CNN
+F 2 "" H 8465 1500 50  0001 C CNN
+F 3 "" H 8465 1500 50  0001 C CNN
+	1    8465 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR025
+U 1 1 5B244D7F
+P 8230 1635
+AR Path="/5B244AEC/5B244D7F" Ref="#PWR025"  Part="1" 
+AR Path="/5B255BE2/5B244D7F" Ref="#PWR61"  Part="1" 
+AR Path="/5B4A8BBF/5B244D7F" Ref="#PWR053"  Part="1" 
+F 0 "#PWR053" H 8230 1385 50  0001 C CNN
+F 1 "GND" H 8230 1485 50  0000 C CNN
+F 2 "" H 8230 1635 50  0001 C CNN
+F 3 "" H 8230 1635 50  0001 C CNN
+	1    8230 1635
+	1    0    0    -1  
+$EndComp
+Text Label 6855 3960 0    60   ~ 0
+RX2
+Text Label 6855 3860 0    60   ~ 0
+TX2
+Text Label 8465 1800 2    60   ~ 0
+TX2
+Text Label 8465 1700 2    60   ~ 0
+RX2
+$Comp
+L DB15_Female J6
+U 1 1 5B245017
+P 8045 3490
+AR Path="/5B244AEC/5B245017" Ref="J6"  Part="1" 
+AR Path="/5B255BE2/5B245017" Ref="J6"  Part="1" 
+AR Path="/5B4A8BBF/5B245017" Ref="J6"  Part="1" 
+F 0 "J6" H 8065 4340 50  0000 C CNN
+F 1 "Switches&Motors" H 8045 2615 50  0000 C CNN
+F 2 "modFiles:DB15" H 8045 3490 50  0001 C CNN
+F 3 "" H 8045 3490 50  0001 C CNN
+	1    8045 3490
+	1    0    0    -1  
+$EndComp
+Text Label 6855 2060 0    60   ~ 0
+OC1B
+Text Label 6855 2160 0    60   ~ 0
+B5
+Text Label 6855 1960 0    60   ~ 0
+OC1C
+Text Label 6855 2260 0    60   ~ 0
+B4
+Text Label 6855 2360 0    60   ~ 0
+H6
+Text Label 6855 2460 0    60   ~ 0
+H5
+Text Label 6855 2710 0    60   ~ 0
+H4
+Text Label 6855 2810 0    60   ~ 0
+H3
+Text Label 6855 2910 0    60   ~ 0
+M_E3
+Text Label 6855 3010 0    60   ~ 0
+M_G5
+Text Label 7745 4090 2    60   ~ 0
+INT0
+Text Label 7745 4190 2    60   ~ 0
+INT1
+Text Label 7745 3490 2    60   ~ 0
+INT4
+Text Label 4905 5860 3    60   ~ 0
+mMOSI
+Text Label 4805 4610 1    60   ~ 0
+mSCK
+Text Label 6855 3110 0    60   ~ 0
+INT4
+Text Label 6855 3210 0    60   ~ 0
+INT5
+Text Label 6855 3760 0    60   ~ 0
+RX3
+Text Label 6855 4360 0    60   ~ 0
+INT0
+Text Label 6855 4260 0    60   ~ 0
+INT1
+Text Label 6855 4160 0    60   ~ 0
+INT2
+Text Label 6855 4060 0    60   ~ 0
+INT3
+Text Label 4205 3710 2    60   ~ 0
+K1
+Text Label 4205 3810 2    60   ~ 0
+K2
+Text Label 4205 3910 2    60   ~ 0
+K3
+Text Label 4205 4010 2    60   ~ 0
+K4
+Text Label 4205 4110 2    60   ~ 0
+K5
+Text Label 4205 4210 2    60   ~ 0
+K6
+Text Label 4205 4310 2    60   ~ 0
+K7
+Text Label 5205 5860 3    60   ~ 0
+OC5B
+Text Label 3575 3825 0    60   ~ 0
+F7
+Text Label 3575 3625 0    60   ~ 0
+F6
+Text Label 3575 3425 0    60   ~ 0
+F5
+Text Label 4205 3060 2    60   ~ 0
+F4
+Text HLabel 7055 3760 2    60   Input ~ 0
+RX
+Text HLabel 7055 3660 2    60   Input ~ 0
+TX
+Text Label 4205 1910 2    60   ~ 0
+RESET2
+Text Label 5205 4610 1    60   ~ 0
+OC5C
+$Comp
+L R R23
+U 1 1 5B271906
+P 8600 4500
+AR Path="/5B255BE2/5B271906" Ref="R23"  Part="1" 
+AR Path="/5B4A8BBF/5B271906" Ref="R23"  Part="1" 
+F 0 "R23" V 8680 4500 50  0000 C CNN
+F 1 "10K" V 8600 4500 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 8530 4500 50  0001 C CNN
+F 3 "" H 8600 4500 50  0001 C CNN
+	1    8600 4500
+	0    1    1    0   
+$EndComp
+$Comp
+L R R24
+U 1 1 5B271941
+P 8600 4600
+AR Path="/5B255BE2/5B271941" Ref="R24"  Part="1" 
+AR Path="/5B4A8BBF/5B271941" Ref="R24"  Part="1" 
+F 0 "R24" V 8680 4600 50  0000 C CNN
+F 1 "10K" V 8600 4600 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 8530 4600 50  0001 C CNN
+F 3 "" H 8600 4600 50  0001 C CNN
+	1    8600 4600
+	0    1    1    0   
+$EndComp
+$Comp
+L +5V #PWR62
+U 1 1 5B271B47
+P 8305 4700
+AR Path="/5B255BE2/5B271B47" Ref="#PWR62"  Part="1" 
+AR Path="/5B4A8BBF/5B271B47" Ref="#PWR054"  Part="1" 
+F 0 "#PWR054" H 8305 4550 50  0001 C CNN
+F 1 "+5V" H 8305 4840 50  0000 C CNN
+F 2 "" H 8305 4700 50  0001 C CNN
+F 3 "" H 8305 4700 50  0001 C CNN
+	1    8305 4700
+	1    0    0    -1  
+$EndComp
+Text Label 8750 4600 0    60   ~ 0
+INT5
+Text Label 7745 3290 2    60   ~ 0
+M_G5
+Text Label 7745 3090 2    60   ~ 0
+M_E3
+$Comp
+L +5V #PWR026
+U 1 1 5B24618E
+P 7745 3690
+AR Path="/5B244AEC/5B24618E" Ref="#PWR026"  Part="1" 
+AR Path="/5B255BE2/5B24618E" Ref="#PWR59"  Part="1" 
+AR Path="/5B4A8BBF/5B24618E" Ref="#PWR055"  Part="1" 
+F 0 "#PWR055" H 7745 3540 50  0001 C CNN
+F 1 "+5V" H 7745 3830 50  0000 C CNN
+F 2 "" H 7745 3690 50  0001 C CNN
+F 3 "" H 7745 3690 50  0001 C CNN
+	1    7745 3690
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D8
+U 1 1 5B278819
+P 10100 5645
+AR Path="/5B255BE2/5B278819" Ref="D8"  Part="1" 
+AR Path="/5B4A8BBF/5B278819" Ref="D8"  Part="1" 
+F 0 "D8" H 10100 5745 50  0000 C CNN
+F 1 "LED" H 10100 5545 50  0000 C CNN
+F 2 "modFiles:Diode_Rectangular" H 10100 5645 50  0001 C CNN
+F 3 "" H 10100 5645 50  0001 C CNN
+	1    10100 5645
+	-1   0    0    1   
+$EndComp
+$Comp
+L LED D9
+U 1 1 5B278899
+P 10105 5765
+AR Path="/5B255BE2/5B278899" Ref="D9"  Part="1" 
+AR Path="/5B4A8BBF/5B278899" Ref="D9"  Part="1" 
+F 0 "D9" H 10105 5865 50  0000 C CNN
+F 1 "LED" H 10105 5665 50  0000 C CNN
+F 2 "modFiles:Diode_Rectangular" H 10105 5765 50  0001 C CNN
+F 3 "" H 10105 5765 50  0001 C CNN
+	1    10105 5765
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R29
+U 1 1 5B278F40
+P 9800 5645
+AR Path="/5B255BE2/5B278F40" Ref="R29"  Part="1" 
+AR Path="/5B4A8BBF/5B278F40" Ref="R29"  Part="1" 
+F 0 "R29" V 9880 5645 50  0000 C CNN
+F 1 "10K" V 9800 5645 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 9730 5645 50  0001 C CNN
+F 3 "" H 9800 5645 50  0001 C CNN
+	1    9800 5645
+	0    1    1    0   
+$EndComp
+$Comp
+L R R30
+U 1 1 5B278FD1
+P 9805 5765
+AR Path="/5B255BE2/5B278FD1" Ref="R30"  Part="1" 
+AR Path="/5B4A8BBF/5B278FD1" Ref="R30"  Part="1" 
+F 0 "R30" V 9885 5765 50  0000 C CNN
+F 1 "10K" V 9805 5765 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 9735 5765 50  0001 C CNN
+F 3 "" H 9805 5765 50  0001 C CNN
+	1    9805 5765
+	0    1    1    0   
+$EndComp
+Text Label 10250 5645 0    60   ~ 0
+INT2
+Text Label 10255 5765 0    60   ~ 0
+INT3
+Text Label 8750 4500 0    60   ~ 0
+INT4
+Text Label 5405 5860 3    60   ~ 0
+G0
+Text Label 5505 5860 3    60   ~ 0
+G2
+Text Label 5605 5860 3    60   ~ 0
+C0
+Text Label 5705 5860 3    60   ~ 0
+C2
+Text Label 5805 5860 3    60   ~ 0
+C4
+Text Label 5905 5860 3    60   ~ 0
+C6
+Text Label 6005 5860 3    60   ~ 0
+A7
+Text Label 6205 5860 3    60   ~ 0
+A3
+Text Label 6305 5860 3    60   ~ 0
+A1
+Text Label 6305 4610 1    60   ~ 0
+A0
+Text Label 6205 4610 1    60   ~ 0
+A2
+Text Label 4205 3610 2    60   ~ 0
+K0
+Text Label 4205 2960 2    60   ~ 0
+F3
+Text Label 4205 2860 2    60   ~ 0
+F2
+Text Label 4205 2760 2    60   ~ 0
+F1
+$Comp
+L +5V #PWR66
+U 1 1 5B27992A
+P 9455 5545
+AR Path="/5B255BE2/5B27992A" Ref="#PWR66"  Part="1" 
+AR Path="/5B4A8BBF/5B27992A" Ref="#PWR056"  Part="1" 
+F 0 "#PWR056" H 9455 5395 50  0001 C CNN
+F 1 "+5V" H 9455 5685 50  0000 C CNN
+F 2 "" H 9455 5545 50  0001 C CNN
+F 3 "" H 9455 5545 50  0001 C CNN
+	1    9455 5545
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_01x04_Male J19
+U 1 1 5B2BEDE5
+P 10540 1385
+AR Path="/5B255BE2/5B2BEDE5" Ref="J19"  Part="1" 
+AR Path="/5B4A8BBF/5B2BEDE5" Ref="J19"  Part="1" 
+F 0 "J19" H 10540 1585 50  0000 C CNN
+F 1 "JoyStick" H 10540 1085 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm" H 10540 1385 50  0001 C CNN
+F 3 "" H 10540 1385 50  0001 C CNN
+	1    10540 1385
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR71
+U 1 1 5B2BEFD3
+P 10340 1285
+AR Path="/5B255BE2/5B2BEFD3" Ref="#PWR71"  Part="1" 
+AR Path="/5B4A8BBF/5B2BEFD3" Ref="#PWR057"  Part="1" 
+F 0 "#PWR057" H 10340 1035 50  0001 C CNN
+F 1 "GND" H 10340 1135 50  0000 C CNN
+F 2 "" H 10340 1285 50  0001 C CNN
+F 3 "" H 10340 1285 50  0001 C CNN
+	1    10340 1285
+	1    0    0    -1  
+$EndComp
+Text Label 10340 1385 2    60   ~ 0
+RX2
+Text Label 10340 1485 2    60   ~ 0
+TX2
+$Comp
+L GND #PWR60
+U 1 1 5B2CFD35
+P 7745 3890
+AR Path="/5B255BE2/5B2CFD35" Ref="#PWR60"  Part="1" 
+AR Path="/5B4A8BBF/5B2CFD35" Ref="#PWR058"  Part="1" 
+F 0 "#PWR058" H 7745 3640 50  0001 C CNN
+F 1 "GND" H 7745 3740 50  0000 C CNN
+F 2 "" H 7745 3890 50  0001 C CNN
+F 3 "" H 7745 3890 50  0001 C CNN
+	1    7745 3890
+	1    0    0    -1  
+$EndComp
+Text Label 4205 3160 2    60   ~ 0
+F5
+Text Label 4205 3260 2    60   ~ 0
+F6
+Text Label 4205 3360 2    60   ~ 0
+F7
+Text Label 3575 3225 0    60   ~ 0
+F4
+Text Label 3575 2525 0    60   ~ 0
+F3
+Text Label 3575 2425 0    60   ~ 0
+F2
+Text Label 3575 2625 0    60   ~ 0
+F1
+Text Label 4205 2660 2    60   ~ 0
+F0
+Text Label 3575 2825 0    60   ~ 0
+F0
+$Comp
+L +12V #PWR46
+U 1 1 5B379378
+P 3575 3525
+AR Path="/5B255BE2/5B379378" Ref="#PWR46"  Part="1" 
+AR Path="/5B4A8BBF/5B379378" Ref="#PWR059"  Part="1" 
+F 0 "#PWR059" H 3575 3375 50  0001 C CNN
+F 1 "+12V" H 3575 3665 50  0000 C CNN
+F 2 "" H 3575 3525 50  0001 C CNN
+F 3 "" H 3575 3525 50  0001 C CNN
+	1    3575 3525
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR47
+U 1 1 5B3793C4
+P 3575 3725
+AR Path="/5B255BE2/5B3793C4" Ref="#PWR47"  Part="1" 
+AR Path="/5B4A8BBF/5B3793C4" Ref="#PWR060"  Part="1" 
+F 0 "#PWR060" H 3575 3475 50  0001 C CNN
+F 1 "GND" H 3575 3575 50  0000 C CNN
+F 2 "" H 3575 3725 50  0001 C CNN
+F 3 "" H 3575 3725 50  0001 C CNN
+	1    3575 3725
+	1    0    0    -1  
+$EndComp
+Text HLabel 5105 5860 3    60   Input ~ 0
+digitalSignal
+Text HLabel 2210 2955 0    60   Input ~ 0
+RESET
+Text Label 7745 3590 2    60   ~ 0
+OC1B
+Text Label 7745 3390 2    60   ~ 0
+OC1C
+Text Label 3575 2725 0    60   ~ 0
+INT5
+Text Label 6105 4610 1    60   ~ 0
+A4
+Text Label 6005 4610 1    60   ~ 0
+A6
+Text Label 7745 3790 2    60   ~ 0
+INT3
+Text Label 3575 2925 0    60   ~ 0
+K1
+$Comp
+L R R12
+U 1 1 5B39222D
+P 3760 3100
+AR Path="/5B255BE2/5B39222D" Ref="R12"  Part="1" 
+AR Path="/5B4A8BBF/5B39222D" Ref="R12"  Part="1" 
+F 0 "R12" V 3840 3100 50  0000 C CNN
+F 1 "R" V 3760 3100 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 3690 3100 50  0001 C CNN
+F 3 "" H 3760 3100 50  0001 C CNN
+	1    3760 3100
+	1    0    0    -1  
+$EndComp
+Text Label 3760 2950 0    60   ~ 0
+K1
+$Comp
+L +5V #PWR49
+U 1 1 5B39234C
+P 3760 3250
+AR Path="/5B255BE2/5B39234C" Ref="#PWR49"  Part="1" 
+AR Path="/5B4A8BBF/5B39234C" Ref="#PWR061"  Part="1" 
+F 0 "#PWR061" H 3760 3100 50  0001 C CNN
+F 1 "+5V" H 3760 3390 50  0000 C CNN
+F 2 "" H 3760 3250 50  0001 C CNN
+F 3 "" H 3760 3250 50  0001 C CNN
+	1    3760 3250
+	0    1    1    0   
+$EndComp
+Text Label 7745 3190 2    60   ~ 0
+B5
+Text Label 7745 2990 2    60   ~ 0
+B4
+Text Label 7745 2790 2    60   ~ 0
+H6
+Text Label 7745 2890 2    60   ~ 0
+H5
+$Comp
+L R R33
+U 1 1 5B396F34
+P 9386 4676
+AR Path="/5B255BE2/5B396F34" Ref="R33"  Part="1" 
+AR Path="/5B4A8BBF/5B396F34" Ref="R33"  Part="1" 
+F 0 "R33" V 9466 4676 50  0000 C CNN
+F 1 "10K" V 9386 4676 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 9316 4676 50  0001 C CNN
+F 3 "" H 9386 4676 50  0001 C CNN
+	1    9386 4676
+	0    1    1    0   
+$EndComp
+$Comp
+L +5V #PWR65
+U 1 1 5B39714E
+P 9236 4676
+AR Path="/5B255BE2/5B39714E" Ref="#PWR65"  Part="1" 
+AR Path="/5B4A8BBF/5B39714E" Ref="#PWR062"  Part="1" 
+F 0 "#PWR062" H 9236 4526 50  0001 C CNN
+F 1 "+5V" H 9236 4816 50  0000 C CNN
+F 2 "" H 9236 4676 50  0001 C CNN
+F 3 "" H 9236 4676 50  0001 C CNN
+	1    9236 4676
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR67
+U 1 1 5B3971A5
+P 9536 4676
+AR Path="/5B255BE2/5B3971A5" Ref="#PWR67"  Part="1" 
+AR Path="/5B4A8BBF/5B3971A5" Ref="#PWR063"  Part="1" 
+F 0 "#PWR063" H 9536 4526 50  0001 C CNN
+F 1 "+5V" H 9536 4816 50  0000 C CNN
+F 2 "" H 9536 4676 50  0001 C CNN
+F 3 "" H 9536 4676 50  0001 C CNN
+	1    9536 4676
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_01x09 J3
+U 1 1 5B3864EA
+P 7625 5745
+AR Path="/5B255BE2/5B3864EA" Ref="J3"  Part="1" 
+AR Path="/5B4A8BBF/5B3864EA" Ref="J3"  Part="1" 
+F 0 "J3" H 7625 6245 50  0000 C CNN
+F 1 "Prashant" H 7625 5245 50  0000 C CNN
+F 2 "modFiles:ledstrip" H 7625 5745 50  0001 C CNN
+F 3 "" H 7625 5745 50  0001 C CNN
+	1    7625 5745
+	1    0    0    -1  
+$EndComp
+Text Label 7425 5445 2    60   ~ 0
+12V_1
+$Comp
+L GND #PWR57
+U 1 1 5B3867CD
+P 7425 5345
+AR Path="/5B255BE2/5B3867CD" Ref="#PWR57"  Part="1" 
+AR Path="/5B4A8BBF/5B3867CD" Ref="#PWR064"  Part="1" 
+F 0 "#PWR064" H 7425 5095 50  0001 C CNN
+F 1 "GND" H 7425 5195 50  0000 C CNN
+F 2 "" H 7425 5345 50  0001 C CNN
+F 3 "" H 7425 5345 50  0001 C CNN
+	1    7425 5345
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_01x06 J8
+U 1 1 5B3873E7
+P 7555 4675
+AR Path="/5B255BE2/5B3873E7" Ref="J8"  Part="1" 
+AR Path="/5B4A8BBF/5B3873E7" Ref="J8"  Part="1" 
+F 0 "J8" H 7555 4975 50  0000 C CNN
+F 1 "Sampada" H 7555 4275 50  0000 C CNN
+F 2 "modFiles:Pneumetic" H 7555 4675 50  0001 C CNN
+F 3 "" H 7555 4675 50  0001 C CNN
+	1    7555 4675
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR56
+U 1 1 5B387A24
+P 7355 4975
+AR Path="/5B255BE2/5B387A24" Ref="#PWR56"  Part="1" 
+AR Path="/5B4A8BBF/5B387A24" Ref="#PWR065"  Part="1" 
+F 0 "#PWR065" H 7355 4725 50  0001 C CNN
+F 1 "GND" H 7355 4825 50  0000 C CNN
+F 2 "" H 7355 4975 50  0001 C CNN
+F 3 "" H 7355 4975 50  0001 C CNN
+	1    7355 4975
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_01x02 J4
+U 1 1 5B387ECB
+P 1550 955
+AR Path="/5B255BE2/5B387ECB" Ref="J4"  Part="1" 
+AR Path="/5B4A8BBF/5B387ECB" Ref="J4"  Part="1" 
+F 0 "J4" H 1550 1055 50  0000 C CNN
+F 1 "PWR2" H 1550 755 50  0000 C CNN
+F 2 "modFiles:Solar_Connector" H 1550 955 50  0001 C CNN
+F 3 "" H 1550 955 50  0001 C CNN
+	1    1550 955 
+	1    0    0    -1  
+$EndComp
+Text Label 1095 1275 2    60   ~ 0
+12V_1
+$Comp
+L GND #PWR42
+U 1 1 5B38813F
+P 1350 1055
+AR Path="/5B255BE2/5B38813F" Ref="#PWR42"  Part="1" 
+AR Path="/5B4A8BBF/5B38813F" Ref="#PWR066"  Part="1" 
+F 0 "#PWR066" H 1350 805 50  0001 C CNN
+F 1 "GND" H 1350 905 50  0000 C CNN
+F 2 "" H 1350 1055 50  0001 C CNN
+F 3 "" H 1350 1055 50  0001 C CNN
+	1    1350 1055
+	1    0    0    -1  
+$EndComp
+Text Label 7355 4875 2    60   ~ 0
+A0
+Text Label 7355 4775 2    60   ~ 0
+A2
+Text Label 7355 4675 2    60   ~ 0
+A4
+Text Label 7355 4575 2    60   ~ 0
+A6
+Text Label 5905 4610 1    60   ~ 0
+C7
+Text Label 7355 4475 2    60   ~ 0
+C7
+Text Label 6105 5860 3    60   ~ 0
+A5
+Text Label 7425 5645 2    60   ~ 0
+C6
+Text Label 7425 5745 2    60   ~ 0
+C4
+Text Label 7425 5845 2    60   ~ 0
+C2
+Text Label 7425 5945 2    60   ~ 0
+C0
+Text Label 7425 6045 2    60   ~ 0
+G2
+Text Label 7425 6145 2    60   ~ 0
+G0
+Text Label 5405 4610 0    60   ~ 0
+G1
+Text Label 7425 5545 2    60   ~ 0
+G1
+$Comp
+L R R38
+U 1 1 5B39321E
+P 8795 4025
+AR Path="/5B255BE2/5B39321E" Ref="R38"  Part="1" 
+AR Path="/5B4A8BBF/5B39321E" Ref="R38"  Part="1" 
+F 0 "R38" V 8875 4025 50  0000 C CNN
+F 1 "10K" V 8795 4025 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 8725 4025 50  0001 C CNN
+F 3 "" H 8795 4025 50  0001 C CNN
+	1    8795 4025
+	0    1    1    0   
+$EndComp
+$Comp
+L R R36
+U 1 1 5B393357
+P 8795 3795
+AR Path="/5B255BE2/5B393357" Ref="R36"  Part="1" 
+AR Path="/5B4A8BBF/5B393357" Ref="R36"  Part="1" 
+F 0 "R36" V 8875 3795 50  0000 C CNN
+F 1 "10K" V 8795 3795 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 8725 3795 50  0001 C CNN
+F 3 "" H 8795 3795 50  0001 C CNN
+	1    8795 3795
+	0    1    1    0   
+$EndComp
+$Comp
+L R R35
+U 1 1 5B393409
+P 8795 3680
+AR Path="/5B255BE2/5B393409" Ref="R35"  Part="1" 
+AR Path="/5B4A8BBF/5B393409" Ref="R35"  Part="1" 
+F 0 "R35" V 8875 3680 50  0000 C CNN
+F 1 "10K" V 8795 3680 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 8725 3680 50  0001 C CNN
+F 3 "" H 8795 3680 50  0001 C CNN
+	1    8795 3680
+	0    1    1    0   
+$EndComp
+$Comp
+L R R34
+U 1 1 5B3934D2
+P 8795 3580
+AR Path="/5B255BE2/5B3934D2" Ref="R34"  Part="1" 
+AR Path="/5B4A8BBF/5B3934D2" Ref="R34"  Part="1" 
+F 0 "R34" V 8875 3580 50  0000 C CNN
+F 1 "10K" V 8795 3580 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 8725 3580 50  0001 C CNN
+F 3 "" H 8795 3580 50  0001 C CNN
+	1    8795 3580
+	0    1    1    0   
+$EndComp
+$Comp
+L R R39
+U 1 1 5B3936D8
+P 8795 4170
+AR Path="/5B255BE2/5B3936D8" Ref="R39"  Part="1" 
+AR Path="/5B4A8BBF/5B3936D8" Ref="R39"  Part="1" 
+F 0 "R39" V 8875 4170 50  0000 C CNN
+F 1 "10K" V 8795 4170 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 8725 4170 50  0001 C CNN
+F 3 "" H 8795 4170 50  0001 C CNN
+	1    8795 4170
+	0    1    1    0   
+$EndComp
+$Comp
+L R R37
+U 1 1 5B393753
+P 8795 3910
+AR Path="/5B255BE2/5B393753" Ref="R37"  Part="1" 
+AR Path="/5B4A8BBF/5B393753" Ref="R37"  Part="1" 
+F 0 "R37" V 8875 3910 50  0000 C CNN
+F 1 "10K" V 8795 3910 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 8725 3910 50  0001 C CNN
+F 3 "" H 8795 3910 50  0001 C CNN
+	1    8795 3910
+	0    1    1    0   
+$EndComp
+$Comp
+L +5V #PWR64
+U 1 1 5B393F87
+P 8645 3580
+AR Path="/5B255BE2/5B393F87" Ref="#PWR64"  Part="1" 
+AR Path="/5B4A8BBF/5B393F87" Ref="#PWR067"  Part="1" 
+F 0 "#PWR067" H 8645 3430 50  0001 C CNN
+F 1 "+5V" H 8645 3720 50  0000 C CNN
+F 2 "" H 8645 3580 50  0001 C CNN
+F 3 "" H 8645 3580 50  0001 C CNN
+	1    8645 3580
+	1    0    0    -1  
+$EndComp
+Text Label 8945 3580 0    60   ~ 0
+H6
+Text Label 8945 3680 0    60   ~ 0
+H5
+Text Label 8945 3795 0    60   ~ 0
+B4
+Text Label 8945 3910 0    60   ~ 0
+B5
+Text Label 8945 4025 0    60   ~ 0
+OC1C
+Text Label 8945 4170 0    60   ~ 0
+OC1B
+$Comp
+L Conn_02x07_Counter_Clockwise J18
+U 1 1 5B3957F7
+P 2405 6510
+AR Path="/5B255BE2/5B3957F7" Ref="J18"  Part="1" 
+AR Path="/5B4A8BBF/5B3957F7" Ref="J18"  Part="1" 
+F 0 "J18" H 2455 6910 50  0000 C CNN
+F 1 "Shld" H 2455 6110 50  0000 C CNN
+F 2 "modFiles:L293_Shield" H 2405 6510 50  0001 C CNN
+F 3 "" H 2405 6510 50  0001 C CNN
+	1    2405 6510
+	0    -1   -1   0   
+$EndComp
+Text Label 2205 6710 3    60   ~ 0
+OC5C
+Text Label 2305 6710 3    60   ~ 0
+A1
+Text Label 2405 6710 3    60   ~ 0
+A3
+Text Label 2705 6710 3    60   ~ 0
+OC5B
+Text Label 2605 6710 3    60   ~ 0
+A5
+Text Label 2505 6710 3    60   ~ 0
+A7
+$Comp
+L Fuse F3
+U 1 1 5B38D3A2
+P 1095 1125
+AR Path="/5B255BE2/5B38D3A2" Ref="F3"  Part="1" 
+AR Path="/5B4A8BBF/5B38D3A2" Ref="F3"  Part="1" 
+F 0 "F3" V 1175 1125 50  0000 C CNN
+F 1 "Fuse" V 1020 1125 50  0000 C CNN
+F 2 "modFiles:Fuse_Holder" V 1025 1125 50  0001 C CNN
+F 3 "" H 1095 1125 50  0001 C CNN
+	1    1095 1125
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R40
+U 1 1 5B38E298
+P 3825 1285
+AR Path="/5B255BE2/5B38E298" Ref="R40"  Part="1" 
+AR Path="/5B4A8BBF/5B38E298" Ref="R40"  Part="1" 
+F 0 "R40" V 3905 1285 50  0000 C CNN
+F 1 "R" V 3825 1285 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 3755 1285 50  0001 C CNN
+F 3 "" H 3825 1285 50  0001 C CNN
+	1    3825 1285
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR50
+U 1 1 5B38E90C
+P 4125 1435
+AR Path="/5B255BE2/5B38E90C" Ref="#PWR50"  Part="1" 
+AR Path="/5B4A8BBF/5B38E90C" Ref="#PWR068"  Part="1" 
+F 0 "#PWR068" H 4125 1185 50  0001 C CNN
+F 1 "GND" H 4125 1285 50  0000 C CNN
+F 2 "" H 4125 1435 50  0001 C CNN
+F 3 "" H 4125 1435 50  0001 C CNN
+	1    4125 1435
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D1
+U 1 1 5B3901B8
+P 3975 1435
+AR Path="/5B255BE2/5B3901B8" Ref="D1"  Part="1" 
+AR Path="/5B4A8BBF/5B3901B8" Ref="D1"  Part="1" 
+F 0 "D1" H 3975 1535 50  0000 C CNN
+F 1 "LED" H 3975 1335 50  0000 C CNN
+F 2 "modFiles:Led_3mm" H 3975 1435 50  0001 C CNN
+F 3 "" H 3975 1435 50  0001 C CNN
+	1    3975 1435
+	-1   0    0    1   
+$EndComp
+$Comp
+L Conn_01x02 J23
+U 1 1 5B390921
+P 2820 1220
+AR Path="/5B255BE2/5B390921" Ref="J23"  Part="1" 
+AR Path="/5B4A8BBF/5B390921" Ref="J23"  Part="1" 
+F 0 "J23" H 2820 1320 50  0000 C CNN
+F 1 "smpda_PWr" H 2820 1020 50  0000 C CNN
+F 2 "modFiles:SiliconPad" H 2820 1220 50  0001 C CNN
+F 3 "" H 2820 1220 50  0001 C CNN
+	1    2820 1220
+	1    0    0    -1  
+$EndComp
+Text Label 2620 1220 2    60   ~ 0
+12V_1
+$Comp
+L GND #PWR45
+U 1 1 5B390EC5
+P 2620 1320
+AR Path="/5B255BE2/5B390EC5" Ref="#PWR45"  Part="1" 
+AR Path="/5B4A8BBF/5B390EC5" Ref="#PWR069"  Part="1" 
+F 0 "#PWR069" H 2620 1070 50  0001 C CNN
+F 1 "GND" H 2620 1170 50  0000 C CNN
+F 2 "" H 2620 1320 50  0001 C CNN
+F 3 "" H 2620 1320 50  0001 C CNN
+	1    2620 1320
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_01x06 J24
+U 1 1 5B393738
+P 1510 5015
+AR Path="/5B255BE2/5B393738" Ref="J24"  Part="1" 
+AR Path="/5B4A8BBF/5B393738" Ref="J24"  Part="1" 
+F 0 "J24" H 1510 5315 50  0000 C CNN
+F 1 "switches" H 1510 4615 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x06_Pitch2.54mm" H 1510 5015 50  0001 C CNN
+F 3 "" H 1510 5015 50  0001 C CNN
+	1    1510 5015
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9595 5580 9455 5580
+Wire Wire Line
+	9455 5580 9455 5545
+Wire Wire Line
+	9595 5645 9650 5645
+Wire Wire Line
+	9595 5765 9655 5765
+Wire Wire Line
+	8420 4500 8450 4500
+Wire Wire Line
+	4125 2410 4205 2410
+Wire Wire Line
+	6855 3660 7055 3660
+Wire Wire Line
+	6855 3760 7055 3760
+Wire Wire Line
+	8420 4800 8450 4800
+Wire Wire Line
+	8450 4600 8420 4600
+Wire Wire Line
+	8230 1635 8230 1600
+Wire Wire Line
+	8230 1600 8465 1600
+Wire Wire Line
+	8645 3580 8645 4170
+Connection ~ 8645 3680
+Connection ~ 8645 3795
+Connection ~ 8645 3910
+Connection ~ 8645 4025
+Wire Wire Line
+	1350 955  1095 955 
+Wire Wire Line
+	1095 955  1095 975 
+Connection ~ 8420 4600
+Wire Wire Line
+	8420 4500 8420 4800
+$Comp
+L R R26
+U 1 1 5B271F06
+P 8600 4800
+AR Path="/5B255BE2/5B271F06" Ref="R26"  Part="1" 
+AR Path="/5B4A8BBF/5B271F06" Ref="R26"  Part="1" 
+F 0 "R26" V 8680 4800 50  0000 C CNN
+F 1 "10K" V 8600 4800 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 8530 4800 50  0001 C CNN
+F 3 "" H 8600 4800 50  0001 C CNN
+	1    8600 4800
+	0    1    1    0   
+$EndComp
+Text Label 8750 4800 0    60   ~ 0
+M_E3
+Wire Wire Line
+	8305 4700 8450 4700
+Connection ~ 8420 4700
+$Comp
+L R R25
+U 1 1 5B271983
+P 8600 4700
+AR Path="/5B255BE2/5B271983" Ref="R25"  Part="1" 
+AR Path="/5B4A8BBF/5B271983" Ref="R25"  Part="1" 
+F 0 "R25" V 8680 4700 50  0000 C CNN
+F 1 "10K" V 8600 4700 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 8530 4700 50  0001 C CNN
+F 3 "" H 8600 4700 50  0001 C CNN
+	1    8600 4700
+	0    1    1    0   
+$EndComp
+Text Label 8750 4700 0    60   ~ 0
+M_G5
+$Comp
+L GND #PWR43
+U 1 1 5B395CED
+P 2105 6710
+AR Path="/5B255BE2/5B395CED" Ref="#PWR43"  Part="1" 
+AR Path="/5B4A8BBF/5B395CED" Ref="#PWR070"  Part="1" 
+F 0 "#PWR070" H 2105 6460 50  0001 C CNN
+F 1 "GND" H 2105 6560 50  0000 C CNN
+F 2 "" H 2105 6710 50  0001 C CNN
+F 3 "" H 2105 6710 50  0001 C CNN
+	1    2105 6710
+	0    1    1    0   
+$EndComp
+$Comp
+L +5V #PWR41
+U 1 1 5B398A29
+P 1310 4815
+AR Path="/5B255BE2/5B398A29" Ref="#PWR41"  Part="1" 
+AR Path="/5B4A8BBF/5B398A29" Ref="#PWR071"  Part="1" 
+F 0 "#PWR071" H 1310 4665 50  0001 C CNN
+F 1 "+5V" H 1310 4955 50  0000 C CNN
+F 2 "" H 1310 4815 50  0001 C CNN
+F 3 "" H 1310 4815 50  0001 C CNN
+	1    1310 4815
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_01x07_Female J25
+U 1 1 5B398C8B
+P 2270 5025
+AR Path="/5B255BE2/5B398C8B" Ref="J25"  Part="1" 
+AR Path="/5B4A8BBF/5B398C8B" Ref="J25"  Part="1" 
+F 0 "J25" H 2270 5425 50  0000 C CNN
+F 1 "Switches1" H 2270 4625 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x07_Pitch2.54mm" H 2270 5025 50  0001 C CNN
+F 3 "" H 2270 5025 50  0001 C CNN
+	1    2270 5025
+	1    0    0    -1  
+$EndComp
+Text Label 2070 4825 2    60   ~ 0
+OC1C
+Text Label 2070 4925 2    60   ~ 0
+OC1B
+Text Label 2070 5325 2    60   ~ 0
+H5
+Text Label 2070 5225 2    60   ~ 0
+H6
+Text Label 2070 5025 2    60   ~ 0
+B5
+Text Label 2070 5125 2    60   ~ 0
+B4
+Text Label 6855 1860 0    60   ~ 0
+GND5
+Text Label 2070 4725 2    60   ~ 0
+GND5
+Wire Wire Line
+	1310 4815 1310 5315
+Connection ~ 1310 4915
+Connection ~ 1310 5015
+Connection ~ 1310 5115
+Connection ~ 1310 5215
+Text Label 4905 4610 1    60   ~ 0
+mMiso
+Text Label 4315 4630 0    60   ~ 0
+mSCK
+Text Label 4315 4730 0    60   ~ 0
+mMiso
+Text Label 4315 4830 0    60   ~ 0
+mMOSI
+$Comp
+L Conn_01x02 J28
+U 1 1 5B39EA85
+P 2475 1640
+AR Path="/5B255BE2/5B39EA85" Ref="J28"  Part="1" 
+AR Path="/5B4A8BBF/5B39EA85" Ref="J28"  Part="1" 
+F 0 "J28" H 2475 1740 50  0000 C CNN
+F 1 "smpda_PWr" H 2475 1440 50  0000 C CNN
+F 2 "modFiles:SiliconPad" H 2475 1640 50  0001 C CNN
+F 3 "" H 2475 1640 50  0001 C CNN
+	1    2475 1640
+	1    0    0    -1  
+$EndComp
+Text Label 2275 1640 2    60   ~ 0
+12V_1
+$Comp
+L GND #PWR44
+U 1 1 5B39EBAD
+P 2275 1740
+AR Path="/5B255BE2/5B39EBAD" Ref="#PWR44"  Part="1" 
+AR Path="/5B4A8BBF/5B39EBAD" Ref="#PWR072"  Part="1" 
+F 0 "#PWR072" H 2275 1490 50  0001 C CNN
+F 1 "GND" H 2275 1590 50  0000 C CNN
+F 2 "" H 2275 1740 50  0001 C CNN
+F 3 "" H 2275 1740 50  0001 C CNN
+	1    2275 1740
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R43
+U 1 1 5B39ED80
+P 4040 890
+AR Path="/5B255BE2/5B39ED80" Ref="R43"  Part="1" 
+AR Path="/5B4A8BBF/5B39ED80" Ref="R43"  Part="1" 
+F 0 "R43" V 4120 890 50  0000 C CNN
+F 1 "R" V 4040 890 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 3970 890 50  0001 C CNN
+F 3 "" H 4040 890 50  0001 C CNN
+	1    4040 890 
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D15
+U 1 1 5B39EE39
+P 4190 1040
+AR Path="/5B255BE2/5B39EE39" Ref="D15"  Part="1" 
+AR Path="/5B4A8BBF/5B39EE39" Ref="D15"  Part="1" 
+F 0 "D15" H 4190 1140 50  0000 C CNN
+F 1 "LED" H 4190 940 50  0000 C CNN
+F 2 "modFiles:Led_3mm" H 4190 1040 50  0001 C CNN
+F 3 "" H 4190 1040 50  0001 C CNN
+	1    4190 1040
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR52
+U 1 1 5B39EFDB
+P 4340 1040
+AR Path="/5B255BE2/5B39EFDB" Ref="#PWR52"  Part="1" 
+AR Path="/5B4A8BBF/5B39EFDB" Ref="#PWR073"  Part="1" 
+F 0 "#PWR073" H 4340 790 50  0001 C CNN
+F 1 "GND" H 4340 890 50  0000 C CNN
+F 2 "" H 4340 1040 50  0001 C CNN
+F 3 "" H 4340 1040 50  0001 C CNN
+	1    4340 1040
+	1    0    0    -1  
+$EndComp
+Text Label 4040 740  2    60   ~ 0
+12V_1
+Wire Wire Line
+	3575 3125 3685 3125
+Wire Wire Line
+	3685 3125 3685 3120
+Wire Wire Line
+	9595 5580 9595 5765
+Connection ~ 9595 5645
+$Comp
+L R R27
+U 1 1 5B3A36C0
+P 9810 5920
+AR Path="/5B255BE2/5B3A36C0" Ref="R27"  Part="1" 
+AR Path="/5B4A8BBF/5B3A36C0" Ref="R27"  Part="1" 
+F 0 "R27" V 9890 5920 50  0000 C CNN
+F 1 "10K" V 9810 5920 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 9740 5920 50  0001 C CNN
+F 3 "" H 9810 5920 50  0001 C CNN
+	1    9810 5920
+	0    1    1    0   
+$EndComp
+$Comp
+L R R28
+U 1 1 5B3A37CE
+P 9815 6020
+AR Path="/5B255BE2/5B3A37CE" Ref="R28"  Part="1" 
+AR Path="/5B4A8BBF/5B3A37CE" Ref="R28"  Part="1" 
+F 0 "R28" V 9895 6020 50  0000 C CNN
+F 1 "10K" V 9815 6020 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 9745 6020 50  0001 C CNN
+F 3 "" H 9815 6020 50  0001 C CNN
+	1    9815 6020
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9660 5920 9660 6020
+Wire Wire Line
+	9660 6020 9665 6020
+$Comp
+L +5V #PWR68
+U 1 1 5B3A3931
+P 9630 5980
+AR Path="/5B255BE2/5B3A3931" Ref="#PWR68"  Part="1" 
+AR Path="/5B4A8BBF/5B3A3931" Ref="#PWR074"  Part="1" 
+F 0 "#PWR074" H 9630 5830 50  0001 C CNN
+F 1 "+5V" H 9630 6120 50  0000 C CNN
+F 2 "" H 9630 5980 50  0001 C CNN
+F 3 "" H 9630 5980 50  0001 C CNN
+	1    9630 5980
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9630 5980 9660 5980
+Wire Wire Line
+	9660 5980 9660 5975
+Connection ~ 9660 5975
+Text Label 9960 5920 0    60   ~ 0
+INT0
+Text Label 9965 6020 0    60   ~ 0
+INT1
+$Comp
+L GND #PWR51
+U 1 1 5B40D9EB
+P 4205 2310
+AR Path="/5B255BE2/5B40D9EB" Ref="#PWR51"  Part="1" 
+AR Path="/5B4A8BBF/5B40D9EB" Ref="#PWR075"  Part="1" 
+F 0 "#PWR075" H 4205 2060 50  0001 C CNN
+F 1 "GND" H 4205 2160 50  0000 C CNN
+F 2 "" H 4205 2310 50  0001 C CNN
+F 3 "" H 4205 2310 50  0001 C CNN
+	1    4205 2310
+	1    0    0    -1  
+$EndComp
+$Sheet
+S 9370 2285 1335 465 
+U 5B41556B
+F0 "Reset_2" 60
+F1 "Reset.sch" 60
+F2 "Pullup" I L 9370 2395 60 
+F3 "ResetPin" I L 9370 2620 60 
+$EndSheet
+Text HLabel 4205 2110 0    60   Input ~ 0
+mcuVCC
+$Comp
+L Conn_01x04 J11
+U 1 1 5B452ADA
+P 7725 1490
+AR Path="/5B255BE2/5B452ADA" Ref="J11"  Part="1" 
+AR Path="/5B4A8BBF/5B452ADA" Ref="J11"  Part="1" 
+F 0 "J11" H 7725 1690 50  0000 C CNN
+F 1 "JoyStick_Bluetooth" H 7725 1190 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm" H 7725 1490 50  0001 C CNN
+F 3 "" H 7725 1490 50  0001 C CNN
+	1    7725 1490
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR58
+U 1 1 5B452C02
+P 7525 1390
+AR Path="/5B255BE2/5B452C02" Ref="#PWR58"  Part="1" 
+AR Path="/5B4A8BBF/5B452C02" Ref="#PWR076"  Part="1" 
+F 0 "#PWR076" H 7525 1240 50  0001 C CNN
+F 1 "+5V" H 7525 1530 50  0000 C CNN
+F 2 "" H 7525 1390 50  0001 C CNN
+F 3 "" H 7525 1390 50  0001 C CNN
+	1    7525 1390
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR55
+U 1 1 5B452C74
+P 7285 1505
+AR Path="/5B255BE2/5B452C74" Ref="#PWR55"  Part="1" 
+AR Path="/5B4A8BBF/5B452C74" Ref="#PWR077"  Part="1" 
+F 0 "#PWR077" H 7285 1255 50  0001 C CNN
+F 1 "GND" H 7285 1355 50  0000 C CNN
+F 2 "" H 7285 1505 50  0001 C CNN
+F 3 "" H 7285 1505 50  0001 C CNN
+	1    7285 1505
+	1    0    0    -1  
+$EndComp
+Text Label 7525 1590 2    60   ~ 0
+RX3
+Wire Wire Line
+	7285 1505 7285 1490
+Wire Wire Line
+	7285 1490 7525 1490
+Text Label 7525 1690 2    60   ~ 0
+TX3
+Text HLabel 4125 2410 0    60   Input ~ 0
+vin_mcu
+Text Label 4130 2410 3    60   ~ 0
+vin
+Text Label 6855 3660 0    60   ~ 0
+TX3
+Text Label 10340 1185 2    60   ~ 0
+vin
+$Comp
+L Conn_01x04 J29
+U 1 1 5B3A195E
+P 2410 3055
+AR Path="/5B255BE2/5B3A195E" Ref="J29"  Part="1" 
+AR Path="/5B4A8BBF/5B3A195E" Ref="J29"  Part="1" 
+F 0 "J29" H 2410 3255 50  0000 C CNN
+F 1 "Reset" H 2410 2755 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm" H 2410 3055 50  0001 C CNN
+F 3 "" H 2410 3055 50  0001 C CNN
+	1    2410 3055
+	1    0    0    -1  
+$EndComp
+Text Label 2210 3055 2    60   ~ 0
+RESET2
+Text Label 9370 2620 2    60   ~ 0
+RESET2
+$Comp
+L GND #PWR54
+U 1 1 5B4699D7
+P 4705 5860
+AR Path="/5B255BE2/5B4699D7" Ref="#PWR54"  Part="1" 
+AR Path="/5B4A8BBF/5B4699D7" Ref="#PWR078"  Part="1" 
+F 0 "#PWR078" H 4705 5610 50  0001 C CNN
+F 1 "GND" H 4705 5710 50  0000 C CNN
+F 2 "" H 4705 5860 50  0001 C CNN
+F 3 "" H 4705 5860 50  0001 C CNN
+	1    4705 5860
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR53
+U 1 1 5B469B3A
+P 4705 4610
+AR Path="/5B255BE2/5B469B3A" Ref="#PWR53"  Part="1" 
+AR Path="/5B4A8BBF/5B469B3A" Ref="#PWR079"  Part="1" 
+F 0 "#PWR079" H 4705 4360 50  0001 C CNN
+F 1 "GND" H 4705 4460 50  0000 C CNN
+F 2 "" H 4705 4610 50  0001 C CNN
+F 3 "" H 4705 4610 50  0001 C CNN
+	1    4705 4610
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4205 2210 4205 2310
+$Comp
+L DB15_Female J2
+U 1 1 5B374E58
+P 3275 3125
+AR Path="/5B255BE2/5B374E58" Ref="J2"  Part="1" 
+AR Path="/5B4A8BBF/5B374E58" Ref="J2"  Part="1" 
+F 0 "J2" H 3295 3975 50  0000 C CNN
+F 1 "Line Tracker" H 3275 2250 50  0000 C CNN
+F 2 "modFiles:DB15" H 3275 3125 50  0001 C CNN
+F 3 "" H 3275 3125 50  0001 C CNN
+	1    3275 3125
+	-1   0    0    1   
+$EndComp
+Text Label 4205 2110 2    60   ~ 0
+masterVCC
+$Comp
+L +3.3V #PWR080
+U 1 1 5B4C27E9
+P 3685 3120
+F 0 "#PWR080" H 3685 2970 50  0001 C CNN
+F 1 "+3.3V" H 3685 3260 50  0000 C CNN
+F 2 "" H 3685 3120 50  0001 C CNN
+F 3 "" H 3685 3120 50  0001 C CNN
+	1    3685 3120
+	1    0    0    -1  
+$EndComp
+$Comp
+L +12V #PWR081
+U 1 1 5B4C6DFD
+P 9200 1675
+F 0 "#PWR081" H 9200 1525 50  0001 C CNN
+F 1 "+12V" H 9200 1815 50  0000 C CNN
+F 2 "" H 9200 1675 50  0001 C CNN
+F 3 "" H 9200 1675 50  0001 C CNN
+	1    9200 1675
+	1    0    0    -1  
+$EndComp
+$Comp
+L POT RV2
+U 1 1 5B4C6FC1
+P 9050 1675
+F 0 "RV2" V 8875 1675 50  0000 C CNN
+F 1 "POT" V 8950 1675 50  0000 C CNN
+F 2 "modFiles:Potentiometer" H 9050 1675 50  0001 C CNN
+F 3 "" H 9050 1675 50  0001 C CNN
+	1    9050 1675
+	0    -1   -1   0   
+$EndComp
+$Comp
+L +5V #PWR082
+U 1 1 5B4C7181
+P 9510 1085
+F 0 "#PWR082" H 9510 935 50  0001 C CNN
+F 1 "+5V" H 9510 1225 50  0000 C CNN
+F 2 "" H 9510 1085 50  0001 C CNN
+F 3 "" H 9510 1085 50  0001 C CNN
+	1    9510 1085
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR083
+U 1 1 5B4C71F7
+P 8900 1675
+F 0 "#PWR083" H 8900 1425 50  0001 C CNN
+F 1 "GND" H 8900 1525 50  0000 C CNN
+F 2 "" H 8900 1675 50  0001 C CNN
+F 3 "" H 8900 1675 50  0001 C CNN
+	1    8900 1675
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR084
+U 1 1 5B4C7328
+P 9510 1685
+F 0 "#PWR084" H 9510 1435 50  0001 C CNN
+F 1 "GND" H 9510 1535 50  0000 C CNN
+F 2 "" H 9510 1685 50  0001 C CNN
+F 3 "" H 9510 1685 50  0001 C CNN
+	1    9510 1685
+	1    0    0    -1  
+$EndComp
+Text Label 9910 1385 0    60   ~ 0
+INT2
+Text Label 7745 3990 2    60   ~ 0
+proximity
+Text Label 9310 1285 1    60   ~ 0
+proximity
+$Comp
+L R R48
+U 1 1 5B4CA364
+P 9160 1285
+F 0 "R48" V 9240 1285 50  0000 C CNN
+F 1 "10K" V 9160 1285 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 9090 1285 50  0001 C CNN
+F 3 "" H 9160 1285 50  0001 C CNN
+	1    9160 1285
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9310 1485 9050 1485
+Wire Wire Line
+	9050 1485 9050 1525
+$Comp
+L +12V #PWR085
+U 1 1 5B4CBA8E
+P 9010 1285
+F 0 "#PWR085" H 9010 1135 50  0001 C CNN
+F 1 "+12V" H 9010 1425 50  0000 C CNN
+F 2 "" H 9010 1285 50  0001 C CNN
+F 3 "" H 9010 1285 50  0001 C CNN
+	1    9010 1285
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R49
+U 1 1 5B4CDC78
+P 10670 5150
+F 0 "R49" V 10750 5150 50  0000 C CNN
+F 1 "10K" V 10670 5150 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 10600 5150 50  0001 C CNN
+F 3 "" H 10670 5150 50  0001 C CNN
+	1    10670 5150
+	0    1    1    0   
+$EndComp
+$Comp
+L R R50
+U 1 1 5B4CDDB1
+P 10670 5245
+F 0 "R50" V 10750 5245 50  0000 C CNN
+F 1 "10K" V 10670 5245 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 10600 5245 50  0001 C CNN
+F 3 "" H 10670 5245 50  0001 C CNN
+	1    10670 5245
+	0    1    1    0   
+$EndComp
+Text Label 10520 5150 2    60   ~ 0
+INT2
+Text Label 10520 5245 2    60   ~ 0
+INT3
+$Comp
+L +5V #PWR086
+U 1 1 5B4CE832
+P 10820 5150
+F 0 "#PWR086" H 10820 5000 50  0001 C CNN
+F 1 "+5V" H 10820 5290 50  0000 C CNN
+F 2 "" H 10820 5150 50  0001 C CNN
+F 3 "" H 10820 5150 50  0001 C CNN
+	1    10820 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10820 5245 10820 5150
+$Comp
+L C C16
+U 1 1 5B4CF350
+P 10880 5495
+F 0 "C16" H 10905 5595 50  0000 L CNN
+F 1 "C" H 10905 5395 50  0000 L CNN
+F 2 "modFiles:Capacitor_3.3uF" H 10918 5345 50  0001 C CNN
+F 3 "" H 10880 5495 50  0001 C CNN
+	1    10880 5495
+	0    1    1    0   
+$EndComp
+$Comp
+L C C21
+U 1 1 5B4CF541
+P 10880 5680
+F 0 "C21" H 10905 5780 50  0000 L CNN
+F 1 "C" H 10905 5580 50  0000 L CNN
+F 2 "modFiles:Capacitor_3.3uF" H 10918 5530 50  0001 C CNN
+F 3 "" H 10880 5680 50  0001 C CNN
+	1    10880 5680
+	0    1    1    0   
+$EndComp
+Text Label 11030 5495 0    60   ~ 0
+INT3
+Text Label 11030 5680 0    60   ~ 0
+INT2
+$Comp
+L GND #PWR087
+U 1 1 5B4CFA75
+P 10730 5680
+F 0 "#PWR087" H 10730 5430 50  0001 C CNN
+F 1 "GND" H 10730 5530 50  0000 C CNN
+F 2 "" H 10730 5680 50  0001 C CNN
+F 3 "" H 10730 5680 50  0001 C CNN
+	1    10730 5680
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10730 5495 10730 5680
+Text Label 3825 1135 2    60   ~ 0
+masterVCC
+Text Label 9370 2395 2    60   ~ 0
+masterVCC
+$Comp
+L LM358 U7
+U 1 1 5B4E47EE
+P 9610 1385
+F 0 "U7" H 9610 1585 50  0000 L CNN
+F 1 "LM358" H 9610 1185 50  0000 L CNN
+F 2 "Housings_DIP:DIP-8_W7.62mm" H 9610 1385 50  0001 C CNN
+F 3 "" H 9610 1385 50  0001 C CNN
+	1    9610 1385
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R51
+U 1 1 5B4EC2E6
+P 10218 4524
+F 0 "R51" V 10298 4524 50  0000 C CNN
+F 1 "10K" V 10218 4524 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 10148 4524 50  0001 C CNN
+F 3 "" H 10218 4524 50  0001 C CNN
+	1    10218 4524
+	0    1    1    0   
+$EndComp
+$Comp
+L +5V #PWR088
+U 1 1 5B4EC2EC
+P 10068 4524
+F 0 "#PWR088" H 10068 4374 50  0001 C CNN
+F 1 "+5V" H 10068 4664 50  0000 C CNN
+F 2 "" H 10068 4524 50  0001 C CNN
+F 3 "" H 10068 4524 50  0001 C CNN
+	1    10068 4524
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR089
+U 1 1 5B4EC2F2
+P 10368 4524
+F 0 "#PWR089" H 10368 4374 50  0001 C CNN
+F 1 "+5V" H 10368 4664 50  0000 C CNN
+F 2 "" H 10368 4524 50  0001 C CNN
+F 3 "" H 10368 4524 50  0001 C CNN
+	1    10368 4524
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 5B4F07F7
+P 9782 5066
+F 0 "R?" V 9862 5066 50  0000 C CNN
+F 1 "10K" V 9782 5066 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 9712 5066 50  0001 C CNN
+F 3 "" H 9782 5066 50  0001 C CNN
+	1    9782 5066
+	0    1    1    0   
+$EndComp
+Text Label 9932 5066 0    60   ~ 0
+RX3
+Text Label 9632 5066 2    60   ~ 0
+RX3
+$Comp
+L R R?
+U 1 1 5B4F1349
+P 9794 5204
+F 0 "R?" V 9874 5204 50  0000 C CNN
+F 1 "10K" V 9794 5204 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 9724 5204 50  0001 C CNN
+F 3 "" H 9794 5204 50  0001 C CNN
+	1    9794 5204
+	0    1    1    0   
+$EndComp
+Text Label 9944 5204 0    60   ~ 0
+TX3
+Text Label 9644 5204 2    60   ~ 0
+TX3
+$EndSCHEMATC

@@ -987,4 +987,42 @@ F 3 "" H 7120 6198 50  0001 C CNN
 	1    7120 6198
 	1    0    0    -1  
 $EndComp
+$Comp
+L +12V #PWR020
+U 1 1 5B45F04E
+P 9770 2185
+F 0 "#PWR020" H 9770 2035 50  0001 C CNN
+F 1 "+12V" H 9770 2325 50  0000 C CNN
+F 2 "" H 9770 2185 50  0001 C CNN
+F 3 "" H 9770 2185 50  0001 C CNN
+	1    9770 2185
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_02x08_Counter_Clockwise J12
+U 1 1 5B45FB48
+P 2400 1570
+F 0 "J12" H 2450 1970 50  0000 C CNN
+F 1 "support" H 2450 1070 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x08_Pitch2.54mm" H 2400 1570 50  0001 C CNN
+F 3 "" H 2400 1570 50  0001 C CNN
+	1    2400 1570
+	1    0    0    -1  
+$EndComp
+NoConn ~ 2200 1270
+NoConn ~ 2200 1370
+NoConn ~ 2200 1470
+NoConn ~ 2200 1570
+NoConn ~ 2200 1670
+NoConn ~ 2200 1770
+NoConn ~ 2200 1870
+NoConn ~ 2200 1970
+NoConn ~ 2700 1970
+NoConn ~ 2700 1870
+NoConn ~ 2700 1770
+NoConn ~ 2700 1670
+NoConn ~ 2700 1570
+NoConn ~ 2700 1270
+NoConn ~ 2700 1370
+NoConn ~ 2700 1470
 $EndSCHEMATC

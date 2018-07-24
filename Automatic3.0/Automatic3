@@ -1,0 +1,59 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>KiCad BOM Example 5</title>
+    </head>
+    <body>
+    <h1>/home/prashant/Documents/Kicad/Workspace/Kicad/Automatic3.0/Automatic3.sch</h1>
+    <p>मंगलवार 24 जुलाई 2018 08:08:06 अपराह्न +0545</p>
+    <p>Eeschema 4.0.7-e2-6376~61~ubuntu18.04.1</p>
+    <p><b>Component Count:</b>98</p>
+    <table>
+    <tr><th style='width:640px'>Ref</th><th>Qnty</th><th>Value</th><th>Part</th><th>Footprint</th><th>Description</th><th>Vendor</th></tr>
+    <tr><td>C1, C2, C3, C5, C6, C7, C12, C14, C15, C16, C17</td><td>11</td><td>104</td><td>device:C</td><td>modFiles:Capacitor_Disc_Medium</td><td>Unpolarized capacitor</td><td></td></tr>
+    <tr><td>C4</td><td>1</td><td>1000uF</td><td>device:C</td><td>modFiles:Capacitor_1000uF</td><td>Unpolarized capacitor</td><td></td></tr>
+    <tr><td>C8, C11</td><td>2</td><td>10uf</td><td>device:C</td><td>modFiles:Capacitor_10uF</td><td>Unpolarized capacitor</td><td></td></tr>
+    <tr><td>C9, C13</td><td>2</td><td>100uF</td><td>device:C</td><td>modFiles:Capacitor_100uF</td><td>Unpolarized capacitor</td><td></td></tr>
+    <tr><td>C10</td><td>1</td><td>10uF</td><td>device:C</td><td>modFiles:Capacitor_10uF</td><td>Unpolarized capacitor</td><td></td></tr>
+    <tr><td>D2, D3</td><td>2</td><td>D</td><td>device:D</td><td>modFiles:Diode_small</td><td>Diode</td><td></td></tr>
+    <tr><td>D4, D12, D14, D17</td><td>4</td><td>LED</td><td>device:LED</td><td>modFiles:LED_D3.0mm</td><td>LED generic</td><td></td></tr>
+    <tr><td>D5</td><td>1</td><td>LED_12V</td><td>device:LED</td><td>modFiles:LED_D3.0mm</td><td>LED generic</td><td></td></tr>
+    <tr><td>D6, D7</td><td>2</td><td>LED_9V</td><td>device:LED</td><td>modFiles:LED_D3.0mm</td><td>LED generic</td><td></td></tr>
+    <tr><td>D8, D13, D19</td><td>3</td><td>LED_5V</td><td>device:LED</td><td>modFiles:LED_D3.0mm</td><td>LED generic</td><td></td></tr>
+    <tr><td>D9</td><td>1</td><td>LED_BUCK</td><td>device:LED</td><td>modFiles:LED_D3.0mm</td><td>LED generic</td><td></td></tr>
+    <tr><td>D10, D11</td><td>2</td><td>D</td><td>device:D</td><td>Diodes_THT:D_DO-27_P12.70mm_Horizontal</td><td>Diode</td><td></td></tr>
+    <tr><td>F1, F2</td><td>2</td><td>Fuse</td><td>device:Fuse</td><td>modFiles:Fuse_Holder</td><td>Fuse, generic</td><td></td></tr>
+    <tr><td>J1</td><td>1</td><td>GND_VCC</td><td>conn:Conn_02x03_Odd_Even</td><td>Pin_Headers:Pin_Header_Straight_2x03_Pitch2.54mm</td><td>Generic connector, double row, 02x03, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers)</td><td></td></tr>
+    <tr><td>J2, J4, J5, J8, J24</td><td>5</td><td>CONN_01X01</td><td>Automatic3-cache:CONN_01X01</td><td>modFiles:1_Pin</td><td></td><td></td></tr>
+    <tr><td>J3</td><td>1</td><td>Compass & throwing</td><td>conn:DB9_Female_MountingHoles</td><td>modFiles:Connector_DB_9</td><td>9-pin female D-SUB connector, Mounting Hole</td><td></td></tr>
+    <tr><td>J6</td><td>1</td><td>Zone_Switches</td><td>conn:DB9_Female_MountingHoles</td><td>modFiles:Connector_DB_9</td><td>9-pin female D-SUB connector, Mounting Hole</td><td></td></tr>
+    <tr><td>J7</td><td>1</td><td>Conn_01x04</td><td>conn:Conn_01x04</td><td>Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm</td><td>Generic connector, single row, 01x04</td><td></td></tr>
+    <tr><td>J9</td><td>1</td><td>I/O_PINS</td><td>conn:Conn_01x05</td><td>Pin_Headers:Pin_Header_Straight_1x05_Pitch2.54mm</td><td>Generic connector, single row, 01x05</td><td></td></tr>
+    <tr><td>J10</td><td>1</td><td>Line Tracker and Proximity</td><td>Automatic3-cache:DB15_FEMALE_MountingHoles</td><td>modFiles:Connector_DB15</td><td></td><td></td></tr>
+    <tr><td>J11, J14, J19, J21, J22</td><td>5</td><td>J</td><td>Prashant_library:J</td><td>modFiles:Jumper</td><td>Jumper, normally closed</td><td></td></tr>
+    <tr><td>J12, J20</td><td>2</td><td>Bluetooth</td><td>Automatic3-cache:CONN_01X06</td><td>Pin_Headers:Pin_Header_Straight_1x06_Pitch2.54mm</td><td></td><td></td></tr>
+    <tr><td>J13</td><td>1</td><td>Encoder</td><td>Automatic3-cache:DB15_FEMALE_MountingHoles</td><td>modFiles:Connector_DB15</td><td></td><td></td></tr>
+    <tr><td>J15</td><td>1</td><td>Motor</td><td>Automatic3-cache:DB15_FEMALE_MountingHoles</td><td>modFiles:Connector_DB15</td><td></td><td></td></tr>
+    <tr><td>J16</td><td>1</td><td>CONN_01X02</td><td>Automatic3-cache:CONN_01X02</td><td>modFiles:Solar_Connector</td><td></td><td></td></tr>
+    <tr><td>J17, J18</td><td>2</td><td>Reset_Jumper</td><td>Automatic3-cache:CONN_01X03</td><td>Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm</td><td></td><td></td></tr>
+    <tr><td>J23</td><td>1</td><td>BUCK+LLC</td><td>conn:Conn_01x12</td><td>modFiles:BUCK+LLC</td><td>Generic connector, single row, 01x12</td><td></td></tr>
+    <tr><td>J25</td><td>1</td><td>JST</td><td>conn:Conn_01x04</td><td>Connectors_JST:JST_XH_B04B-XH-A_04x2.50mm_Straight</td><td>Generic connector, single row, 01x04</td><td></td></tr>
+    <tr><td>R1</td><td>1</td><td>15K</td><td>device:R</td><td>modFiles:Resistor_small</td><td>Resistor</td><td></td></tr>
+    <tr><td>R2, R4, R5, R6, R7, R8, R9, R10, R11, R12, R13, R25, R26, R32, R33, R34</td><td>16</td><td>10K</td><td>device:R</td><td>modFiles:Resistor_small</td><td>Resistor</td><td></td></tr>
+    <tr><td>R3</td><td>1</td><td>10K</td><td>device:R</td><td>Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</td><td>Resistor</td><td></td></tr>
+    <tr><td>R14</td><td>1</td><td>1K5</td><td>device:R</td><td>modFiles:Resistor_small</td><td>Resistor</td><td></td></tr>
+    <tr><td>R15, R16, R18, R20</td><td>4</td><td>1K</td><td>device:R</td><td>modFiles:Resistor_small</td><td>Resistor</td><td></td></tr>
+    <tr><td>R17, R19, R35, R42</td><td>4</td><td>330</td><td>device:R</td><td>modFiles:Resistor_small</td><td>Resistor</td><td></td></tr>
+    <tr><td>R21, R22, R23, R24</td><td>4</td><td>10k</td><td>device:R</td><td>modFiles:Resistor_small</td><td>Resistor</td><td></td></tr>
+    <tr><td>R28, R31</td><td>2</td><td>R</td><td>device:R</td><td>modFiles:Resistor_small</td><td>Resistor</td><td></td></tr>
+    <tr><td>SW1, SW2</td><td>2</td><td>Reset</td><td>switches:SW_Push</td><td>modFiles:Push_Button</td><td>Push button switch, generic, two pins</td><td></td></tr>
+    <tr><td>U1, U2</td><td>2</td><td>Arduino_Mega2560_Shield</td><td>Prashant_library:Arduino_Mega2560_Shield</td><td>modFiles:Arduino_Mega2560_Shield</td><td></td><td></td></tr>
+    <tr><td>U4</td><td>1</td><td>LM7809</td><td>Automatic3-cache:LM7809ACT</td><td>modFiles:Voltage_Regulators</td><td></td><td></td></tr>
+    <tr><td>U5</td><td>1</td><td>Buck</td><td>Automatic3-rescue:Buck-RESCUE-Automatic3</td><td>modFiles:Buck_Regulator</td><td></td><td></td></tr><!--TABLEROW-->
+    </table>
+    </body>
+</html>
+    

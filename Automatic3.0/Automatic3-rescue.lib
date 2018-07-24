@@ -1,0 +1,20 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#
+# Buck-RESCUE-Automatic3
+#
+DEF Buck-RESCUE-Automatic3 U 0 40 Y Y 1 F N
+F0 "U" 324 294 60 H V C CNN
+F1 "Buck-RESCUE-Automatic3" 124 294 60 H V C CNN
+F2 "" 424 294 60 H I C CNN
+F3 "" 424 294 60 H I C CNN
+DRAW
+S 1 254 829 4 0 0 0 N
+X IN(+) 1 -200 195 200 R 50 39 1 1 I
+X IN(-) 2 -200 70 200 R 50 39 1 1 I
+X OUT(+) 3 1030 190 200 L 50 39 1 1 I
+X OUT(-) 4 1030 65 200 L 50 39 1 1 I
+ENDDRAW
+ENDDEF
+#
+#End Library
