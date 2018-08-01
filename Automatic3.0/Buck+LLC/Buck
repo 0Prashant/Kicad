@@ -1,0 +1,36 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>KiCad BOM Example 5</title>
+    </head>
+    <body>
+    <h1>/home/prashant/Documents/Kicad/Workspace/Kicad/Automatic3.0/Buck+LLC/Buck.sch</h1>
+    <p>बुधवार 25 जुलाई 2018 12:43:50 पूर्वाह्न +0545</p>
+    <p>Eeschema 4.0.7-e2-6376~61~ubuntu18.04.1</p>
+    <p><b>Component Count:</b>25</p>
+    <table>
+    <tr><th style='width:640px'>Ref</th><th>Qnty</th><th>Value</th><th>Part</th><th>Footprint</th><th>Description</th><th>Vendor</th></tr>
+    <tr><td>C1</td><td>1</td><td>100uf</td><td>device:C</td><td>modFiles:Capacitor_100uF</td><td>Unpolarized capacitor</td><td></td></tr>
+    <tr><td>C2</td><td>1</td><td>10uf</td><td>device:C</td><td>modFiles:Capacitor_10uF</td><td>Unpolarized capacitor</td><td></td></tr>
+    <tr><td>D1</td><td>1</td><td>D</td><td>device:D</td><td>modFiles:Diode_Medium</td><td>Diode</td><td></td></tr>
+    <tr><td>D2</td><td>1</td><td>LED</td><td>device:LED</td><td>modFiles:LED_D3.0mm</td><td>LED generic</td><td></td></tr>
+    <tr><td>F1</td><td>1</td><td>Fuse</td><td>device:Fuse</td><td>modFiles:Fuse_Holder</td><td>Fuse, generic</td><td></td></tr>
+    <tr><td>J1</td><td>1</td><td>OUT</td><td>conn:Conn_01x02</td><td>modFiles:Connector_Bornier_2</td><td>Generic connector, single row, 01x02</td><td></td></tr>
+    <tr><td>J2, J3</td><td>2</td><td>LED</td><td>conn:Conn_01x02</td><td>modFiles:Connector_Bornier_2</td><td>Generic connector, single row, 01x02</td><td></td></tr>
+    <tr><td>J4</td><td>1</td><td>Conn_01x11</td><td>conn:Conn_01x11</td><td>modFiles:BUCK+LLC</td><td>Generic connector, single row, 01x11</td><td></td></tr>
+    <tr><td>J5</td><td>1</td><td>LM324</td><td>conn:Conn_02x07_Counter_Clockwise</td><td>Housings_DIP:DIP-14_W7.62mm</td><td>Generic connector, double row, 02x07, counter clockwise pin numbering scheme (similar to DIP packge numbering)</td><td></td></tr>
+    <tr><td>J7, J8</td><td>2</td><td>Conn_01x01</td><td>conn:Conn_01x01</td><td>modFiles:1_Pin</td><td>Generic connector, single row, 01x01</td><td></td></tr>
+    <tr><td>Q1, Q2</td><td>2</td><td>TIP122</td><td>transistors:TIP122</td><td>modFiles:Voltage_Regulators</td><td>5A Ic, 60V Vce, Silicon Darlington Power Transistor NPN, TO-220</td><td></td></tr>
+    <tr><td>R1</td><td>1</td><td>1K5</td><td>device:R</td><td>modFiles:Resistor_small</td><td>Resistor</td><td></td></tr>
+    <tr><td>R2, R4</td><td>2</td><td>2K2</td><td>device:R</td><td>modFiles:Resistor_small</td><td>Resistor</td><td></td></tr>
+    <tr><td>R3, R5</td><td>2</td><td>10K</td><td>device:R</td><td>modFiles:Resistor_small</td><td>Resistor</td><td></td></tr>
+    <tr><td>R6, R7</td><td>2</td><td>R</td><td>device:R</td><td>modFiles:Resistor_small</td><td>Resistor</td><td></td></tr>
+    <tr><td>R8, R9, R10</td><td>3</td><td>10k</td><td>device:R</td><td>modFiles:Resistor_small</td><td>Resistor</td><td></td></tr>
+    <tr><td>U1</td><td>1</td><td>Buck</td><td>Prashant_library:Buck</td><td>modFiles:Buck_Regulator</td><td></td><td></td></tr><!--TABLEROW-->
+    </table>
+    </body>
+</html>
+    
