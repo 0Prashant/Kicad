@@ -760,7 +760,7 @@ $Sheet
 S 9325 800  1025 900 
 U 5B15B5AD
 F0 "Power" 39
-F1 "./Power/Power_Supply.sch" 39
+F1 "~/Documents/Kicad/Workspace/Kicad/Automatic3.0/Power/Power_Supply.sch" 39
 F2 "POWER_FOR_MEGA" I R 10350 950 60 
 F3 "BUCK" I R 10350 1100 60 
 F4 "5V" I R 10350 1310 60 

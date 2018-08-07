@@ -601,28 +601,6 @@ Wire Wire Line
 	3375 2950 3375 2900
 Connection ~ 3375 2900
 $Comp
-L Conn_01x10 J9
-U 1 1 5B37A28F
-P 6750 1925
-F 0 "J9" H 6750 2425 50  0000 C CNN
-F 1 "Conn_01x10" H 6750 1325 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x10_Pitch2.54mm" H 6750 1925 50  0001 C CNN
-F 3 "" H 6750 1925 50  0001 C CNN
-	1    6750 1925
-	1    0    0    -1  
-$EndComp
-$Comp
-L Conn_01x10 J10
-U 1 1 5B37A335
-P 6750 3425
-F 0 "J10" H 6750 3925 50  0000 C CNN
-F 1 "Conn_01x10" H 6750 2825 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x10_Pitch2.54mm" H 6750 3425 50  0001 C CNN
-F 3 "" H 6750 3425 50  0001 C CNN
-	1    6750 3425
-	1    0    0    -1  
-$EndComp
-$Comp
 L R R8
 U 1 1 5B37A698
 P 2650 4175
@@ -780,4 +758,50 @@ F 3 "" H 6550 2325 50  0001 C CNN
 	1    6550 2325
 	0    1    1    0   
 $EndComp
+$Comp
+L Conn_02x10_Odd_Even J9
+U 1 1 5B37D9E9
+P 6750 1925
+F 0 "J9" H 6800 2425 50  0000 C CNN
+F 1 "Conn_02x10_Odd_Even" H 6800 1325 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x10_Pitch2.54mm" H 6750 1925 50  0001 C CNN
+F 3 "" H 6750 1925 50  0001 C CNN
+	1    6750 1925
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7050 1525 7050 2425
+Connection ~ 7050 2325
+Connection ~ 7050 2225
+Connection ~ 7050 2125
+Connection ~ 7050 2025
+Connection ~ 7050 1925
+Connection ~ 7050 1825
+Connection ~ 7050 1725
+Connection ~ 7050 1625
+Wire Wire Line
+	6550 1625 7050 1625
+$Comp
+L Conn_02x10_Odd_Even J10
+U 1 1 5B37E5C8
+P 6750 3425
+F 0 "J10" H 6800 3925 50  0000 C CNN
+F 1 "Conn_02x10_Odd_Even" H 6800 2825 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x10_Pitch2.54mm" H 6750 3425 50  0001 C CNN
+F 3 "" H 6750 3425 50  0001 C CNN
+	1    6750 3425
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7050 3025 7050 3925
+Connection ~ 7050 3125
+Connection ~ 7050 3225
+Connection ~ 7050 3325
+Connection ~ 7050 3825
+Connection ~ 7050 3725
+Connection ~ 7050 3625
+Connection ~ 7050 3425
+Connection ~ 7050 3525
+Wire Wire Line
+	6550 3125 7050 3125
 $EndSCHEMATC

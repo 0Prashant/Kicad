@@ -279,70 +279,10 @@ F 3 "" H 9050 3200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Conn_02x07_Counter_Clockwise J5
-U 1 1 5B490223
-P 2275 4725
-F 0 "J5" H 2325 5125 50  0000 C CNN
-F 1 "LM324" H 2325 4325 50  0000 C CNN
-F 2 "Housings_DIP:DIP-14_W7.62mm" H 2275 4725 50  0001 C CNN
-F 3 "" H 2275 4725 50  0001 C CNN
-	1    2275 4725
-	1    0    0    -1  
-$EndComp
-$Comp
-L +5V #PWR06
-U 1 1 5B4903B2
-P 2075 4725
-F 0 "#PWR06" H 2075 4575 50  0001 C CNN
-F 1 "+5V" H 2075 4865 50  0000 C CNN
-F 2 "" H 2075 4725 50  0001 C CNN
-F 3 "" H 2075 4725 50  0001 C CNN
-	1    2075 4725
-	0    -1   -1   0   
-$EndComp
-$Comp
-L GND #PWR07
-U 1 1 5B4903F0
-P 2575 4725
-F 0 "#PWR07" H 2575 4475 50  0001 C CNN
-F 1 "GND" H 2575 4575 50  0000 C CNN
-F 2 "" H 2575 4725 50  0001 C CNN
-F 3 "" H 2575 4725 50  0001 C CNN
-	1    2575 4725
-	0    -1   -1   0   
-$EndComp
-Text Label 2075 4525 2    60   ~ 0
-IN1-
-Text Label 2075 5025 2    60   ~ 0
-OUT2
-Text Label 2075 4925 2    60   ~ 0
-IN2-
-Text Label 2575 4425 0    60   ~ 0
-OUT4
-Text Label 2575 4525 0    60   ~ 0
-IN4-
-Text Label 2575 5025 0    60   ~ 0
-OUT3
-Text Label 2575 4925 0    60   ~ 0
-IN3-
-Text Label 9450 1975 0    60   ~ 0
-IN1-
-$Comp
-L GND #PWR08
-U 1 1 5B4917AD
-P 9150 2200
-F 0 "#PWR08" H 9150 1950 50  0001 C CNN
-F 1 "GND" H 9150 2050 50  0000 C CNN
-F 2 "" H 9150 2200 50  0001 C CNN
-F 3 "" H 9150 2200 50  0001 C CNN
-	1    9150 2200
-	1    0    0    -1  
-$EndComp
-$Comp
-L +12V #PWR09
+L +12V #PWR06
 U 1 1 5B49CF5D
 P 2175 2125
-F 0 "#PWR09" H 2175 1975 50  0001 C CNN
+F 0 "#PWR06" H 2175 1975 50  0001 C CNN
 F 1 "+12V" H 2175 2265 50  0000 C CNN
 F 2 "" H 2175 2125 50  0001 C CNN
 F 3 "" H 2175 2125 50  0001 C CNN
@@ -350,10 +290,10 @@ F 3 "" H 2175 2125 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L GND #PWR010
+L GND #PWR07
 U 1 1 5B49D143
 P 1950 2025
-F 0 "#PWR010" H 1950 1775 50  0001 C CNN
+F 0 "#PWR07" H 1950 1775 50  0001 C CNN
 F 1 "GND" H 1950 1875 50  0000 C CNN
 F 2 "" H 1950 2025 50  0001 C CNN
 F 3 "" H 1950 2025 50  0001 C CNN
@@ -361,76 +301,44 @@ F 3 "" H 1950 2025 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L +5V #PWR011
+L +5V #PWR08
 U 1 1 5B49D34F
 P 1950 2225
-F 0 "#PWR011" H 1950 2075 50  0001 C CNN
+F 0 "#PWR08" H 1950 2075 50  0001 C CNN
 F 1 "+5V" H 1950 2365 50  0000 C CNN
 F 2 "" H 1950 2225 50  0001 C CNN
 F 3 "" H 1950 2225 50  0001 C CNN
 	1    1950 2225
 	0    1    1    0   
 $EndComp
-$Comp
-L R R7
-U 1 1 5B4A2A6C
-P 9300 2125
-F 0 "R7" V 9380 2125 50  0000 C CNN
-F 1 "R" V 9300 2125 50  0000 C CNN
-F 2 "modFiles:Resistor_small" V 9230 2125 50  0001 C CNN
-F 3 "" H 9300 2125 50  0001 C CNN
-	1    9300 2125
-	0    1    1    0   
-$EndComp
-$Comp
-L R R6
-U 1 1 5B4A2A13
-P 9300 1975
-F 0 "R6" V 9380 1975 50  0000 C CNN
-F 1 "R" V 9300 1975 50  0000 C CNN
-F 2 "modFiles:Resistor_small" V 9230 1975 50  0001 C CNN
-F 3 "" H 9300 1975 50  0001 C CNN
-	1    9300 1975
-	0    1    1    0   
-$EndComp
-Text Label 1950 2525 0    60   ~ 0
-PR1
 Text Label 1950 2325 0    60   ~ 0
-PR2
+PR1
 Text Label 1950 2425 0    60   ~ 0
+PR2
+Text Label 1950 2525 0    60   ~ 0
 PR3
-Text Label 1950 2825 0    60   ~ 0
-PR1o
 Text Label 1950 2625 0    60   ~ 0
-PR2o
+PR1o
 Text Label 1950 2725 0    60   ~ 0
+PR2o
+Text Label 1950 2825 0    60   ~ 0
 PR3o
 Text Label 1950 2925 0    60   ~ 0
 LED1
 Text Label 1950 3025 0    60   ~ 0
 LED2
-Text Label 1575 4625 0    60   ~ 0
+Text Label 4150 4875 2    60   ~ 0
 PR1
-Text Label 1575 4825 0    60   ~ 0
+Text Label 4150 5200 2    60   ~ 0
 PR2
 Text Label 4325 3325 3    60   ~ 0
 PR3
-Text Label 1575 4425 0    60   ~ 0
+Text Label 4450 4875 0    60   ~ 0
 PR1o
-Text Label 1575 5025 0    60   ~ 0
+Text Label 4450 5200 0    60   ~ 0
 PR2o
-Text Label 2900 5025 0    60   ~ 0
+Text Label 4475 4550 0    60   ~ 0
 PR3o
-Text Label 2075 4825 2    60   ~ 0
-IN2+
-Text Label 2575 4825 0    60   ~ 0
-IN3+
-Text Label 2575 4625 0    60   ~ 0
-IN4+
-Text Label 2075 4625 2    60   ~ 0
-IN1+
-Text Label 2075 4425 2    60   ~ 0
-OUT1
 Text Label 6775 3675 2    60   ~ 0
 LED1
 Text Label 8150 3675 2    60   ~ 0
@@ -513,18 +421,7 @@ Wire Wire Line
 Connection ~ 8800 4100
 Connection ~ 7475 1975
 Wire Wire Line
-	2075 4925 2575 4925
-Wire Wire Line
-	2325 4925 2325 4525
-Connection ~ 2325 4925
-Wire Wire Line
-	2325 4525 2075 4525
-Wire Wire Line
 	2175 2125 1950 2125
-Wire Wire Line
-	9450 1975 9450 2125
-Wire Wire Line
-	9150 2125 9150 2200
 Wire Wire Line
 	4675 1650 4675 2850
 Wire Wire Line
@@ -532,22 +429,6 @@ Wire Wire Line
 Connection ~ 4675 2150
 Wire Wire Line
 	4675 1975 8850 1975
-Wire Wire Line
-	2075 4425 1575 4425
-Wire Wire Line
-	1575 4625 2075 4625
-Wire Wire Line
-	1575 4825 2075 4825
-Wire Wire Line
-	2075 5025 1575 5025
-Wire Wire Line
-	2575 4825 2900 4825
-Wire Wire Line
-	2900 5025 2575 5025
-Wire Wire Line
-	9150 1975 9025 1975
-Wire Wire Line
-	9025 1975 9025 1900
 $Comp
 L Conn_01x01 J7
 U 1 1 5B4B992C
@@ -604,31 +485,18 @@ F 3 "" H 4325 3175 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	4525 2975 4750 2975
+	4325 2975 4750 2975
 Wire Wire Line
 	4750 2975 4750 3025
 Wire Wire Line
 	4525 2975 4525 3025
 Connection ~ 4625 2975
-$Comp
-L GND #PWR012
-U 1 1 5B561CAE
-P 4325 3025
-F 0 "#PWR012" H 4325 2775 50  0001 C CNN
-F 1 "GND" H 4325 2875 50  0000 C CNN
-F 2 "" H 4325 3025 50  0001 C CNN
-F 3 "" H 4325 3025 50  0001 C CNN
-	1    4325 3025
-	-1   0    0    1   
-$EndComp
 Text Label 4750 3325 3    60   ~ 0
 PR1
 Text Label 4525 3325 3    60   ~ 0
 PR2
-Text Label 2900 4825 0    60   ~ 0
+Text Label 4175 4550 2    60   ~ 0
 PR3
-Connection ~ 9150 2175
-Connection ~ 9025 1900
 Connection ~ 8850 1975
 Wire Wire Line
 	8850 1900 10300 1900
@@ -670,10 +538,10 @@ F 3 "" H 9925 4050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR013
+L GND #PWR09
 U 1 1 5B5CFAFF
 P 10250 4250
-F 0 "#PWR013" H 10250 4000 50  0001 C CNN
+F 0 "#PWR09" H 10250 4000 50  0001 C CNN
 F 1 "GND" H 10250 4100 50  0000 C CNN
 F 2 "" H 10250 4250 50  0001 C CNN
 F 3 "" H 10250 4250 50  0001 C CNN
@@ -698,8 +566,6 @@ Wire Wire Line
 Wire Wire Line
 	10300 3400 10250 3400
 Wire Wire Line
-	10250 3400 10250 3575
-Wire Wire Line
 	9900 3775 9950 3775
 Wire Wire Line
 	9925 3900 9925 3775
@@ -723,6 +589,43 @@ $EndComp
 Text Label 1950 3125 0    60   ~ 0
 LED3
 Wire Wire Line
-	5025 2250 5025 2150
+	5025 2250 5025 1950
 Connection ~ 4675 1975
+Connection ~ 10250 3550
+$Comp
+L D D3
+U 1 1 5B67F017
+P 4300 4875
+F 0 "D3" H 4300 4975 50  0000 C CNN
+F 1 "D" H 4300 4775 50  0000 C CNN
+F 2 "modFiles:Diode_small" H 4300 4875 50  0001 C CNN
+F 3 "" H 4300 4875 50  0001 C CNN
+	1    4300 4875
+	1    0    0    -1  
+$EndComp
+$Comp
+L D D5
+U 1 1 5B67F09E
+P 4325 4550
+F 0 "D5" H 4325 4650 50  0000 C CNN
+F 1 "D" H 4325 4450 50  0000 C CNN
+F 2 "modFiles:Diode_small" H 4325 4550 50  0001 C CNN
+F 3 "" H 4325 4550 50  0001 C CNN
+	1    4325 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L D D4
+U 1 1 5B67F13B
+P 4300 5200
+F 0 "D4" H 4300 5300 50  0000 C CNN
+F 1 "D" H 4300 5100 50  0000 C CNN
+F 2 "modFiles:Diode_small" H 4300 5200 50  0001 C CNN
+F 3 "" H 4300 5200 50  0001 C CNN
+	1    4300 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4325 2975 4325 3025
+Connection ~ 4525 2975
 $EndSCHEMATC

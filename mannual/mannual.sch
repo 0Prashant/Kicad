@@ -804,4 +804,53 @@ Connection ~ 7050 3425
 Connection ~ 7050 3525
 Wire Wire Line
 	6550 3125 7050 3125
+Wire Wire Line
+	1550 3325 1550 3300
+Wire Wire Line
+	1550 3300 2075 3300
+Wire Wire Line
+	2075 3300 2075 3325
+Connection ~ 2075 3325
+Wire Wire Line
+	1550 3425 1550 3400
+Wire Wire Line
+	1550 3400 2075 3400
+Wire Wire Line
+	2075 3400 2075 3425
+Connection ~ 2075 3425
+Wire Wire Line
+	1550 3525 1550 3500
+Wire Wire Line
+	1550 3500 2075 3500
+Wire Wire Line
+	2075 3500 2075 3525
+Connection ~ 2075 3525
+Wire Wire Line
+	1550 3625 1550 3600
+Wire Wire Line
+	1550 3600 2075 3600
+Wire Wire Line
+	2075 3600 2075 3625
+Connection ~ 2075 3625
+Wire Wire Line
+	1550 3725 1550 3700
+Wire Wire Line
+	1550 3700 2075 3700
+Wire Wire Line
+	2075 3700 2075 3725
+Connection ~ 2075 3725
+Wire Wire Line
+	1550 3825 1550 3800
+Wire Wire Line
+	1550 3800 2075 3800
+Wire Wire Line
+	2075 3800 2075 3825
+Connection ~ 2075 3825
+Wire Wire Line
+	1550 3225 1550 3175
+Wire Wire Line
+	1550 3175 2075 3175
+Wire Wire Line
+	2075 3175 2075 3225
+Connection ~ 2075 3225
 $EndSCHEMATC
