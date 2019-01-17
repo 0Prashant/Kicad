@@ -2895,4 +2895,10 @@ Wire Wire Line
 	8200 4225 7900 4225
 Wire Wire Line
 	8150 5375 7900 5375
+Text Label 8550 6700 0    60   ~ 0
+encoder
+Text Label 8550 6800 0    60   ~ 0
+linetracker
+Text Label 8550 6900 0    60   ~ 0
+u-usb
 $EndSCHEMATC

@@ -1,0 +1,576 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:linetraker-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Conn_01x08 J2
+U 1 1 5BF79EE7
+P 4500 2800
+F 0 "J2" H 4500 3200 50  0001 C CNN
+F 1 "Conn_01x08" H 4500 2300 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x08_Pitch2.54mm" H 4500 2800 50  0001 C CNN
+F 3 "" H 4500 2800 50  0001 C CNN
+	1    4500 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_01x08 J3
+U 1 1 5BF79F0A
+P 4650 2800
+F 0 "J3" H 4650 3200 50  0001 C CNN
+F 1 "Conn_01x08" H 4650 2300 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x08_Pitch2.54mm" H 4650 2800 50  0001 C CNN
+F 3 "" H 4650 2800 50  0001 C CNN
+	1    4650 2800
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 5BF79FB6
+P 6050 2850
+F 0 "R1" V 6130 2850 50  0000 C CNN
+F 1 "1K" V 6050 2850 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0617_L17.0mm_D6.0mm_P7.62mm_Vertical" V 5980 2850 50  0001 C CNN
+F 3 "" H 6050 2850 50  0001 C CNN
+	1    6050 2850
+	0    1    1    0   
+$EndComp
+$Comp
+L LED D1
+U 1 1 5BF79FD7
+P 6350 2850
+F 0 "D1" H 6350 2950 50  0000 C CNN
+F 1 "LED" H 6350 2750 50  0000 C CNN
+F 2 "modFiles:LED_D3.0mm" H 6350 2850 50  0001 C CNN
+F 3 "" H 6350 2850 50  0001 C CNN
+	1    6350 2850
+	-1   0    0    1   
+$EndComp
+Text Label 4300 2500 2    60   ~ 0
+AN
+Text Label 4300 2600 2    60   ~ 0
+RST
+Text Label 4300 2700 2    60   ~ 0
+CS
+Text Label 4300 2800 2    60   ~ 0
+SCK
+Text Label 4300 2900 2    60   ~ 0
+MISO
+Text Label 4300 3000 2    60   ~ 0
+MOSI
+Text Label 4300 3100 2    60   ~ 0
++3V3
+Text Label 4300 3200 2    60   ~ 0
+GND
+Text Label 4850 2500 0    60   ~ 0
+PWM
+Text Label 4850 2600 0    60   ~ 0
+INT
+Text Label 4850 2700 0    60   ~ 0
+RX
+Text Label 4850 2800 0    60   ~ 0
+TX
+Text Label 4850 2900 0    60   ~ 0
+SCL
+Text Label 4850 3000 0    60   ~ 0
+SDA
+Text Label 4850 3100 0    60   ~ 0
++5V
+Text Label 4850 3200 0    60   ~ 0
+GND
+Text Label 5900 2850 2    60   ~ 0
++3V3
+Text Label 6500 2850 0    60   ~ 0
+GND
+Text Label 3000 2850 2    60   ~ 0
++5V
+Text Label 3000 2650 2    60   ~ 0
+GND
+Text Label 8325 3225 0    60   ~ 0
+RST
+Text Label 7225 1725 2    60   ~ 0
+IntX
+Text Label 3000 2550 2    60   ~ 0
+IntX
+Text Label 3000 2750 2    60   ~ 0
+IOX
+Text Label 3000 2350 2    60   ~ 0
+IntY
+Text Label 3000 2450 2    60   ~ 0
+IOY
+$Comp
+L DB9_Female J1
+U 1 1 5BF79EC0
+P 3300 2750
+F 0 "J1" H 3300 3300 50  0000 C CNN
+F 1 "DB9_Female" H 3300 2175 50  0000 C CNN
+F 2 "Connectors:DB9FC" H 3300 2750 50  0001 C CNN
+F 3 "" H 3300 2750 50  0001 C CNN
+	1    3300 2750
+	1    0    0    -1  
+$EndComp
+Text Label 3000 2950 2    60   ~ 0
+RX
+Text Label 3000 3050 2    60   ~ 0
+TX
+Text Label 3000 3150 2    60   ~ 0
+JPULSE
+Text Label 1850 2250 2    60   ~ 0
+JPULSE
+Text Label 2000 2250 0    60   ~ 0
+PWM
+$Comp
+L D_Zener D2
+U 1 1 5BF846F5
+P 7675 2100
+F 0 "D2" H 7675 2200 50  0000 C CNN
+F 1 "D_Zener" H 7675 2000 50  0000 C CNN
+F 2 "Diodes_THT:D_T-1_P5.08mm_Horizontal" H 7675 2100 50  0001 C CNN
+F 3 "" H 7675 2100 50  0001 C CNN
+	1    7675 2100
+	0    1    1    0   
+$EndComp
+$Comp
+L R R3
+U 1 1 5BF8476D
+P 9450 1550
+F 0 "R3" V 9530 1550 50  0000 C CNN
+F 1 "4K7" V 9450 1550 50  0000 C CNN
+F 2 "modFiles:Resistor_small" V 9380 1550 50  0001 C CNN
+F 3 "" H 9450 1550 50  0001 C CNN
+	1    9450 1550
+	1    0    0    -1  
+$EndComp
+Text Label 7675 2250 3    60   ~ 0
+GND
+Text Label 7675 1425 1    60   ~ 0
++3V3
+$Comp
+L R R2
+U 1 1 5BF867C0
+P 7375 1725
+F 0 "R2" V 7455 1725 50  0000 C CNN
+F 1 "100" V 7375 1725 50  0000 C CNN
+F 2 "modFiles:Resistor_small" V 7305 1725 50  0001 C CNN
+F 3 "" H 7375 1725 50  0001 C CNN
+	1    7375 1725
+	0    1    1    0   
+$EndComp
+$Comp
+L Conn_01x01 J5
+U 1 1 5BF872A4
+P 7225 1375
+F 0 "J5" H 7225 1475 50  0000 C CNN
+F 1 "Conn_01x01" H 7225 1275 50  0001 C CNN
+F 2 "abc:CONN_PAD" H 7225 1375 50  0001 C CNN
+F 3 "" H 7225 1375 50  0001 C CNN
+	1    7225 1375
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Conn_01x01 J9
+U 1 1 5BF876AA
+P 7875 1800
+F 0 "J9" H 7975 1800 50  0000 C CNN
+F 1 "Conn_01x01" H 7875 1700 50  0001 C CNN
+F 2 "abc:CONN_PAD" H 7875 1800 50  0001 C CNN
+F 3 "" H 7875 1800 50  0001 C CNN
+	1    7875 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_01x01 J10
+U 1 1 5BF8780E
+P 7875 1950
+F 0 "J10" H 8000 1950 50  0000 C CNN
+F 1 "Conn_01x01" H 7875 1850 50  0001 C CNN
+F 2 "abc:CONN_PAD" H 7875 1950 50  0001 C CNN
+F 3 "" H 7875 1950 50  0001 C CNN
+	1    7875 1950
+	1    0    0    -1  
+$EndComp
+Text Label 9000 1700 2    60   ~ 0
+IOX
+Text Label 9975 3225 0    60   ~ 0
+AN
+$Comp
+L D_Zener D4
+U 1 1 5BF87C84
+P 9450 2075
+F 0 "D4" H 9450 2175 50  0000 C CNN
+F 1 "D_Zener" H 9450 1975 50  0000 C CNN
+F 2 "Diodes_THT:D_T-1_P5.08mm_Horizontal" H 9450 2075 50  0001 C CNN
+F 3 "" H 9450 2075 50  0001 C CNN
+	1    9450 2075
+	0    1    1    0   
+$EndComp
+$Comp
+L R R8
+U 1 1 5BF87C8A
+P 7675 1575
+F 0 "R8" V 7755 1575 50  0000 C CNN
+F 1 "4K7" V 7675 1575 50  0000 C CNN
+F 2 "modFiles:Resistor_small" V 7605 1575 50  0001 C CNN
+F 3 "" H 7675 1575 50  0001 C CNN
+	1    7675 1575
+	1    0    0    -1  
+$EndComp
+Text Label 9450 2225 3    60   ~ 0
+GND
+Text Label 9450 1400 1    60   ~ 0
++3V3
+$Comp
+L R R6
+U 1 1 5BF87C93
+P 9150 1700
+F 0 "R6" V 9230 1700 50  0000 C CNN
+F 1 "100" V 9150 1700 50  0000 C CNN
+F 2 "modFiles:Resistor_small" V 9080 1700 50  0001 C CNN
+F 3 "" H 9150 1700 50  0001 C CNN
+	1    9150 1700
+	0    1    1    0   
+$EndComp
+$Comp
+L Conn_01x01 J13
+U 1 1 5BF87C9C
+P 9000 1350
+F 0 "J13" H 9000 1450 50  0000 C CNN
+F 1 "Conn_01x01" H 9000 1250 50  0001 C CNN
+F 2 "abc:CONN_PAD" H 9000 1350 50  0001 C CNN
+F 3 "" H 9000 1350 50  0001 C CNN
+	1    9000 1350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Conn_01x01 J17
+U 1 1 5BF87CA8
+P 9650 1775
+F 0 "J17" H 9750 1775 50  0000 C CNN
+F 1 "Conn_01x01" H 9650 1675 50  0001 C CNN
+F 2 "abc:CONN_PAD" H 9650 1775 50  0001 C CNN
+F 3 "" H 9650 1775 50  0001 C CNN
+	1    9650 1775
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_01x01 J18
+U 1 1 5BF87CAF
+P 9650 1925
+F 0 "J18" H 9775 1925 50  0000 C CNN
+F 1 "Conn_01x01" H 9650 1825 50  0001 C CNN
+F 2 "abc:CONN_PAD" H 9650 1925 50  0001 C CNN
+F 3 "" H 9650 1925 50  0001 C CNN
+	1    9650 1925
+	1    0    0    -1  
+$EndComp
+Text Label 7550 3225 2    60   ~ 0
+IntY
+Text Label 9775 1700 0    60   ~ 0
+SCK
+$Comp
+L D_Zener D3
+U 1 1 5BF87FA5
+P 8000 3600
+F 0 "D3" H 8000 3700 50  0000 C CNN
+F 1 "D_Zener" H 8000 3500 50  0000 C CNN
+F 2 "Diodes_THT:D_T-1_P5.08mm_Horizontal" H 8000 3600 50  0001 C CNN
+F 3 "" H 8000 3600 50  0001 C CNN
+	1    8000 3600
+	0    1    1    0   
+$EndComp
+$Comp
+L R R5
+U 1 1 5BF87FAB
+P 9650 3075
+F 0 "R5" V 9730 3075 50  0000 C CNN
+F 1 "4K7" V 9650 3075 50  0000 C CNN
+F 2 "modFiles:Resistor_small" V 9580 3075 50  0001 C CNN
+F 3 "" H 9650 3075 50  0001 C CNN
+	1    9650 3075
+	1    0    0    -1  
+$EndComp
+Text Label 8000 3750 3    60   ~ 0
+GND
+Text Label 8000 2925 1    60   ~ 0
++3V3
+$Comp
+L R R4
+U 1 1 5BF87FB4
+P 7700 3225
+F 0 "R4" V 7780 3225 50  0000 C CNN
+F 1 "100" V 7700 3225 50  0000 C CNN
+F 2 "modFiles:Resistor_small" V 7630 3225 50  0001 C CNN
+F 3 "" H 7700 3225 50  0001 C CNN
+	1    7700 3225
+	0    1    1    0   
+$EndComp
+$Comp
+L Conn_01x01 J7
+U 1 1 5BF87FBD
+P 7550 2875
+F 0 "J7" H 7550 2975 50  0000 C CNN
+F 1 "Conn_01x01" H 7550 2775 50  0001 C CNN
+F 2 "abc:CONN_PAD" H 7550 2875 50  0001 C CNN
+F 3 "" H 7550 2875 50  0001 C CNN
+	1    7550 2875
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Conn_01x01 J11
+U 1 1 5BF87FC9
+P 8200 3300
+F 0 "J11" H 8300 3300 50  0000 C CNN
+F 1 "Conn_01x01" H 8200 3200 50  0001 C CNN
+F 2 "abc:CONN_PAD" H 8200 3300 50  0001 C CNN
+F 3 "" H 8200 3300 50  0001 C CNN
+	1    8200 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_01x01 J12
+U 1 1 5BF87FD0
+P 8200 3450
+F 0 "J12" H 8325 3450 50  0000 C CNN
+F 1 "Conn_01x01" H 8200 3350 50  0001 C CNN
+F 2 "abc:CONN_PAD" H 8200 3450 50  0001 C CNN
+F 3 "" H 8200 3450 50  0001 C CNN
+	1    8200 3450
+	1    0    0    -1  
+$EndComp
+Text Label 9200 3225 2    60   ~ 0
+IOY
+Text Label 8000 1725 0    60   ~ 0
+CS
+$Comp
+L D_Zener D5
+U 1 1 5BF88343
+P 9650 3600
+F 0 "D5" H 9650 3700 50  0000 C CNN
+F 1 "D_Zener" H 9650 3500 50  0000 C CNN
+F 2 "Diodes_THT:D_T-1_P5.08mm_Horizontal" H 9650 3600 50  0001 C CNN
+F 3 "" H 9650 3600 50  0001 C CNN
+	1    9650 3600
+	0    1    1    0   
+$EndComp
+$Comp
+L R R9
+U 1 1 5BF88349
+P 8000 3075
+F 0 "R9" V 8080 3075 50  0000 C CNN
+F 1 "4K7" V 8000 3075 50  0000 C CNN
+F 2 "modFiles:Resistor_small" V 7930 3075 50  0001 C CNN
+F 3 "" H 8000 3075 50  0001 C CNN
+	1    8000 3075
+	1    0    0    -1  
+$EndComp
+Text Label 9650 3750 3    60   ~ 0
+GND
+Text Label 9650 2925 1    60   ~ 0
++3V3
+$Comp
+L R R7
+U 1 1 5BF88352
+P 9350 3225
+F 0 "R7" V 9430 3225 50  0000 C CNN
+F 1 "100" V 9350 3225 50  0000 C CNN
+F 2 "modFiles:Resistor_small" V 9280 3225 50  0001 C CNN
+F 3 "" H 9350 3225 50  0001 C CNN
+	1    9350 3225
+	0    1    1    0   
+$EndComp
+$Comp
+L Conn_01x01 J14
+U 1 1 5BF8835B
+P 9200 2875
+F 0 "J14" H 9200 2975 50  0000 C CNN
+F 1 "Conn_01x01" H 9200 2775 50  0001 C CNN
+F 2 "abc:CONN_PAD" H 9200 2875 50  0001 C CNN
+F 3 "" H 9200 2875 50  0001 C CNN
+	1    9200 2875
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Conn_01x01 J19
+U 1 1 5BF88367
+P 9850 3300
+F 0 "J19" H 9950 3300 50  0000 C CNN
+F 1 "Conn_01x01" H 9850 3200 50  0001 C CNN
+F 2 "abc:CONN_PAD" H 9850 3300 50  0001 C CNN
+F 3 "" H 9850 3300 50  0001 C CNN
+	1    9850 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_01x01 J20
+U 1 1 5BF8836E
+P 9850 3450
+F 0 "J20" H 9975 3450 50  0000 C CNN
+F 1 "Conn_01x01" H 9850 3350 50  0001 C CNN
+F 2 "abc:CONN_PAD" H 9850 3450 50  0001 C CNN
+F 3 "" H 9850 3450 50  0001 C CNN
+	1    9850 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_01x01 J8
+U 1 1 5BF9A4F5
+P 9300 1350
+F 0 "J8" H 9300 1450 50  0000 C CNN
+F 1 "Conn_01x01" H 9300 1250 50  0001 C CNN
+F 2 "abc:CONN_PAD" H 9300 1350 50  0001 C CNN
+F 3 "" H 9300 1350 50  0001 C CNN
+	1    9300 1350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Conn_01x01 J6
+U 1 1 5BF9A63C
+P 7850 2870
+F 0 "J6" H 7850 2970 50  0000 C CNN
+F 1 "Conn_01x01" H 7850 2770 50  0001 C CNN
+F 2 "abc:CONN_PAD" H 7850 2870 50  0001 C CNN
+F 3 "" H 7850 2870 50  0001 C CNN
+	1    7850 2870
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Conn_01x01 J15
+U 1 1 5BF9A6AF
+P 9500 2875
+F 0 "J15" H 9500 2975 50  0000 C CNN
+F 1 "Conn_01x01" H 9500 2775 50  0001 C CNN
+F 2 "abc:CONN_PAD" H 9500 2875 50  0001 C CNN
+F 3 "" H 9500 2875 50  0001 C CNN
+	1    9500 2875
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Conn_01x01 J4
+U 1 1 5BF9A734
+P 7525 1370
+F 0 "J4" H 7525 1470 50  0000 C CNN
+F 1 "Conn_01x01" H 7525 1270 50  0001 C CNN
+F 2 "abc:CONN_PAD" H 7525 1370 50  0001 C CNN
+F 3 "" H 7525 1370 50  0001 C CNN
+	1    7525 1370
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1850 2250 2000 2250
+Wire Wire Line
+	7225 1725 7225 1575
+Wire Wire Line
+	7525 1725 8000 1725
+Wire Wire Line
+	7675 1725 7675 1800
+Connection ~ 9450 1700
+Wire Wire Line
+	9000 1700 9000 1550
+Wire Wire Line
+	9300 1700 9775 1700
+Wire Wire Line
+	9450 1700 9450 1775
+Connection ~ 8000 3225
+Wire Wire Line
+	7550 3225 7550 3075
+Wire Wire Line
+	7850 3225 8325 3225
+Wire Wire Line
+	8000 3225 8000 3300
+Connection ~ 9650 3225
+Wire Wire Line
+	9200 3225 9200 3075
+Wire Wire Line
+	9500 3225 9975 3225
+Wire Wire Line
+	9650 3225 9650 3300
+Connection ~ 7675 1725
+Wire Wire Line
+	7525 1570 7525 1725
+Wire Wire Line
+	9300 1550 9300 1700
+Wire Wire Line
+	7850 3070 7850 3225
+Wire Wire Line
+	9500 3075 9500 3225
+$Comp
+L Conn_01x03 J16
+U 1 1 5C07CF53
+P 5175 4550
+F 0 "J16" H 5175 4750 50  0000 C CNN
+F 1 "Conn_01x03" H 5175 4350 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 5175 4550 50  0001 C CNN
+F 3 "" H 5175 4550 50  0001 C CNN
+	1    5175 4550
+	0    1    1    0   
+$EndComp
+$Comp
+L Conn_01x04 J21
+U 1 1 5C07D054
+P 6225 4450
+F 0 "J21" H 6225 4650 50  0000 C CNN
+F 1 "Conn_01x04" H 6225 4150 50  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x04_Pitch2.54mm" H 6225 4450 50  0001 C CNN
+F 3 "" H 6225 4450 50  0001 C CNN
+	1    6225 4450
+	0    1    1    0   
+$EndComp
+Text Label 5075 4350 1    60   ~ 0
+GND
+Text Label 5175 4350 1    60   ~ 0
+RX
+Text Label 5275 4350 0    60   ~ 0
+TX
+Text Label 6025 4250 2    60   ~ 0
++5V
+Text Label 6125 4250 1    60   ~ 0
+GND
+Text Label 6225 4250 1    60   ~ 0
+RX
+Text Label 6325 4250 0    60   ~ 0
+TX
+$EndSCHEMATC

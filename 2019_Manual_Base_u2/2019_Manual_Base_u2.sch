@@ -1,0 +1,731 @@
+EESchema Schematic File Version 2
+LIBS:2019_Manual_Base_u2-rescue
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:74xgxx
+LIBS:ac-dc
+LIBS:actel
+LIBS:allegro
+LIBS:Altera
+LIBS:analog_devices
+LIBS:battery_management
+LIBS:bbd
+LIBS:bosch
+LIBS:brooktre
+LIBS:cmos_ieee
+LIBS:dc-dc
+LIBS:diode
+LIBS:elec-unifil
+LIBS:ESD_Protection
+LIBS:ftdi
+LIBS:gennum
+LIBS:graphic_symbols
+LIBS:hc11
+LIBS:infineon
+LIBS:intersil
+LIBS:ir
+LIBS:Lattice
+LIBS:leds
+LIBS:LEM
+LIBS:logic_programmable
+LIBS:maxim
+LIBS:mechanical
+LIBS:microchip_dspic33dsc
+LIBS:microchip_pic10mcu
+LIBS:microchip_pic12mcu
+LIBS:microchip_pic16mcu
+LIBS:microchip_pic18mcu
+LIBS:microchip_pic24mcu
+LIBS:microchip_pic32mcu
+LIBS:modules
+LIBS:motor_drivers
+LIBS:msp430
+LIBS:nordicsemi
+LIBS:nxp
+LIBS:nxp_armmcu
+LIBS:onsemi
+LIBS:Oscillators
+LIBS:Power_Management
+LIBS:powerint
+LIBS:Prashant_library
+LIBS:pspice
+LIBS:references
+LIBS:rfcom
+LIBS:RFSolutions
+LIBS:sensors
+LIBS:silabs
+LIBS:stm8
+LIBS:stm32
+LIBS:supertex
+LIBS:transf
+LIBS:triac_thyristor
+LIBS:ttl_ieee
+LIBS:video
+LIBS:wiznet
+LIBS:Worldsemi
+LIBS:Xicor
+LIBS:zetex
+LIBS:Zilog
+LIBS:2019_Manual_Base_u2-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+NoConn ~ 10050 2625
+NoConn ~ 10050 2675
+NoConn ~ 8450 2675
+NoConn ~ 8450 2625
+NoConn ~ 8850 4650
+$Comp
+L Conn_01x02 J1
+U 1 1 5BC80663
+P 1025 1125
+F 0 "J1" H 1025 1225 50  0000 C CNN
+F 1 "Power" V 1125 1075 50  0000 C CNN
+F 2 "modFiles:Solar_Connector" H 1025 1125 50  0001 C CNN
+F 3 "" H 1025 1125 50  0001 C CNN
+	1    1025 1125
+	0    1    1    0   
+$EndComp
+$Comp
+L USB_A J6
+U 1 1 5BC80D76
+P 5075 1475
+F 0 "J6" H 5175 1825 50  0000 L CNN
+F 1 "U1" H 4875 1825 50  0000 L CNN
+F 2 "modFiles:Connector_USB" H 5225 1425 50  0001 C CNN
+F 3 "" H 5225 1425 50  0001 C CNN
+	1    5075 1475
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR01
+U 1 1 5BC81208
+P 2400 850
+F 0 "#PWR01" H 2400 700 50  0001 C CNN
+F 1 "+5V" H 2400 990 50  0000 C CNN
+F 2 "" H 2400 850 50  0001 C CNN
+F 3 "" H 2400 850 50  0001 C CNN
+	1    2400 850 
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR02
+U 1 1 5BC81228
+P 625 1100
+F 0 "#PWR02" H 625 850 50  0001 C CNN
+F 1 "GND" H 625 950 50  0000 C CNN
+F 2 "" H 625 1100 50  0001 C CNN
+F 3 "" H 625 1100 50  0001 C CNN
+	1    625  1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R3
+U 1 1 5BC81284
+P 1425 1050
+F 0 "R3" V 1505 1050 50  0000 C CNN
+F 1 "R" V 1425 1050 50  0000 C CNN
+F 2 "modFiles:Resistor_small" V 1355 1050 50  0001 C CNN
+F 3 "" H 1425 1050 50  0001 C CNN
+	1    1425 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D2
+U 1 1 5BC812F1
+P 1425 1400
+F 0 "D2" H 1425 1500 50  0000 C CNN
+F 1 "LED" H 1425 1300 50  0000 C CNN
+F 2 "modFiles:LED_D3.0mm" H 1425 1400 50  0001 C CNN
+F 3 "" H 1425 1400 50  0001 C CNN
+	1    1425 1400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR03
+U 1 1 5BC81372
+P 1425 1675
+F 0 "#PWR03" H 1425 1425 50  0001 C CNN
+F 1 "GND" H 1425 1525 50  0000 C CNN
+F 2 "" H 1425 1675 50  0001 C CNN
+F 3 "" H 1425 1675 50  0001 C CNN
+	1    1425 1675
+	1    0    0    -1  
+$EndComp
+$Comp
+L FUSE F1
+U 1 1 5BC8139A
+P 1900 900
+F 0 "F1" H 2000 950 40  0000 C CNN
+F 1 "FUSE" H 1800 850 40  0000 C CNN
+F 2 "modFiles:Fuse_Holder" H 1900 900 60  0001 C CNN
+F 3 "" H 1900 900 60  0000 C CNN
+	1    1900 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R4
+U 1 1 5BC81423
+P 2400 1050
+F 0 "R4" V 2480 1050 50  0000 C CNN
+F 1 "R" V 2400 1050 50  0000 C CNN
+F 2 "modFiles:Resistor_small" V 2330 1050 50  0001 C CNN
+F 3 "" H 2400 1050 50  0001 C CNN
+	1    2400 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D3
+U 1 1 5BC81429
+P 2400 1400
+F 0 "D3" H 2400 1500 50  0000 C CNN
+F 1 "LED" H 2400 1300 50  0000 C CNN
+F 2 "modFiles:LED_D3.0mm" H 2400 1400 50  0001 C CNN
+F 3 "" H 2400 1400 50  0001 C CNN
+	1    2400 1400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR04
+U 1 1 5BC81430
+P 2400 1675
+F 0 "#PWR04" H 2400 1425 50  0001 C CNN
+F 1 "GND" H 2400 1525 50  0000 C CNN
+F 2 "" H 2400 1675 50  0001 C CNN
+F 3 "" H 2400 1675 50  0001 C CNN
+	1    2400 1675
+	1    0    0    -1  
+$EndComp
+Text Label 1025 900  0    60   ~ 0
+Vin
+$Comp
+L DB9_Female_MountingHoles J2
+U 1 1 5BC81E67
+P 1850 3225
+F 0 "J2" H 1850 3875 50  0000 C CNN
+F 1 "Encoder & Line_Trackers" H 1850 3800 50  0000 C CNN
+F 2 "modFiles:Connector_DB_9" H 1850 3225 50  0001 C CNN
+F 3 "" H 1850 3225 50  0001 C CNN
+	1    1850 3225
+	1    0    0    -1  
+$EndComp
+$Comp
+L USB_A J8
+U 1 1 5BC81EE7
+P 5950 1475
+F 0 "J8" H 6050 1825 50  0000 L CNN
+F 1 "U3" H 5750 1825 50  0000 L CNN
+F 2 "modFiles:Connector_USB" H 6100 1425 50  0001 C CNN
+F 3 "" H 6100 1425 50  0001 C CNN
+	1    5950 1475
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR05
+U 1 1 5BCFD407
+P 5375 1275
+F 0 "#PWR05" H 5375 1025 50  0001 C CNN
+F 1 "GND" H 5375 1125 50  0000 C CNN
+F 2 "" H 5375 1275 50  0001 C CNN
+F 3 "" H 5375 1275 50  0001 C CNN
+	1    5375 1275
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR06
+U 1 1 5BCFD43A
+P 6250 1275
+F 0 "#PWR06" H 6250 1025 50  0001 C CNN
+F 1 "GND" H 6250 1125 50  0000 C CNN
+F 2 "" H 6250 1275 50  0001 C CNN
+F 3 "" H 6250 1275 50  0001 C CNN
+	1    6250 1275
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR07
+U 1 1 5BCFD466
+P 5900 1900
+F 0 "#PWR07" H 5900 1650 50  0001 C CNN
+F 1 "GND" H 5900 1750 50  0000 C CNN
+F 2 "" H 5900 1900 50  0001 C CNN
+F 3 "" H 5900 1900 50  0001 C CNN
+	1    5900 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR08
+U 1 1 5BCFD49D
+P 5025 1900
+F 0 "#PWR08" H 5025 1650 50  0001 C CNN
+F 1 "GND" H 5025 1750 50  0000 C CNN
+F 2 "" H 5025 1900 50  0001 C CNN
+F 3 "" H 5025 1900 50  0001 C CNN
+	1    5025 1900
+	1    0    0    -1  
+$EndComp
+Text Label 6250 1575 0    60   ~ 0
+RX
+Text Label 6250 1475 0    60   ~ 0
+TX
+Text Label 5375 1575 0    60   ~ 0
+RX
+Text Label 5375 1475 0    60   ~ 0
+TX
+Text Label 8450 2925 2    40   ~ 0
+GND
+Text Label 9650 2925 2    40   ~ 0
+GND
+Text Label 10050 2925 0    40   ~ 0
+GND
+Text Label 8850 2925 0    40   ~ 0
+GND
+Text Label 10050 4725 0    40   ~ 0
+GND
+Text Label 8850 4725 0    40   ~ 0
+GND
+Text Label 8450 4725 2    40   ~ 0
+GND
+Text Label 9650 4725 2    40   ~ 0
+GND
+$Comp
+L BC547 Q1
+U 1 1 5BCFE180
+P 1300 7100
+F 0 "Q1" H 1500 7175 50  0000 L CNN
+F 1 "BC547" H 1500 7100 50  0000 L CNN
+F 2 "modFiles:BC547" H 1500 7025 50  0001 L CIN
+F 3 "" H 1300 7100 50  0001 L CNN
+	1    1300 7100
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 5BCFE1EB
+P 900 7100
+F 0 "R1" V 980 7100 50  0000 C CNN
+F 1 "R" V 900 7100 50  0000 C CNN
+F 2 "modFiles:Resistor_small" V 830 7100 50  0001 C CNN
+F 3 "" H 900 7100 50  0001 C CNN
+	1    900  7100
+	0    1    1    0   
+$EndComp
+$Comp
+L R R2
+U 1 1 5BCFE2C7
+P 1075 7325
+F 0 "R2" V 1155 7325 50  0000 C CNN
+F 1 "R" V 1075 7325 50  0000 C CNN
+F 2 "modFiles:Resistor_small" V 1005 7325 50  0001 C CNN
+F 3 "" H 1075 7325 50  0001 C CNN
+	1    1075 7325
+	1    0    0    -1  
+$EndComp
+$Comp
+L 6V_Relay Rly1
+U 1 1 5BCFE3BB
+P 1400 6750
+F 0 "Rly1" H 2050 7100 50  0000 L CNN
+F 1 "6V_Relay" H 2050 7000 50  0000 L CNN
+F 2 "modFiles:Relay_6V" H 2050 6900 50  0001 L CNN
+F 3 "" H 1600 6550 50  0000 C CNN
+	1    1400 6750
+	1    0    0    -1  
+$EndComp
+$Comp
+L D D1
+U 1 1 5BCFE4D7
+P 1075 6550
+F 0 "D1" H 1075 6650 50  0000 C CNN
+F 1 "D" H 1075 6450 50  0000 C CNN
+F 2 "modFiles:Diode_Small" H 1075 6550 50  0001 C CNN
+F 3 "" H 1075 6550 50  0001 C CNN
+	1    1075 6550
+	0    1    1    0   
+$EndComp
+$Comp
+L Conn_01x02 J3
+U 1 1 5BCFE6D1
+P 1975 5925
+F 0 "J3" H 1975 6025 50  0000 C CNN
+F 1 "Conn_01x02" H 1975 5725 50  0000 C CNN
+F 2 "modFiles:Connector_Bornier_2" H 1975 5925 50  0001 C CNN
+F 3 "" H 1975 5925 50  0001 C CNN
+	1    1975 5925
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1425 1250 1425 1200
+Wire Wire Line
+	1425 1675 1425 1550
+Wire Wire Line
+	2400 1250 2400 1200
+Wire Wire Line
+	2400 1675 2400 1550
+Wire Wire Line
+	1025 900  1650 900 
+Wire Wire Line
+	2150 900  2400 900 
+Wire Wire Line
+	2400 900  2400 850 
+Wire Wire Line
+	1025 900  1025 925 
+Connection ~ 1425 900 
+Wire Wire Line
+	625  1100 625  925 
+Wire Wire Line
+	625  925  925  925 
+Wire Wire Line
+	4975 1900 5075 1900
+Wire Wire Line
+	4975 1900 4975 1875
+Wire Wire Line
+	5075 1900 5075 1875
+Connection ~ 5025 1900
+Wire Wire Line
+	5850 1875 5850 1900
+Wire Wire Line
+	5850 1900 5950 1900
+Wire Wire Line
+	5950 1900 5950 1875
+Connection ~ 5900 1900
+Wire Wire Line
+	1100 7100 1050 7100
+Wire Wire Line
+	1075 7100 1075 7175
+Connection ~ 1075 7100
+Wire Wire Line
+	1400 6900 1400 6850
+Wire Wire Line
+	1075 5750 1075 6400
+Wire Wire Line
+	1075 6250 1400 6250
+Wire Wire Line
+	1075 6700 1075 6875
+Wire Wire Line
+	1075 6875 1400 6875
+Connection ~ 1400 6875
+$Comp
+L GND #PWR09
+U 1 1 5BCFE79D
+P 1800 6850
+F 0 "#PWR09" H 1800 6600 50  0001 C CNN
+F 1 "GND" H 1800 6700 50  0000 C CNN
+F 2 "" H 1800 6850 50  0001 C CNN
+F 3 "" H 1800 6850 50  0001 C CNN
+	1    1800 6850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1675 6025 1775 6025
+Wire Wire Line
+	1700 6025 1700 6250
+$Comp
+L +12V #PWR010
+U 1 1 5BCFE923
+P 1775 5925
+F 0 "#PWR010" H 1775 5775 50  0001 C CNN
+F 1 "+12V" H 1775 6065 50  0000 C CNN
+F 2 "" H 1775 5925 50  0001 C CNN
+F 3 "" H 1775 5925 50  0001 C CNN
+	1    1775 5925
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR011
+U 1 1 5BCFEBC2
+P 1075 7475
+F 0 "#PWR011" H 1075 7225 50  0001 C CNN
+F 1 "GND" H 1075 7325 50  0000 C CNN
+F 2 "" H 1075 7475 50  0001 C CNN
+F 3 "" H 1075 7475 50  0001 C CNN
+	1    1075 7475
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR012
+U 1 1 5BCFEC77
+P 1400 7300
+F 0 "#PWR012" H 1400 7050 50  0001 C CNN
+F 1 "GND" H 1400 7150 50  0000 C CNN
+F 2 "" H 1400 7300 50  0001 C CNN
+F 3 "" H 1400 7300 50  0001 C CNN
+	1    1400 7300
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR013
+U 1 1 5BCFEEC6
+P 1225 6150
+F 0 "#PWR013" H 1225 6000 50  0001 C CNN
+F 1 "+5V" H 1225 6290 50  0000 C CNN
+F 2 "" H 1225 6150 50  0001 C CNN
+F 3 "" H 1225 6150 50  0001 C CNN
+	1    1225 6150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1225 6150 1225 6250
+Connection ~ 1225 6250
+$Comp
+L BC547 Q2
+U 1 1 5BCFF124
+P 2950 7075
+F 0 "Q2" H 3150 7150 50  0000 L CNN
+F 1 "BC547" H 3150 7075 50  0000 L CNN
+F 2 "modFiles:BC547" H 3150 7000 50  0001 L CIN
+F 3 "" H 2950 7075 50  0001 L CNN
+	1    2950 7075
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R5
+U 1 1 5BCFF12A
+P 2550 7075
+F 0 "R5" V 2630 7075 50  0000 C CNN
+F 1 "R" V 2550 7075 50  0000 C CNN
+F 2 "modFiles:Resistor_small" V 2480 7075 50  0001 C CNN
+F 3 "" H 2550 7075 50  0001 C CNN
+	1    2550 7075
+	0    1    1    0   
+$EndComp
+$Comp
+L R R6
+U 1 1 5BCFF130
+P 2725 7300
+F 0 "R6" V 2805 7300 50  0000 C CNN
+F 1 "R" V 2725 7300 50  0000 C CNN
+F 2 "modFiles:Resistor_small" V 2655 7300 50  0001 C CNN
+F 3 "" H 2725 7300 50  0001 C CNN
+	1    2725 7300
+	1    0    0    -1  
+$EndComp
+$Comp
+L 6V_Relay Rly2
+U 1 1 5BCFF136
+P 3050 6725
+F 0 "Rly2" H 3700 7075 50  0000 L CNN
+F 1 "6V_Relay" H 3700 6975 50  0000 L CNN
+F 2 "modFiles:Relay_6V" H 3700 6875 50  0001 L CNN
+F 3 "" H 3250 6525 50  0000 C CNN
+	1    3050 6725
+	1    0    0    -1  
+$EndComp
+$Comp
+L D D4
+U 1 1 5BCFF13C
+P 2725 6525
+F 0 "D4" H 2725 6625 50  0000 C CNN
+F 1 "D" H 2725 6425 50  0000 C CNN
+F 2 "modFiles:Diode_Small" H 2725 6525 50  0001 C CNN
+F 3 "" H 2725 6525 50  0001 C CNN
+	1    2725 6525
+	0    1    1    0   
+$EndComp
+$Comp
+L Conn_01x02 J4
+U 1 1 5BCFF142
+P 3625 5900
+F 0 "J4" H 3625 6000 50  0000 C CNN
+F 1 "Conn_01x02" H 3625 5700 50  0000 C CNN
+F 2 "modFiles:Connector_Bornier_2" H 3625 5900 50  0001 C CNN
+F 3 "" H 3625 5900 50  0001 C CNN
+	1    3625 5900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2750 7075 2700 7075
+Wire Wire Line
+	2725 7075 2725 7150
+Connection ~ 2725 7075
+Wire Wire Line
+	3050 6875 3050 6825
+Wire Wire Line
+	2725 6375 2725 6225
+Wire Wire Line
+	2675 6225 3050 6225
+Wire Wire Line
+	2725 6675 2725 6850
+Wire Wire Line
+	2725 6850 3050 6850
+Connection ~ 3050 6850
+$Comp
+L GND #PWR014
+U 1 1 5BCFF151
+P 3450 6825
+F 0 "#PWR014" H 3450 6575 50  0001 C CNN
+F 1 "GND" H 3450 6675 50  0000 C CNN
+F 2 "" H 3450 6825 50  0001 C CNN
+F 3 "" H 3450 6825 50  0001 C CNN
+	1    3450 6825
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3275 6000 3425 6000
+Wire Wire Line
+	3350 6000 3350 6225
+$Comp
+L +12V #PWR015
+U 1 1 5BCFF159
+P 3425 5900
+F 0 "#PWR015" H 3425 5750 50  0001 C CNN
+F 1 "+12V" H 3425 6040 50  0000 C CNN
+F 2 "" H 3425 5900 50  0001 C CNN
+F 3 "" H 3425 5900 50  0001 C CNN
+	1    3425 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR016
+U 1 1 5BCFF15F
+P 2725 7450
+F 0 "#PWR016" H 2725 7200 50  0001 C CNN
+F 1 "GND" H 2725 7300 50  0000 C CNN
+F 2 "" H 2725 7450 50  0001 C CNN
+F 3 "" H 2725 7450 50  0001 C CNN
+	1    2725 7450
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR017
+U 1 1 5BCFF165
+P 3050 7275
+F 0 "#PWR017" H 3050 7025 50  0001 C CNN
+F 1 "GND" H 3050 7125 50  0000 C CNN
+F 2 "" H 3050 7275 50  0001 C CNN
+F 3 "" H 3050 7275 50  0001 C CNN
+	1    3050 7275
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR018
+U 1 1 5BCFF16B
+P 2875 6125
+F 0 "#PWR018" H 2875 5975 50  0001 C CNN
+F 1 "+5V" H 2875 6265 50  0000 C CNN
+F 2 "" H 2875 6125 50  0001 C CNN
+F 3 "" H 2875 6125 50  0001 C CNN
+	1    2875 6125
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2875 6125 2875 6225
+Connection ~ 2875 6225
+$Comp
+L Conn_01x04 J5
+U 1 1 5BCFE4DB
+P 3925 1475
+F 0 "J5" H 3925 1675 50  0000 C CNN
+F 1 "Conn_01x04" H 3925 1175 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm" H 3925 1475 50  0001 C CNN
+F 3 "" H 3925 1475 50  0001 C CNN
+	1    3925 1475
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R8
+U 1 1 5BCFE661
+P 2825 5750
+F 0 "R8" V 2905 5750 50  0000 C CNN
+F 1 "R" V 2825 5750 50  0000 C CNN
+F 2 "modFiles:Resistor_small" V 2755 5750 50  0001 C CNN
+F 3 "" H 2825 5750 50  0001 C CNN
+	1    2825 5750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED D6
+U 1 1 5BCFE6D2
+P 3125 5750
+F 0 "D6" H 3125 5850 50  0000 C CNN
+F 1 "LED" H 3125 5650 50  0000 C CNN
+F 2 "modFiles:LED_D3.0mm" H 3125 5750 50  0001 C CNN
+F 3 "" H 3125 5750 50  0001 C CNN
+	1    3125 5750
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3275 5750 3275 6000
+Connection ~ 3350 6000
+Wire Wire Line
+	2675 5750 2675 6225
+Connection ~ 2725 6225
+$Comp
+L R R7
+U 1 1 5BCFEC82
+P 1225 5750
+F 0 "R7" V 1305 5750 50  0000 C CNN
+F 1 "R" V 1225 5750 50  0000 C CNN
+F 2 "modFiles:Resistor_small" V 1155 5750 50  0001 C CNN
+F 3 "" H 1225 5750 50  0001 C CNN
+	1    1225 5750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED D5
+U 1 1 5BCFEC88
+P 1525 5750
+F 0 "D5" H 1525 5850 50  0000 C CNN
+F 1 "LED" H 1525 5650 50  0000 C CNN
+F 2 "modFiles:LED_D3.0mm" H 1525 5750 50  0001 C CNN
+F 3 "" H 1525 5750 50  0001 C CNN
+	1    1525 5750
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1675 5750 1675 6025
+Connection ~ 1075 6250
+Connection ~ 1700 6025
+$Comp
+L STM32F407_Discovery U1
+U 1 1 5BCFEA22
+P 9250 4050
+F 0 "U1" H 9425 5650 60  0000 C CNN
+F 1 "STM32F407_Discovery" H 9525 3200 60  0000 C CNN
+F 2 "modFiles:STM32F407_Discovery" H 9250 4050 60  0001 C CNN
+F 3 "" H 9250 4050 60  0001 C CNN
+	1    9250 4050
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
