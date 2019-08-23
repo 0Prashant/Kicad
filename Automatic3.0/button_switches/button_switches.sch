@@ -1,38 +1,6 @@
-EESchema Schematic File Version 2
-LIBS:power
-LIBS:device
-LIBS:switches
-LIBS:relays
-LIBS:motors
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
+EESchema Schematic File Version 4
 LIBS:button_switches-cache
-EELAYER 25 0
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -47,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L GND #PWR01
+L power:GND #PWR01
 U 1 1 5B407516
 P 5300 5500
 F 0 "#PWR01" H 5300 5250 50  0001 C CNN
@@ -58,7 +26,7 @@ F 3 "" H 5300 5500 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L C C1
+L Device:C C1
 U 1 1 5B407589
 P 5750 3550
 F 0 "C1" H 5775 3650 50  0000 L CNN
@@ -69,7 +37,7 @@ F 3 "" H 5750 3550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C2
+L Device:C C2
 U 1 1 5B4075F0
 P 6050 3550
 F 0 "C2" H 6075 3650 50  0000 L CNN
@@ -80,7 +48,7 @@ F 3 "" H 6050 3550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C3
+L Device:C C3
 U 1 1 5B407643
 P 6350 3550
 F 0 "C3" H 6375 3650 50  0000 L CNN
@@ -91,7 +59,7 @@ F 3 "" H 6350 3550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C4
+L Device:C C4
 U 1 1 5B407728
 P 6650 3550
 F 0 "C4" H 6675 3650 50  0000 L CNN
@@ -102,7 +70,7 @@ F 3 "" H 6650 3550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C5
+L Device:C C5
 U 1 1 5B40772E
 P 6950 3550
 F 0 "C5" H 6975 3650 50  0000 L CNN
@@ -113,7 +81,7 @@ F 3 "" H 6950 3550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C6
+L Device:C C6
 U 1 1 5B407734
 P 7250 3550
 F 0 "C6" H 7275 3650 50  0000 L CNN
@@ -124,7 +92,7 @@ F 3 "" H 7250 3550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR02
+L power:GND #PWR02
 U 1 1 5B407926
 P 6500 3750
 F 0 "#PWR02" H 6500 3500 50  0001 C CNN
@@ -135,7 +103,7 @@ F 3 "" H 6500 3750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L DB9_Female_MountingHoles J1
+L conn:DB9_Female_MountingHoles J1
 U 1 1 5B40799F
 P 2250 4300
 F 0 "J1" H 2250 4950 50  0000 C CNN
@@ -158,7 +126,7 @@ IN5
 Text Label 2550 4500 0    60   ~ 0
 IN6
 $Comp
-L GND #PWR03
+L power:GND #PWR03
 U 1 1 5B40863D
 P 2250 3700
 F 0 "#PWR03" H 2250 3450 50  0001 C CNN
@@ -181,7 +149,7 @@ IN5
 Text Label 4400 5800 0    60   ~ 0
 IN6
 $Comp
-L R R1
+L Device:R R1
 U 1 1 5B40899C
 P 8450 3400
 F 0 "R1" V 8530 3400 50  0000 C CNN
@@ -192,7 +160,7 @@ F 3 "" H 8450 3400 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L LED D1
+L Device:LED D1
 U 1 1 5B408A01
 P 8850 3400
 F 0 "D1" H 8850 3500 50  0000 C CNN
@@ -203,7 +171,7 @@ F 3 "" H 8850 3400 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L R R2
+L Device:R R2
 U 1 1 5B408B1D
 P 8450 3700
 F 0 "R2" V 8530 3700 50  0000 C CNN
@@ -214,7 +182,7 @@ F 3 "" H 8450 3700 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L LED D2
+L Device:LED D2
 U 1 1 5B408B23
 P 8850 3700
 F 0 "D2" H 8850 3800 50  0000 C CNN
@@ -225,7 +193,7 @@ F 3 "" H 8850 3700 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L R R3
+L Device:R R3
 U 1 1 5B408DE6
 P 8450 4000
 F 0 "R3" V 8530 4000 50  0000 C CNN
@@ -236,7 +204,7 @@ F 3 "" H 8450 4000 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L LED D3
+L Device:LED D3
 U 1 1 5B408DEC
 P 8850 4000
 F 0 "D3" H 8850 4100 50  0000 C CNN
@@ -247,7 +215,7 @@ F 3 "" H 8850 4000 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L R R4
+L Device:R R4
 U 1 1 5B408DF3
 P 8450 4300
 F 0 "R4" V 8530 4300 50  0000 C CNN
@@ -258,7 +226,7 @@ F 3 "" H 8450 4300 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L LED D4
+L Device:LED D4
 U 1 1 5B408DF9
 P 8850 4300
 F 0 "D4" H 8850 4400 50  0000 C CNN
@@ -269,7 +237,7 @@ F 3 "" H 8850 4300 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L R R5
+L Device:R R5
 U 1 1 5B408FA8
 P 8450 4600
 F 0 "R5" V 8530 4600 50  0000 C CNN
@@ -280,7 +248,7 @@ F 3 "" H 8450 4600 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L LED D5
+L Device:LED D5
 U 1 1 5B408FAE
 P 8850 4600
 F 0 "D5" H 8850 4700 50  0000 C CNN
@@ -291,7 +259,7 @@ F 3 "" H 8850 4600 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L R R6
+L Device:R R6
 U 1 1 5B408FB5
 P 8450 4900
 F 0 "R6" V 8530 4900 50  0000 C CNN
@@ -302,7 +270,7 @@ F 3 "" H 8450 4900 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L LED D6
+L Device:LED D6
 U 1 1 5B408FBB
 P 8850 4900
 F 0 "D6" H 8850 5000 50  0000 C CNN
@@ -313,7 +281,7 @@ F 3 "" H 8850 4900 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L R R7
+L Device:R R7
 U 1 1 5B408FC2
 P 8450 5200
 F 0 "R7" V 8530 5200 50  0000 C CNN
@@ -324,7 +292,7 @@ F 3 "" H 8450 5200 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L LED D7
+L Device:LED D7
 U 1 1 5B408FC8
 P 8850 5200
 F 0 "D7" H 8850 5300 50  0000 C CNN
@@ -347,7 +315,7 @@ IN4
 Text Label 9000 3700 0    60   ~ 0
 IN1
 $Comp
-L +5V #PWR04
+L power:+5V #PWR04
 U 1 1 5B40A393
 P 8200 3300
 F 0 "#PWR04" H 8200 3150 50  0001 C CNN
@@ -358,7 +326,7 @@ F 3 "" H 8200 3300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR05
+L power:GND #PWR05
 U 1 1 5B40A6C1
 P 2550 4700
 F 0 "#PWR05" H 2550 4450 50  0001 C CNN
@@ -369,7 +337,7 @@ F 3 "" H 2550 4700 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L +5V #PWR06
+L power:+5V #PWR06
 U 1 1 5B40A754
 P 2550 4600
 F 0 "#PWR06" H 2550 4450 50  0001 C CNN
@@ -380,7 +348,7 @@ F 3 "" H 2550 4600 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R R9
+L Device:R R9
 U 1 1 5B40AA47
 P 6250 4600
 F 0 "R9" V 6330 4600 50  0000 C CNN
@@ -391,7 +359,7 @@ F 3 "" H 6250 4600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R10
+L Device:R R10
 U 1 1 5B40AB63
 P 6450 4600
 F 0 "R10" V 6530 4600 50  0000 C CNN
@@ -402,7 +370,7 @@ F 3 "" H 6450 4600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R11
+L Device:R R11
 U 1 1 5B40ABDD
 P 6650 4600
 F 0 "R11" V 6730 4600 50  0000 C CNN
@@ -413,7 +381,7 @@ F 3 "" H 6650 4600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R12
+L Device:R R12
 U 1 1 5B40ACF9
 P 6850 4600
 F 0 "R12" V 6930 4600 50  0000 C CNN
@@ -424,7 +392,7 @@ F 3 "" H 6850 4600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R13
+L Device:R R13
 U 1 1 5B40ACFF
 P 7050 4600
 F 0 "R13" V 7130 4600 50  0000 C CNN
@@ -435,7 +403,7 @@ F 3 "" H 7050 4600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R14
+L Device:R R14
 U 1 1 5B40AD05
 P 7250 4600
 F 0 "R14" V 7330 4600 50  0000 C CNN
@@ -470,7 +438,7 @@ IN5
 Text Label 7250 3400 0    60   ~ 0
 IN6
 $Comp
-L +5V #PWR07
+L power:+5V #PWR07
 U 1 1 5B40C8C6
 P 6950 4800
 F 0 "#PWR07" H 6950 4650 50  0001 C CNN
@@ -481,7 +449,7 @@ F 3 "" H 6950 4800 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L GND #PWR08
+L power:GND #PWR08
 U 1 1 5B40CBCE
 P 9050 3400
 F 0 "#PWR08" H 9050 3150 50  0001 C CNN
@@ -492,7 +460,7 @@ F 3 "" H 9050 3400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SW_DPST SW1
+L switches:SW_DPST SW1
 U 1 1 5B40F447
 P 4600 3300
 F 0 "SW1" H 4600 3500 50  0000 C CNN
@@ -503,7 +471,7 @@ F 3 "" H 4600 3300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SW_DPST SW2
+L switches:SW_DPST SW2
 U 1 1 5B40F79D
 P 4600 3800
 F 0 "SW2" H 4600 4000 50  0000 C CNN
@@ -522,7 +490,7 @@ Wire Wire Line
 	5300 5500 5000 5500
 Connection ~ 5000 5500
 Wire Wire Line
-	5750 3700 7600 3700
+	5750 3700 6050 3700
 Connection ~ 6950 3700
 Connection ~ 6650 3700
 Connection ~ 6350 3700
@@ -545,7 +513,7 @@ Wire Wire Line
 Wire Wire Line
 	8600 5200 8700 5200
 Wire Wire Line
-	8300 3400 8300 5500
+	8300 3400 8300 3700
 Connection ~ 8300 3700
 Connection ~ 8300 4000
 Connection ~ 8300 4300
@@ -557,7 +525,7 @@ Wire Wire Line
 Wire Wire Line
 	8200 3400 8300 3400
 Wire Wire Line
-	6250 4750 7450 4750
+	6250 4750 6450 4750
 Connection ~ 6450 4750
 Connection ~ 6650 4750
 Connection ~ 6850 4750
@@ -570,7 +538,7 @@ Connection ~ 6950 4750
 Wire Wire Line
 	9050 3400 9000 3400
 $Comp
-L SW_DPST SW3
+L switches:SW_DPST SW3
 U 1 1 5B40FDB4
 P 4600 4300
 F 0 "SW3" H 4600 4500 50  0000 C CNN
@@ -581,7 +549,7 @@ F 3 "" H 4600 4300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SW_DPST SW4
+L switches:SW_DPST SW4
 U 1 1 5B40FE3A
 P 4600 4800
 F 0 "SW4" H 4600 5000 50  0000 C CNN
@@ -592,7 +560,7 @@ F 3 "" H 4600 4800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SW_DPST SW5
+L switches:SW_DPST SW5
 U 1 1 5B40FF09
 P 4600 5250
 F 0 "SW5" H 4600 5450 50  0000 C CNN
@@ -603,7 +571,7 @@ F 3 "" H 4600 5250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SW_DPST SW6
+L switches:SW_DPST SW6
 U 1 1 5B40FFA7
 P 4600 5700
 F 0 "SW6" H 4600 5900 50  0000 C CNN
@@ -614,33 +582,33 @@ F 3 "" H 4600 5700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4400 5600 5000 5600
+	4400 5600 4800 5600
 Connection ~ 5000 5600
 Connection ~ 4800 5600
 Wire Wire Line
 	5000 5350 4800 5350
 Wire Wire Line
-	4400 5150 5000 5150
+	4400 5150 4800 5150
 Connection ~ 5000 5150
 Wire Wire Line
 	4800 4900 5000 4900
 Wire Wire Line
-	4400 4700 5000 4700
+	4400 4700 4800 4700
 Connection ~ 5000 4700
 Wire Wire Line
 	4800 4400 5000 4400
 Wire Wire Line
-	4400 4200 5000 4200
+	4400 4200 4800 4200
 Connection ~ 5000 4200
 Wire Wire Line
 	4800 3900 5000 3900
 Wire Wire Line
-	4400 3700 5000 3700
+	4400 3700 4800 3700
 Connection ~ 5000 3700
 Wire Wire Line
 	4800 3400 5000 3400
 Wire Wire Line
-	4400 3200 5000 3200
+	4400 3200 4800 3200
 Connection ~ 5000 3400
 Connection ~ 4800 3200
 Connection ~ 4800 3700
@@ -650,9 +618,9 @@ Connection ~ 4800 5150
 Wire Wire Line
 	4800 5800 5000 5800
 Wire Wire Line
-	5000 3200 5000 6250
+	5000 3200 5000 3400
 $Comp
-L Conn_01x01 J3
+L conn:Conn_01x01 J3
 U 1 1 5B411ABB
 P 5400 7250
 F 0 "J3" H 5400 7350 50  0000 C CNN
@@ -663,7 +631,7 @@ F 3 "" H 5400 7250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Conn_01x01 J4
+L conn:Conn_01x01 J4
 U 1 1 5B411BCA
 P 5400 7500
 F 0 "J4" H 5400 7600 50  0000 C CNN
@@ -674,7 +642,7 @@ F 3 "" H 5400 7500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Conn_01x01 J5
+L conn:Conn_01x01 J5
 U 1 1 5B411C4D
 P 5400 7700
 F 0 "J5" H 5400 7800 50  0000 C CNN
@@ -685,7 +653,7 @@ F 3 "" H 5400 7700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Conn_01x01 J2
+L conn:Conn_01x01 J2
 U 1 1 5B411D15
 P 5400 7100
 F 0 "J2" H 5400 7200 50  0000 C CNN
@@ -695,4 +663,76 @@ F 3 "" H 5400 7100 50  0001 C CNN
 	1    5400 7100
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	5000 3900 5000 4200
+Wire Wire Line
+	5000 4400 5000 4700
+Wire Wire Line
+	5000 4900 5000 5150
+Wire Wire Line
+	5000 5350 5000 5500
+Wire Wire Line
+	5000 5800 5000 6250
+Wire Wire Line
+	5000 5500 5000 5600
+Wire Wire Line
+	6950 3700 7250 3700
+Wire Wire Line
+	6650 3700 6950 3700
+Wire Wire Line
+	6350 3700 6500 3700
+Wire Wire Line
+	6050 3700 6350 3700
+Wire Wire Line
+	6500 3700 6650 3700
+Wire Wire Line
+	8300 3700 8300 4000
+Wire Wire Line
+	8300 4000 8300 4300
+Wire Wire Line
+	8300 4300 8300 4600
+Wire Wire Line
+	8300 5200 8300 5500
+Wire Wire Line
+	8300 4600 8300 4900
+Wire Wire Line
+	8300 4900 8300 5200
+Wire Wire Line
+	6450 4750 6650 4750
+Wire Wire Line
+	6650 4750 6850 4750
+Wire Wire Line
+	6850 4750 6950 4750
+Wire Wire Line
+	7050 4750 7250 4750
+Wire Wire Line
+	7250 4750 7450 4750
+Wire Wire Line
+	7250 3700 7600 3700
+Wire Wire Line
+	6950 4750 7050 4750
+Wire Wire Line
+	5000 5600 5000 5800
+Wire Wire Line
+	4800 5600 5000 5600
+Wire Wire Line
+	5000 5150 5000 5350
+Wire Wire Line
+	5000 4700 5000 4900
+Wire Wire Line
+	5000 4200 5000 4400
+Wire Wire Line
+	5000 3700 5000 3900
+Wire Wire Line
+	5000 3400 5000 3700
+Wire Wire Line
+	4800 3200 5000 3200
+Wire Wire Line
+	4800 3700 5000 3700
+Wire Wire Line
+	4800 4200 5000 4200
+Wire Wire Line
+	4800 4700 5000 4700
+Wire Wire Line
+	4800 5150 5000 5150
 $EndSCHEMATC

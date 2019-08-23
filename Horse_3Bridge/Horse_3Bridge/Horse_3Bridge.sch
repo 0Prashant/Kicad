@@ -1,0 +1,350 @@
+EESchema Schematic File Version 4
+LIBS:Horse_3Bridge-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Prashant_library:Motor_Driver U1
+U 1 1 5C7C579B
+P 2575 3800
+F 0 "U1" H 3503 4271 50  0000 L CNN
+F 1 "Motor_Driver1" H 3503 4180 50  0000 L CNN
+F 2 "modFiles:H_Bridge" H 2575 3800 60  0001 C CNN
+F 3 "" H 2575 3800 60  0001 C CNN
+	1    2575 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Prashant_library:Motor_Driver U2
+U 1 1 5C7C588A
+P 3625 3775
+F 0 "U2" H 4553 4246 50  0000 L CNN
+F 1 "Motor_Driver2" H 4553 4155 50  0000 L CNN
+F 2 "modFiles:H_Bridge" H 3625 3775 60  0001 C CNN
+F 3 "" H 3625 3775 60  0001 C CNN
+	1    3625 3775
+	1    0    0    -1  
+$EndComp
+$Comp
+L Prashant_library:Motor_Driver U3
+U 1 1 5C7C58BC
+P 4625 3775
+F 0 "U3" H 5553 4246 50  0000 L CNN
+F 1 "Motor_Driver3" H 5553 4155 50  0000 L CNN
+F 2 "modFiles:H_Bridge" H 4625 3775 60  0001 C CNN
+F 3 "" H 4625 3775 60  0001 C CNN
+	1    4625 3775
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR0101
+U 1 1 5C7C59AA
+P 3075 4425
+F 0 "#PWR0101" H 3075 4275 50  0001 C CNN
+F 1 "+12V" H 3090 4598 50  0000 C CNN
+F 2 "" H 3075 4425 50  0001 C CNN
+F 3 "" H 3075 4425 50  0001 C CNN
+	1    3075 4425
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 5C7C59ED
+P 3225 3850
+F 0 "#PWR0102" H 3225 3600 50  0001 C CNN
+F 1 "GND" H 3230 3677 50  0000 C CNN
+F 2 "" H 3225 3850 50  0001 C CNN
+F 3 "" H 3225 3850 50  0001 C CNN
+	1    3225 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3075 3800 3125 3800
+Wire Wire Line
+	3175 3800 3225 3800
+Wire Wire Line
+	3225 3800 3225 3850
+$Comp
+L power:GND #PWR0104
+U 1 1 5C7C5AB5
+P 4275 3875
+F 0 "#PWR0104" H 4275 3625 50  0001 C CNN
+F 1 "GND" H 4280 3702 50  0000 C CNN
+F 2 "" H 4275 3875 50  0001 C CNN
+F 3 "" H 4275 3875 50  0001 C CNN
+	1    4275 3875
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4175 3775 4125 3775
+Wire Wire Line
+	4225 3775 4275 3775
+Wire Wire Line
+	4275 3775 4275 3875
+Wire Wire Line
+	5175 3775 5125 3775
+Wire Wire Line
+	5225 3775 5275 3775
+Wire Wire Line
+	5275 3775 5275 3875
+Text Label 3325 3800 3    50   ~ 0
+EN1
+Text Label 3375 3800 3    50   ~ 0
+I1A
+Text Label 3425 3800 3    50   ~ 0
+I1B
+Text Label 4375 3775 3    50   ~ 0
+EN2
+Text Label 4425 3775 3    50   ~ 0
+I2A
+Text Label 4475 3775 3    50   ~ 0
+I2B
+$Comp
+L power:GND #PWR0106
+U 1 1 5C7C5DE9
+P 5275 3875
+F 0 "#PWR0106" H 5275 3625 50  0001 C CNN
+F 1 "GND" H 5280 3702 50  0000 C CNN
+F 2 "" H 5275 3875 50  0001 C CNN
+F 3 "" H 5275 3875 50  0001 C CNN
+	1    5275 3875
+	1    0    0    -1  
+$EndComp
+Text Label 5375 3775 3    50   ~ 0
+EN3
+Text Label 5425 3775 3    50   ~ 0
+I3A
+Text Label 5475 3775 3    50   ~ 0
+I3B
+$Comp
+L conn:Conn_01x02 J1
+U 1 1 5C7C5EDF
+P 3225 2700
+F 0 "J1" V 3191 2512 50  0000 R CNN
+F 1 "M1" V 3100 2512 50  0000 R CNN
+F 2 "modFiles:Solar_Connector" H 3225 2700 50  0001 C CNN
+F 3 "~" H 3225 2700 50  0001 C CNN
+	1    3225 2700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L conn:Conn_01x02 J3
+U 1 1 5C7C5FA3
+P 4275 2675
+F 0 "J3" V 4241 2487 50  0000 R CNN
+F 1 "M2" V 4150 2487 50  0000 R CNN
+F 2 "modFiles:Solar_Connector" H 4275 2675 50  0001 C CNN
+F 3 "~" H 4275 2675 50  0001 C CNN
+	1    4275 2675
+	0    -1   -1   0   
+$EndComp
+$Comp
+L conn:Conn_01x02 J5
+U 1 1 5C7C5FC3
+P 5275 2650
+F 0 "J5" V 5241 2462 50  0000 R CNN
+F 1 "M3" V 5150 2462 50  0000 R CNN
+F 2 "modFiles:Solar_Connector" H 5275 2650 50  0001 C CNN
+F 3 "~" H 5275 2650 50  0001 C CNN
+	1    5275 2650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3225 2900 3225 2950
+Wire Wire Line
+	3325 2900 3325 2950
+Wire Wire Line
+	4275 2875 4275 2925
+Wire Wire Line
+	4375 2875 4375 2925
+Wire Wire Line
+	5275 2850 5275 2925
+Wire Wire Line
+	5375 2850 5375 2925
+$Comp
+L conn:Conn_01x02 J2
+U 1 1 5C7C6644
+P 3825 2025
+F 0 "J2" H 3905 2017 50  0000 L CNN
+F 1 "Power" H 3905 1926 50  0000 L CNN
+F 2 "modFiles:Solar_Connector" H 3825 2025 50  0001 C CNN
+F 3 "~" H 3825 2025 50  0001 C CNN
+	1    3825 2025
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR0107
+U 1 1 5C7C669C
+P 3625 2025
+F 0 "#PWR0107" H 3625 1875 50  0001 C CNN
+F 1 "+12V" H 3640 2198 50  0000 C CNN
+F 2 "" H 3625 2025 50  0001 C CNN
+F 3 "" H 3625 2025 50  0001 C CNN
+	1    3625 2025
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0108
+U 1 1 5C7C66D3
+P 3625 2125
+F 0 "#PWR0108" H 3625 1875 50  0001 C CNN
+F 1 "GND" H 3630 1952 50  0000 C CNN
+F 2 "" H 3625 2125 50  0001 C CNN
+F 3 "" H 3625 2125 50  0001 C CNN
+	1    3625 2125
+	1    0    0    -1  
+$EndComp
+$Comp
+L conn:DB9_Female_MountingHoles J4
+U 1 1 5C7C67BC
+P 4350 5925
+F 0 "J4" V 4667 5882 50  0000 C CNN
+F 1 "DB9_Female_MountingHoles" V 4576 5882 50  0000 C CNN
+F 2 "modFiles:Connector_DB_9" H 4350 5925 50  0001 C CNN
+F 3 "" H 4350 5925 50  0001 C CNN
+	1    4350 5925
+	0    -1   -1   0   
+$EndComp
+Text Label 3950 6225 3    50   ~ 0
+EN1
+Text Label 4050 6225 3    50   ~ 0
+I1A
+Text Label 4250 6225 3    50   ~ 0
+I1B
+Text Label 4550 6225 3    50   ~ 0
+EN2
+Text Label 4350 6225 3    50   ~ 0
+I2A
+Text Label 4150 6225 3    50   ~ 0
+I2B
+Text Label 4450 6225 3    50   ~ 0
+EN3
+Text Label 4650 6225 3    50   ~ 0
+I3A
+Text Label 4750 6225 3    50   ~ 0
+I3B
+Text Label 4950 5925 2    50   ~ 0
+G
+$Comp
+L Device:Fuse F1
+U 1 1 5C7C5D02
+P 3075 4175
+F 0 "F1" H 3015 4129 50  0000 R CNN
+F 1 "Fuse" H 3015 4220 50  0000 R CNN
+F 2 "modFiles:Fuse_Holder" V 3005 4175 50  0001 C CNN
+F 3 "~" H 3075 4175 50  0001 C CNN
+	1    3075 4175
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3075 3800 3075 4025
+Wire Wire Line
+	3075 4325 3075 4425
+$Comp
+L power:+12V #PWR0103
+U 1 1 5C7C635C
+P 4125 4450
+F 0 "#PWR0103" H 4125 4300 50  0001 C CNN
+F 1 "+12V" H 4140 4623 50  0000 C CNN
+F 2 "" H 4125 4450 50  0001 C CNN
+F 3 "" H 4125 4450 50  0001 C CNN
+	1    4125 4450
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:Fuse F2
+U 1 1 5C7C6362
+P 4125 4200
+F 0 "F2" H 4065 4154 50  0000 R CNN
+F 1 "Fuse" H 4065 4245 50  0000 R CNN
+F 2 "modFiles:Fuse_Holder" V 4055 4200 50  0001 C CNN
+F 3 "~" H 4125 4200 50  0001 C CNN
+	1    4125 4200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4125 4350 4125 4450
+$Comp
+L power:+12V #PWR0105
+U 1 1 5C7C6A7B
+P 5125 4450
+F 0 "#PWR0105" H 5125 4300 50  0001 C CNN
+F 1 "+12V" H 5140 4623 50  0000 C CNN
+F 2 "" H 5125 4450 50  0001 C CNN
+F 3 "" H 5125 4450 50  0001 C CNN
+	1    5125 4450
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:Fuse F3
+U 1 1 5C7C6A81
+P 5125 4200
+F 0 "F3" H 5065 4154 50  0000 R CNN
+F 1 "Fuse" H 5065 4245 50  0000 R CNN
+F 2 "modFiles:Fuse_Holder" V 5055 4200 50  0001 C CNN
+F 3 "~" H 5125 4200 50  0001 C CNN
+	1    5125 4200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5125 4350 5125 4450
+Wire Wire Line
+	4125 3775 4125 4050
+Wire Wire Line
+	5125 3775 5125 4050
+$Comp
+L conn:Conn_01x01 J6
+U 1 1 5C7C85BF
+P 5950 6300
+F 0 "J6" H 6029 6342 50  0000 L CNN
+F 1 "Bolt" H 6029 6251 50  0000 L CNN
+F 2 "modFiles:Nut_Bolt" H 5950 6300 50  0001 C CNN
+F 3 "~" H 5950 6300 50  0001 C CNN
+	1    5950 6300
+	1    0    0    -1  
+$EndComp
+$Comp
+L conn:Conn_01x01 J7
+U 1 1 5C7C86DB
+P 5950 6500
+F 0 "J7" H 6029 6542 50  0000 L CNN
+F 1 "Bolt" H 6029 6451 50  0000 L CNN
+F 2 "modFiles:Nut_Bolt" H 5950 6500 50  0001 C CNN
+F 3 "~" H 5950 6500 50  0001 C CNN
+	1    5950 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L conn:Conn_01x01 J8
+U 1 1 5C7C872B
+P 5950 6675
+F 0 "J8" H 6029 6717 50  0000 L CNN
+F 1 "Bolt" H 6029 6626 50  0000 L CNN
+F 2 "modFiles:Nut_Bolt" H 5950 6675 50  0001 C CNN
+F 3 "~" H 5950 6675 50  0001 C CNN
+	1    5950 6675
+	1    0    0    -1  
+$EndComp
+$Comp
+L conn:Conn_01x01 J9
+U 1 1 5C7C8779
+P 5950 6825
+F 0 "J9" H 6029 6867 50  0000 L CNN
+F 1 "Bolt" H 6029 6776 50  0000 L CNN
+F 2 "modFiles:Nut_Bolt" H 5950 6825 50  0001 C CNN
+F 3 "~" H 5950 6825 50  0001 C CNN
+	1    5950 6825
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

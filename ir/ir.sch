@@ -1,35 +1,6 @@
-EESchema Schematic File Version 2
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:special
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
-EELAYER 25 0
+EESchema Schematic File Version 4
+LIBS:ir-cache
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -44,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L LM741 U2
+L ir-rescue:LM741 U2
 U 1 1 5A145632
 P 5450 3450
 F 0 "U2" H 5600 3600 60  0000 C CNN
@@ -61,7 +32,7 @@ vcc
 Text Label 5350 3850 3    60   ~ 0
 gnd
 $Comp
-L LM7809CT U1
+L ir-rescue:LM7809CT U1
 U 1 1 5A1456EE
 P 2850 2950
 F 0 "U1" H 2650 3150 40  0000 C CNN
@@ -82,7 +53,7 @@ in1
 Text Label 4950 3550 2    60   ~ 0
 in2
 $Comp
-L POT RV1
+L ir-rescue:POT RV1
 U 1 1 5A1457A2
 P 4000 3000
 F 0 "RV1" H 4000 2900 50  0000 C CNN
@@ -101,7 +72,7 @@ in1
 Text Label 3800 3600 2    60   ~ 0
 vcc
 $Comp
-L R R2
+L ir-rescue:R R2
 U 1 1 5A14589D
 P 3800 3850
 F 0 "R2" V 3880 3850 40  0000 C CNN
@@ -112,7 +83,7 @@ F 3 "" H 3800 3850 30  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D2
+L ir-rescue:LED D2
 U 1 1 5A145912
 P 3800 4350
 F 0 "D2" H 3800 4450 50  0000 C CNN
@@ -125,7 +96,7 @@ $EndComp
 Text Label 3800 4550 3    60   ~ 0
 gnd
 $Comp
-L R R1
+L ir-rescue:R R1
 U 1 1 5A1459BE
 P 3100 3800
 F 0 "R1" V 3180 3800 40  0000 C CNN
@@ -136,7 +107,7 @@ F 3 "" H 3100 3800 30  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D1
+L ir-rescue:LED D1
 U 1 1 5A1459FD
 P 3100 4350
 F 0 "D1" H 3100 4450 50  0000 C CNN
@@ -151,7 +122,7 @@ vcc
 Text Label 3100 4550 3    60   ~ 0
 gnd
 $Comp
-L C C1
+L ir-rescue:C C1
 U 1 1 5A145C93
 P 2450 3150
 F 0 "C1" H 2450 3250 40  0000 L CNN
@@ -162,7 +133,7 @@ F 3 "" H 2450 3150 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C2
+L ir-rescue:C C2
 U 1 1 5A145CE1
 P 3250 3150
 F 0 "C2" H 3250 3250 40  0000 L CNN
@@ -185,14 +156,14 @@ Wire Wire Line
 Wire Wire Line
 	2450 2900 2450 2950
 Wire Wire Line
-	2450 3350 3250 3350
+	2450 3350 2850 3350
 Wire Wire Line
 	2850 3350 2850 3200
 Wire Wire Line
 	3250 2900 3250 2950
 Connection ~ 2850 3350
 $Comp
-L CONN_2 P1
+L ir-rescue:CONN_2 P1
 U 1 1 5A14657F
 P 2250 2600
 F 0 "P1" V 2200 2600 40  0000 C CNN
@@ -207,7 +178,7 @@ power
 Text Label 1900 2700 2    60   ~ 0
 gnd
 $Comp
-L CONN_1 P2
+L ir-rescue:CONN_1 P2
 U 1 1 5A1467C6
 P 6450 3450
 F 0 "P2" H 6530 3450 40  0000 L CNN
@@ -219,4 +190,6 @@ F 3 "" H 6450 3450 60  0001 C CNN
 $EndComp
 Wire Wire Line
 	6300 3450 5950 3450
+Wire Wire Line
+	2850 3350 3250 3350
 $EndSCHEMATC
